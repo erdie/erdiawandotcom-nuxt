@@ -45,6 +45,23 @@ export default {
         return {
             post: data
         }
-    }
+    },
+    head() {
+        let metadata = this.post
+        
+        return {
+            title: `${metadata.title.rendered}`,
+            meta: [{
+                hid: `iOSUrl`,
+                property: 'al:ios:url',
+                content: `${metadata.title.rendered} - ${metadata.excerpt.rendered}`
+            },
+            {
+                hid: `description`,
+                name: 'description',
+                content: `${metadata.title.rendered} - ${metadata.excerpt.rendered}`
+            }]
+        }
+    },
 }
 </script>
