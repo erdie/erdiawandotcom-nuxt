@@ -22,9 +22,7 @@ export default {
   /*
   ** Global CSS
   */
- css: [
-  { src: '~/assets/sass/style.sass', lang: 'sass' }
-],
+ css: [{ src: '~/assets/sass/style.sass', lang: 'sass' }],
   /*
   ** Plugins to load before mounting the App
   */
@@ -59,6 +57,17 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    }
+  },
+  layoutTransition: {
+    name: 'layout',
+    mode: 'out-in'
+  },
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in',
+    beforeEnter (el) {
+      console.log('Before enter...');
     }
   }
 }
