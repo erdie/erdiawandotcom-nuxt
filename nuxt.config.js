@@ -69,5 +69,8 @@ export default {
     beforeEnter (el) {
       console.log('Before enter...');
     }
+  },
+  generate: {
+    fallback: true
   }
 }
