@@ -1,0 +1,41 @@
+$space-base : 15px
+
+// Grid width
+=columns($col)
+    flex: 0 0 calc(100% / (12/#{$col}))
+    max-width: calc(100% / (12/#{$col}))
+
+.item
+    display: flex
+    flex-wrap: wrap
+
+    >[classˆ=item__]
+        padding: 0 $space-base
+
+    //number of grids
+    @for $items from 1 through 12
+        $item : $items * 1
+        .item__#{$item}
+            @include columns($item)
+
+// grid based on screensize
+@mixin item--phone()
+    .item
+        @for $items from 1 through 12
+            $item : $items * 1
+            .m\:item__#{$item}
+                @include columns($item)
+
+@mixin item--tablet()
+    .item
+        @for $items from 1 through 12
+            $item : $items * 1
+            .t\:item__#{$item}
+                @include columns($item)
+
+@mixin item--desktop()
+    .item
+        @for $items from 1 through 12
+            $item : $items * 1
+            .d\:item__#{$item}
+                @include columns($item)

@@ -1,0 +1,78 @@
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap')
+
+body
+    // font-family: 'Open Sans', sans-serif
+    font-family: 'Be Vietnam', sans-serif
+    
+$font-barlow: 'Barlow Semi Condensed', sans-serif
+
+$font-open-sans: 'Open Sans', sans-serif 
+    
+.font-barlow
+    font-family: 'Barlow Semi Condensed', sans-serif
+
+.font-open-sans
+    font-family: 'Open Sans', sans-serif
+
+$base-context: 16
+
+@function em($px, $context: $base-context)
+    @return #{$px/$context}em 
+
+//title
+.title
+    font-size: em(32)
+@mixin title--phone()
+    .title
+        font-size: em(24)
+@mixin title--tablet()
+    .title
+        font-size: em(28)
+@mixin title--desktop()
+    .title
+        font-size: em(42)
+
+//heading
+.heading
+    font-size: em(24)
+@mixin heading--phone()
+    .heading
+        font-size: em(24)
+@mixin heading--tablet()
+    .heading
+        font-size: em(28)
+@mixin heading--desktop()
+    .heading
+        font-size: em(42)
+
+//sub-heading
+.sub-heading
+    font-size: em(21)
+@mixin sub-heading--phone()
+    .sub-heading
+        font-size: em(18)
+@mixin sub-heading--tablet()
+    .sub-heading
+        font-size: em(21)
+@mixin sub-heading--desktop()
+    .sub-heading
+        font-size: em(32)
+
+//text
+.text
+    font-size: em(16)
+@mixin text--phone()
+    .text
+        font-size: em(14)
+@mixin text--desktop()
+    .text
+        font-size: em(18)
+
+a
+    color: #474F85
+    transition: 0.3s
+
+a:hover
+    color: #51E3D4
+    transition: 0.3s

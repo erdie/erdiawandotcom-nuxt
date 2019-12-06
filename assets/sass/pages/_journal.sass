@@ -1,0 +1,175 @@
+@import components/colors
+@import components/typography
+
+#navigation
+    background-color: $primary-color
+    .navigation-group
+        .menu
+            .brand
+                padding: 10px 15px 8px 15px
+                img 
+                    height: 45px
+                    transform: rotate(-3deg)
+            color: #ffffff
+            ul
+                list-style: none
+                padding: 0
+                margin-left: 40px
+                .active
+                    font-weight: bold
+                li
+                    display: inline-block
+                    margin: 0 8px
+                    a
+                        color: #ffffff
+                        text-transform: uppercase
+                        text-decoration: none
+        .social
+            color: #ffffff
+            text-align: left
+            padding: 2px 15px 5px 15px
+            small
+                padding: 0
+                margin: 2px 0 3px 4px
+                font-size: 12px
+            ul
+                list-style: none
+                padding: 0
+                margin: 0 0 5px 0
+                li
+                    display: inline-block
+                    margin: 0 5px
+                    a
+                        text-decoration: none
+
+#navigation-mobile
+    display: none
+    .menu
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding: 10px 15px
+        .icon-menu
+            position: relative
+            .active
+                display: block
+            ul
+                display: none
+                position: absolute
+                top: 16px
+                right: 0
+                background-color: white
+                border-radius: 5px
+                z-index: 2
+                border: 1px solid #dedede
+                li
+                    padding: 7px 10px
+                    a
+                        color: #333333 !important
+#navigation-mobile
+    background-color: $primary-color
+    .navigation-group
+        .menu
+            .brand
+                img 
+                    height: 45px
+                    transform: rotate(-3deg)
+            color: #ffffff
+            ul
+                list-style: none
+                padding: 0
+                margin-left: 40px
+                .active
+                    font-weight: bold
+                li
+                    display: inline-block
+                    margin: 0 8px
+                    a
+                        color: #ffffff
+                        text-transform: uppercase
+                        text-decoration: none
+    .social
+        color: #ffffff
+        text-align: center
+        padding: 2px 0 5px 0
+        small
+            padding: 0
+            margin: 2px 0 3px 4px
+            font-size: 12px
+            display: inline-block
+        ul
+            list-style: none
+            padding: 0
+            margin: 0 0 5px 0
+            display: inline-block
+            li
+                display: inline-block
+                margin: 0 5px
+                a
+                    text-decoration: none
+        
+#blog
+    padding: 50px 0 10px 0
+    .blog
+        a
+            text-decoration: none
+            color: #333333
+        a:hover
+            color: #333333
+        .blog-card
+            transition: 0.3s
+            margin: 15px 15px
+            img
+                width: 100%
+                height: 200px
+                border-radius: 6px
+                object-fit: cover
+                object-position: center
+            .blog-title
+                font-size: 16px
+                line-height: 1.4
+                h2
+                    padding: 10px 0
+                    margin: 0
+                    font-weight: 500
+            .blog-author
+                padding: 0
+                font-weight: 300
+            .blog-desc
+                p
+                    margin: 0
+                    padding: 10px 0
+                    font-weight: 300
+
+    .blog-card:hover
+        transform: translateY(-10px)
+        transition: 0.3s
+
+@include respond(phone)
+    #navigation
+        display: none
+    #navigation-mobile
+        .navigation-group
+            .menu
+                padding: 10px 0
+                .brand
+                    padding: 0
+        display: block
+        .social-mobile
+            background-color: #5b64a0
+            .social
+                transform: scale(0.98)
+        .menu
+            transform: scale(0.9)
+    #blog
+        padding: 30px 0 10px 0
+        .blog
+            .blog-card
+                img
+                    height: 200px
+
+@include respond(tablet)
+    .blog
+        .blog-card
+            img
+                height: 230px !important

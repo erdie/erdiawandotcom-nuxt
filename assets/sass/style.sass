@@ -1,0 +1,47 @@
+// Components
+@import components/breakpoints
+@import components/button
+@import components/colors
+@import components/icons
+@import components/container
+@import components/flex
+@import components/grid-mixin
+@import components/typography
+@import components/dark-mode 
+@import components/pagination
+@import components/loading
+@import components/transition
+
+// Pages
+@import pages/home
+@import pages/journal
+@import pages/journal-detail
+
+@include respond(phone)
+    @include item--phone()
+    @include title--phone()
+    @include heading--phone()
+    @include sub-heading--phone()
+    @include text--phone()
+    @include container--phone()
+
+@include respond(tablet)
+    @include item--tablet()
+    @include title--tablet()
+    @include heading--tablet()
+    @include sub-heading--tablet()
+    @include container--tablet()
+
+@include respond(desktop)
+    @include item--desktop()
+    @include title--desktop()
+    @include heading--desktop()
+    @include sub-heading--desktop()
+    @include text--desktop()
+    @include container--desktop()
+
+html, body
+    margin: 0
+    padding: 0
+    clear: both
+    scroll-behavior: smooth

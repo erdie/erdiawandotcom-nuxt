@@ -1,7 +1,7 @@
 {
   "name": "erdiawan.com",
   "version": "1.0.0",
-  "description": "Erdiawan Personal Site",
+  "description": "Anna Erdiawan Personal Site",
   "author": "Erdiawan Anna",
   "private": true,
   "scripts": {
@@ -12,9 +12,11 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "node-sass": "^4.13.0",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
