@@ -12,7 +12,9 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'shortcut icon', type: 'image/png', href: 'favicon.png?v=1' },
+      { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg?v=1' },
+      { rel: 'shortcut icon', type: 'image/png', href: 'favicon.png' },
+      { rel: 'mask-icon', href: 'favicon.svg', color: '#ffffff' },
       { rel: 'apple-touch-icon', sizes: '512x512', href: 'favicon.png?v=1' }
     ]
   },
