@@ -13,7 +13,7 @@ export default {
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/png', href: 'favicon.png?v=1' },
-      { rel: 'apple-touch-icon', sizes: "512x512", href: 'favicon.png?v=1' }
+      { rel: 'apple-touch-icon', sizes: '512x512', href: 'favicon.png?v=1' }
     ]
   },
   /*
