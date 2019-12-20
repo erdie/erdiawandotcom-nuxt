@@ -41,11 +41,17 @@ import axios from 'axios'
 export default {
     layout: 'journal',
     async asyncData ({ store, route }) { 
-        let { data} = await axios.get('https://chromplex.com/wp-json/wp/v2/posts/' + route.params.id + '/') 
+        let { data } = await axios.get('https://chromplex.com/wp-json/wp/v2/posts/' + route.params.id + '/') 
         return {
             post: data
         }
     },
+    // async asyncData ({ store, route }) { 
+    //     let { data } = await axios.get('https://chromplex.com/wp-json/wp/v2/posts?slug=' + route.params.slug + '/') 
+    //     return {
+    //         post: data 
+    //     }
+    // },
     head() {
         let metadata = this.post
         

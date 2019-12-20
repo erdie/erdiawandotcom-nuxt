@@ -6,9 +6,10 @@
                     <div class="d:item__4 t:item__6 m:item__12" v-for="post in posts" :key="post.id">
                         <!-- <a v-bind:href="post.link"> -->
                             <div class="blog-card">
-                                <router-link :to="'/journal/'+post.id">
+                                <!-- <nuxt-link :to="'/journal/'+post.slug"> -->
+                                <nuxt-link :to="{ name: 'journal-id', params: { id: post.id, slug: post.slug } }">
                                 <img v-bind:src="post.jetpack_featured_media_url" alt="">
-                                </router-link>
+                                </nuxt-link>
                                 <div class="blog-title">
                                     <h2>{{post.title.rendered}}</h2>
                                 </div>
