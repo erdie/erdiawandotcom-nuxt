@@ -29,8 +29,9 @@
                 <div class="footer-group">
                     <div class="menu">
                         <ul>
-                            <li class="active"><a href="">Home</a></li>
-                            <li><a href="#portfolio">portfolio</a></li>
+                            <li class="active"><nuxt-link to="/">Home</nuxt-link></li>
+                            <!-- <li><nuxt-link to="/#portfolio">Portfolio</nuxt-link></li> -->
+                            <li><nuxt-link :to="{ path: '/',hash:'#portfolio'}">Portfolio</nuxt-link></li>
                             <li><nuxt-link to="/journal">Journal</nuxt-link></li>
                         </ul>
                     </div>

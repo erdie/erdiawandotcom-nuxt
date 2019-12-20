@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="loading">
     <Navigation />
     <NavigationMobile />
     <nuxt />
@@ -18,5 +18,16 @@ export default {
         NavigationMobile,
         Footer
     },
+    data: () => ({
+      loading: true
+    }),
+    methods: {
+      start () {
+        this.loading = true
+      },
+      finish () {
+        this.loading = false
+      }
+    }
 }
 </script>

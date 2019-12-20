@@ -5,20 +5,23 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || '"personal site"',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: 'favicon.png?v=1' }
+      { rel: 'shortcut icon', type: 'image/png', href: 'favicon.png?v=1' },
+      { rel: 'apple-touch-icon', sizes: "512x512", href: 'favicon.png?v=1' }
     ]
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { 
+    color: '#51e3d4' 
+  },
   /*
   ** Global CSS
   */
@@ -59,17 +62,17 @@ export default {
     extend (config, ctx) {
     }
   },
-  layoutTransition: {
-    name: 'layout',
-    mode: 'out-in'
-  },
-  pageTransition: {
-    name: 'page',
-    mode: 'out-in',
-    beforeEnter (el) {
-      console.log('Before enter...');
-    }
-  },
+  // layoutTransition: {
+  //   name: 'layout',
+  //   mode: 'out-in'
+  // },
+  // pageTransition: {
+  //   name: 'page',
+  //   mode: 'out-in',
+  //   beforeEnter (el) {
+  //     console.log('Before enter...');
+  //   }
+  // },
   generate: {
     fallback: true
   },
