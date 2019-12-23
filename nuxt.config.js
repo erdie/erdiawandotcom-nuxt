@@ -1,6 +1,11 @@
 
-export default {
+module.exports = {
   mode: 'universal',
+  env: {
+    wordpressApiBaseUrl: 'https://chromplex.com/wp-json/wp/v2',
+
+    proxyApiBaseUrl: process.env.NODE_ENV === 'production' ? 'https://erdiawan.com/api' : 'http://localhost:3000/api'
+  },
   /*
   ** Headers of the page
   */
@@ -31,7 +36,8 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
+ plugins: [
+    '~/plugins/app'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,18 +55,14 @@ export default {
     '@nuxtjs/pwa'
   ],
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
-  /*
   ** Build configuration
   */
   build: {
     /*
     ** You can extend webpack config here
     */
+    // vendor: ['axios', '~/api/api'],
+
     extend (config, ctx) {
     }
   },

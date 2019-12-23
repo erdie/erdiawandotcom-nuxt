@@ -5,15 +5,18 @@
   "author": "Erdiawan Anna",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "dev": "node server.js",
+    "build": "node_modules/.bin/nuxt build",
+    "start": "NODE_ENV=production node server.js",
+    "generate": "node_modules/.bin/nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "precommit": "npm run lint",
+    "deploy": "now"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.0",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "cachios": "^2.2.3",
     "node-sass": "^4.13.0",
     "nuxt": "^2.11.0",
     "sass-loader": "^8.0.0"
