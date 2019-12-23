@@ -25,10 +25,6 @@
                 </div>
             </div>
         </section>
-        <!-- <Pagination :pagination="pagination"
-                    @prev="--postsData.page; getPosts();"
-                    @next="postsData.page++; getPosts();">
-        </Pagination> -->
     </div>
 </template>
 
