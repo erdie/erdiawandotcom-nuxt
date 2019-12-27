@@ -29,7 +29,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="../assets/portfolio/finest.png" class="lazyload" alt="Finest">
+                    <img src="~/assets/img/portfolio/finest.png" class="lazyload" alt="Finest">
                     <h3>Finest</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
