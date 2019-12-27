@@ -3,15 +3,6 @@
         <div class="container">
             <h2>Portfolio</h2>
             <div class="portfolio-grid item">
-                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="../assets/portfolio/finest.png" class="lazyload" alt="Triv Frontend">
-                    <h3>Finest</h3>
-                    <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
-                        Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
-                        Demo: <a href="https://finest.co.id" target="_blank" rel="noopener">finest.co.id</a><br>
-                        Source Code: <strong>Private</strong>
-                    </p>
-                </div>
                 <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                     <img src="../assets/portfolio/triv-frontend.jpg" class="lazyload" alt="Triv Frontend">
                     <h3>Triv Frontend</h3>
@@ -35,6 +26,15 @@
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://devfest.gdgjakarta.org" target="_blank" rel="noopener">devfest.gdgjakarta.org</a><br>
                         Source Code: <a href="https://github.com/gdgindonesia/devfest-19-landing" target="_blank">Github</a>
+                    </p>
+                </div>
+                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <img src="../assets/portfolio/finest.png" class="lazyload" alt="Finest">
+                    <h3>Finest</h3>
+                    <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
+                        Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
+                        Demo: <a href="https://finest.co.id" target="_blank" rel="noopener">finest.co.id</a><br>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
