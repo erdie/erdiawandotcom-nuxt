@@ -19,7 +19,7 @@
                 <div class="hero-image">
                     <img src="~/assets/img/erdi.jpg" class="lazyload" alt="Anna Erdiawan">
                     <div class="btn-hire">
-                        <a href="mailto:hi@erdiawan"><button class="btn btn-primary">Hire Me</button></a>
+                        <a href="mailto:hi@erdiawan"><button class="btn btn-primary"><i class="icon-mail"></i> Send Me a Message</button></a>
                     </div>
                 </div>
             </div>
