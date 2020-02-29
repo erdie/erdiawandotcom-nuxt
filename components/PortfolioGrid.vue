@@ -25,7 +25,7 @@
                     <p>Tech Stack: HTML5, CSS3, SASS, NUXT, VUE JS<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://devfest.gdgjakarta.org" target="_blank" rel="noopener">devfest.gdgjakarta.org</a><br>
-                        Source Code: <a href="https://github.com/gdgindonesia/devfest-19-landing" target="_blank"><i class="icon-github-small"></i> Github</a>
+                        Source Code: <a href="https://github.com/gdgindonesia/devfest-19-landing" target="_blank">Github</a>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -34,7 +34,7 @@
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
                         Demo: <a href="https://finest.co.id" target="_blank" rel="noopener">finest.co.id</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -43,7 +43,7 @@
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://founderasia.com/" target="_blank" rel="noopener">founderasia.com</a> <br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong> Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -52,7 +52,7 @@
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://exp-up.id" target="_blank" rel="noopener">exp-up.id</a> & <a href="https://exp-academy.id" target="_blank" rel="noopener">exp-academy.id</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -61,7 +61,7 @@
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://digitaraya.com/startuppilihantempo/" target="_blank" rel="noopener">digitaraya.com/startuppilihantempo/</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -71,7 +71,7 @@
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://digitaraya.com" target="_blank" rel="noopener">digitaraya.com</a><br>
                         Demo v1: <a href="https://v1.digitaraya.com" target="_blank" rel="noopener">v1.digitaraya.com</a> (Wordpress) <br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -80,7 +80,7 @@
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://digitaraya.com/tiketcom-tourismbatch/" target="_blank" rel="noopener">digitaraya.com/tiketcom-tourismbatch/</a> <br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -89,7 +89,7 @@
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://simona.ventures" target="_blank" rel="noopener">simona.ventures</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -98,7 +98,7 @@
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://simona.ventures/apacwomen/" target="_blank" rel="noopener">simona.ventures/apacwomen/</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -107,7 +107,7 @@
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="http://lancong.id" target="_blank" rel="noopener">lancong.id</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -116,7 +116,7 @@
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://kinesysgroup.com" target="_blank" rel="noopener">kinesysgroup.com</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -125,7 +125,7 @@
                     <p>Tech Stack: WORDPRESS<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://mariviu.com" target="_blank" rel="noopener">mariviu.com</a> <br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -134,7 +134,7 @@
                     <p>Tech Stack: WORDPRESS, MATERIAL LITE DESIGN<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="https://chromplex.com" target="_blank" rel="noopener">chromplex.com</a> <br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -144,7 +144,7 @@
                         Frontend Dev: Anna Erdiawan<br>
                         Backend Dev: Rio Swarawan & Ali Mahfud<br>
                         Demo: <a href="http://digiskul.nuansa.id" target="_blank" rel="noopener">digiskul.nuansa.id</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -153,7 +153,7 @@
                     <p>Tech Stack: HTML5, CSS3, BOOTSTRAP<br>
                         Frontend Dev: Anna Erdiawan<br>
                         Demo: <a href="http://perkim.sumbarprov.go.id" target="_blank" rel="noopener">perkim.sumbarprov.go.id</a><br>
-                        Source Code: <strong><i class="icon-locked"></i> Private</strong>
+                        Source Code: <strong>Private</strong>
                     </p>
                 </div>
             </div>
