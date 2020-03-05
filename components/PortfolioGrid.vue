@@ -20,6 +20,15 @@
                     </p>
                 </div> -->
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <img src="~/assets/img/portfolio/digitarasa.png" class="lazyload" alt="Startup Pilihan Tempo">
+                    <h3>Digitarasa by GoFood</h3>
+                    <p>Tech Stack: HTML5, CSS3, SASS<br>
+                        Frontend Dev: Anna Erdiawan<br>
+                        Demo: <a href="https://digitarasa.id" target="_blank" rel="noopener">digitarasa.id</a><br>
+                        Source Code: <strong>Private</strong>
+                    </p>
+                </div>
+                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                     <img src="~/assets/img/portfolio/devfest-jakarta.png" class="lazyload" alt="Startup Pilihan Tempo">
                     <h3>DevFest 2019 Jakarta</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, NUXT, VUE JS<br>
