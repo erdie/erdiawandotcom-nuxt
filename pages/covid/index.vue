@@ -4,13 +4,13 @@
         <h2>Kasus Covid19 di Indonesia</h2>
         <ul>
             <li>Terkonfirmasi: <b>{{alldata.confirmed.value}}</b></li>
-            <li>Dalam Perawatan: <b>{{alldata.recovered.value}}</b></li>
-            <li>Sembuh: <b>{{alldata.deaths.value}}</b></li>
-            <li>Meninggal: <b>{{alldata.activeCare.value}}</b></li>
+            <li>Dalam Perawatan: <b>{{alldata.active.value}}</b></li>
+            <li>Sembuh: <b>{{alldata.recovered.value}}</b></li>
+            <li>Meninggal: <b>{{alldata.deaths.value}}</b></li>
         </ul>
         <small class="covid-date">
-            Update terakhir: {{alldata.metadata.lastUpdatedAt}} <br>
-            API dari <a href="https://kawalcovid19.id/" target="_blank" rel="noopener">kawalcovid19.id</a>
+            <!-- Update terakhir: {{alldata.metadata.lastUpdatedAt}} <br> -->
+            API dari <a href="https://indonesia-covid-19.mathdro.id/api" target="_blank" rel="noopener">Mathdroid</a>
         </small>
     </div>
     </div>
@@ -33,7 +33,7 @@ export default {
     }},
     layout: 'journal',
     async asyncData() {
-        const { data } = await axios.get('https://kawalcovid19.harippe.id/api/summary') 
+        const { data } = await axios.get('https://indonesia-covid-19.mathdro.id/api') 
         return {
             alldata: data
         }
