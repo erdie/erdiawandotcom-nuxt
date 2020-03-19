@@ -34,7 +34,7 @@ export default {
     }},
     layout: 'journal',
     async asyncData() {
-        const { data } = await axios.get('https://indonesia-covid-19.mathdro.id/api') 
+        const { data } = await axios.get('https://github.com/mathdroid/indonesia-covid-19-api') 
         return {
             alldata: data
         }
@@ -49,25 +49,25 @@ export default {
         margin: 0 15px
         h2
             color: #5b64a0
+        ul
+            list-style: none
+            padding: 0
+            .confirmed
+                b
+                    color: #f2c94c
+            .active
+                b
+                    color: #f5a623
+            .recovered
+                b
+                    color: #219653
+            .deaths
+                b
+                    color: #d8232a
     @media (prefers-color-scheme: dark)
         .covid
             h2
                 color: #51E3D4
-            ul
-                list-style: none
-                padding: 0
-                .confirmed
-                    b
-                        color: #f2c94c
-                .active
-                    b
-                        color: #f5a623
-                .recovered
-                    b
-                        color: #219653
-                .deaths
-                    b
-                        color: #d8232a
             .covid-date
                 a
                     color: #51E3D4
