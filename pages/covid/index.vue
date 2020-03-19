@@ -10,7 +10,7 @@
         </ul>
         <small class="covid-date">
             <!-- Update terakhir: {{alldata.metadata.lastUpdatedAt}} <br> -->
-            API dari <a href="https://indonesia-covid-19.mathdro.id/api" target="_blank" rel="noopener">Mathdroid</a> <br>
+            API dari <a href="https://github.com/mathdroid/indonesia-covid-19-api" target="_blank" rel="noopener">Mathdroid</a> <br>
             Data berdasarkan dari situs resmi pemerintah Indonesia <a href="https://www.covid19.go.id/">covid19.go.id</a>
         </small>
     </div>
@@ -34,7 +34,7 @@ export default {
     }},
     layout: 'journal',
     async asyncData() {
-        const { data } = await axios.get('https://github.com/mathdroid/indonesia-covid-19-api') 
+        const { data } = await axios.get('https://indonesia-covid-19-api.now.sh/api') 
         return {
             alldata: data
         }
