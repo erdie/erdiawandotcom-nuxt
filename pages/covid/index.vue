@@ -3,11 +3,15 @@
         <div class="container">
         <h2>Kasus Covid19 di Indonesia</h2>
         <ul>
-            <li class="confirmed">Terkonfirmasi: <b>{{alldata.confirmed.value}}</b></li>
-            <li class="active">Dalam Perawatan: <b>{{alldata.active.value}}</b></li>
-            <li class="recovered">Sembuh: <b>{{alldata.recovered.value}}</b></li>
-            <li class="deaths">Meninggal: <b>{{alldata.deaths.value}}</b></li>
+            <li class="confirmed">Terkonfirmasi: <b>{{alldata.jumlahKasus}}</b></li>
+            <li class="active">Dalam Perawatan: <b>{{alldata.perawatan}}</b></li>
+            <li class="recovered">Sembuh: <b>{{alldata.sembuh}}</b></li>
+            <li class="deaths">Meninggal: <b>{{alldata.meninggal}}</b></li>
         </ul>
+        <!-- <h3>Detail</h3>
+        <ul v-for="cases in allcases" :key="cases.id">
+            <li>Kasus nomor: {{cases.no}}</li>
+        </ul> -->
         <small class="covid-date">
             <!-- Update terakhir: {{alldata.metadata.lastUpdatedAt}} <br> -->
             API dari <a href="https://github.com/mathdroid/indonesia-covid-19-api" target="_blank" rel="noopener">Mathdroid</a> <br>
@@ -34,11 +38,17 @@ export default {
     }},
     layout: 'journal',
     async asyncData() {
-        const { data } = await axios.get('https://indonesia-covid-19-api.now.sh/api') 
+        const { data } = await axios.get('https://indonesia-covid-19-api.now.sh/api/')
         return {
             alldata: data
         }
-    },
+    }
+    // async asyncData() {
+    //     const { datacases } = await axios.get('https://indonesia-covid-19-api.now.sh/api/kasus/') 
+    //     return {
+    //         allcases: datacases
+    //     }
+    // }
 }
 </script>
 
