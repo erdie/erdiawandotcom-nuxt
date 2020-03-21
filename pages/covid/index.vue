@@ -2,20 +2,26 @@
     <div class="covid">
         <div class="container">
         <h2>Kasus Covid19 di Indonesia</h2>
-        <ul>
+        <small>(Total kasus di Indonesia)</small>
+        <ul class="indonesia">
             <li class="confirmed">Terkonfirmasi: <b>{{alldata.jumlahKasus}}</b></li>
             <li class="active">Dalam Perawatan: <b>{{alldata.perawatan}}</b></li>
             <li class="recovered">Sembuh: <b>{{alldata.sembuh}}</b></li>
             <li class="deaths">Meninggal: <b>{{alldata.meninggal}}</b></li>
         </ul>
-        <!-- <h3>Detail</h3>
-        <ul v-for="cases in allcases" :key="cases.id">
-            <li>Kasus nomor: {{cases.no}}</li>
-        </ul> -->
+        <h3>Data Per Provinsi</h3>
+        <small>(Total kasus Per Provinsi)</small>
+        <ul v-for="cases in provincedata" :key="cases.id">
+            <h4>🔴{{cases.provinsi}}</h4>
+            <ul class="province">
+                <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusTerkonfirmasiAkumulatif}}</strong></li>
+                <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSembuhAkumulatif}}</strong></li>
+                <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeninggalAkumulatif}}</strong></li>
+            </ul> 
+        </ul>
         <small class="covid-date">
-            <!-- Update terakhir: {{alldata.metadata.lastUpdatedAt}} <br> -->
             API dari <a href="https://github.com/mathdroid/indonesia-covid-19-api" target="_blank" rel="noopener">Mathdroid</a> <br>
-            Data berdasarkan dari situs resmi pemerintah Indonesia <a href="https://www.covid19.go.id/">covid19.go.id</a>
+            Data berdasarkan situs resmi pemerintah Indonesia <a href="https://www.covid19.go.id/">covid19.go.id</a>
         </small>
     </div>
     </div>
@@ -23,11 +29,13 @@
 
 <script>
 import axios from 'axios'
+import 'vue-css-donut-chart/dist/vcdonut.css'
 
 export default {
     data: () => ({
         loading: true,
-        title: 'Kasus Covid19 di Indonesia'
+        title: 'Kasus Covid19 di Indonesia',
+        dummy: [{ value: 25 }, { value: 25 }]
     }),
     head () {
         return {
@@ -37,18 +45,19 @@ export default {
         ]
     }},
     layout: 'journal',
+
     async asyncData() {
-        const { data } = await axios.get('https://indonesia-covid-19-api.now.sh/api/')
+        let firstURL = 'https://indonesia-covid-19-api.now.sh/api/'
+        let secondURL = 'https://indonesia-covid-19-api.now.sh/api/provinsi'
+
+        const firstResponse = await axios.get(firstURL)
+        const secondResponse = await axios.get(secondURL)
+
         return {
-            alldata: data
+            alldata: firstResponse.data,
+            provincedata: secondResponse.data.data
         }
     }
-    // async asyncData() {
-    //     const { datacases } = await axios.get('https://indonesia-covid-19-api.now.sh/api/kasus/') 
-    //     return {
-    //         allcases: datacases
-    //     }
-    // }
 }
 </script>
 
@@ -59,7 +68,14 @@ export default {
         margin: 0 15px
         h2
             color: #5b64a0
+            margin-bottom: 0
+        h3
+            margin-bottom: 0
+        h4
+            margin: 0
         ul
+            padding: 0
+        .indonesia
             list-style: none
             padding: 0
             .confirmed
@@ -74,9 +90,29 @@ export default {
             .deaths
                 b
                     color: #d8232a
+        .province
+            list-style: none
+            padding: 0
+            li
+                margin-left: 19px
+            .confirmed
+                strong
+                    color: #f2c94c
+            .active
+                strong
+                    color: #f5a623
+            .recovered
+                strong
+                    color: #219653
+            .deaths
+                strong
+                    color: #d8232a
+
     @media (prefers-color-scheme: dark)
         .covid
             h2
+                color: #51E3D4
+            h3
                 color: #51E3D4
             .covid-date
                 a
