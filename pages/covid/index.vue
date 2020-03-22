@@ -12,7 +12,7 @@
         <h3>Data Per Provinsi</h3>
         <small>(Total kasus Per Provinsi)</small>
         <input class="province-search" type="text" v-model="search" placeholder="Ketikkan nama provinsi">
-        <ul v-for="cases in filterList" :key="cases">
+        <ul v-for="cases in filterList" :key="cases.id">
             <h4>🔴{{cases.provinsi}}</h4>
             <ul class="province">
                 <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusPosi}}</strong></li>
