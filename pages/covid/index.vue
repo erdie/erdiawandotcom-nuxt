@@ -12,12 +12,12 @@
         <h3>Data Per Provinsi</h3>
         <small>(Total kasus Per Provinsi)</small>
         <input class="province-search" type="text" v-model="search" placeholder="Ketikkan nama provinsi">
-        <ul v-for="cases in filterList" :key="cases.id">
+        <ul v-for="cases in filterList" :key="cases">
             <h4>🔴{{cases.provinsi}}</h4>
             <ul class="province">
-                <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusTerkonfirmasiAkumulatif}}</strong></li>
-                <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSembuhAkumulatif}}</strong></li>
-                <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeninggalAkumulatif}}</strong></li>
+                <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusPosi}}</strong></li>
+                <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSemb}}</strong></li>
+                <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeni}}</strong></li>
             </ul> 
         </ul>
         <small class="covid-date">
