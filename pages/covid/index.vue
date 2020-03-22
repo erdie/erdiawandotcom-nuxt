@@ -11,7 +11,8 @@
         </ul>
         <h3>Data Per Provinsi</h3>
         <small>(Total kasus Per Provinsi)</small>
-        <ul v-for="cases in provincedata" :key="cases.id">
+        <input class="province-search" type="text" v-model="search" placeholder="Ketikkan nama provinsi">
+        <ul v-for="cases in filterList" :key="cases.id">
             <h4>🔴{{cases.provinsi}}</h4>
             <ul class="province">
                 <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusTerkonfirmasiAkumulatif}}</strong></li>
@@ -35,7 +36,8 @@ export default {
     data: () => ({
         loading: true,
         title: 'Kasus Covid19 di Indonesia',
-        dummy: [{ value: 25 }, { value: 25 }]
+        dummy: [{ value: 25 }, { value: 25 }],
+        search: ''
     }),
     head () {
         return {
@@ -45,7 +47,6 @@ export default {
         ]
     }},
     layout: 'journal',
-
     async asyncData() {
         let firstURL = 'https://indonesia-covid-19-api.now.sh/api/'
         let secondURL = 'https://indonesia-covid-19-api.now.sh/api/provinsi'
@@ -56,6 +57,20 @@ export default {
         return {
             alldata: firstResponse.data,
             provincedata: secondResponse.data.data
+        }
+        asyncData().catch((error) => {
+            console.log(error)
+        })
+    },
+    computed: {
+        filterList: function() {
+            let filtering = this.provincedata
+            if (this.search){
+                filtering = filtering.filter((cases) => {
+                    return cases.provinsi.toLowerCase().match(this.search.toLowerCase())
+                })
+            } 
+            return filtering
         }
     }
 }
@@ -90,6 +105,15 @@ export default {
             .deaths
                 b
                     color: #d8232a
+        .province-search
+            display: block
+            margin: 10px 0
+            padding: 5px 10px
+            outline: none
+            border: 1px solid #dedede
+            min-width: 200px
+            border-radius: 30px
+            font-size: 12px
         .province
             list-style: none
             padding: 0
