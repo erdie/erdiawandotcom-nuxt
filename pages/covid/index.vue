@@ -105,7 +105,7 @@ export default {
         //Convert Array to Object
         // const compileKasusKumulatifObject = Object.assign({}, compileKasusKumulatif)
 
-        console.log(compileKasusKumulatif)
+        // console.log(compileKasusKumulatif)
 
         return {
             alldata: firstResponse.data,
