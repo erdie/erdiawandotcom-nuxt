@@ -12,26 +12,28 @@
                 :chartdata="chartdata"
                 :options="options"/>
                 <!-- <line-chart :chart-data="datacollection"></line-chart> -->
-                <ul class="indonesia">
-                    <li class="confirmed"><b>{{alldata.jumlahKasus}}</b><br>Terkonfirmasi</li>
-                    <li class="active"><b>{{alldata.perawatan}}</b><br>Dalam Perawatan</li>
-                    <li class="recovered"><b>{{alldata.sembuh}}</b><br>Sembuh</li>
-                    <li class="deaths"><b>{{alldata.meninggal}}</b><br>Meninggal</li>
-                </ul>
+                <div class="indonesia item">
+                    <div class="cases confirmed d:item__3 t:item__3 m:item__6"><b>{{alldata.jumlahKasus}}</b><br>Terkonfirmasi</div>
+                    <div class="cases active d:item__3 t:item__3 m:item__6"><b>{{alldata.perawatan}}</b><br>Dalam Perawatan</div>
+                    <div class="cases recovered d:item__3 t:item__3 m:item__6"><b>{{alldata.sembuh}}</b><br>Sembuh</div>
+                    <div class="cases deaths d:item__3 t:item__3 m:item__6"><b>{{alldata.meninggal}}</b><br>Meninggal</div>
+                </div>
             </div>
             <div class="d:item__4 t:item__4 m:item__12">
                 <div class="province-group">
                     <h3>Data Per Provinsi</h3>
                     <small>(Total kasus Per Provinsi)</small>
                     <input class="province-search" type="text" v-model="search" placeholder="Ketikkan nama provinsi">
-                    <ul v-for="cases in filterList" :key="cases.id">
-                        <h4>📍{{cases.provinsi}}</h4>
-                        <ul class="province">
-                            <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusPosi}}</strong></li>
-                            <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSemb}}</strong></li>
-                            <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeni}}</strong></li>
-                        </ul> 
-                    </ul>
+                    <div class="province-list">
+                        <ul v-for="cases in filterList" :key="cases.id">
+                            <h4>📍{{cases.provinsi}}</h4>
+                            <ul class="province">
+                                <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusPosi}}</strong></li>
+                                <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSemb}}</strong></li>
+                                <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeni}}</strong></li>
+                            </ul> 
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,17 +130,17 @@ export default {
             labels: this.dataLabels,
             datasets: [
                 {
-                label: 'Pasien Sembuh',
+                label: 'Sembuh',
                 backgroundColor: '#219653',
                 data: this.dataPasienSembuh
                 },
                 {
-                label: 'Pasien Meninggal',
+                label: 'Meninggal',
                 backgroundColor: '#d8232a',
                 data: this.dataPasienMeninggal
                 },
                 {
-                label: 'Pasien Dalam Perawatan',
+                label: 'Dalam Perawatan',
                 backgroundColor: '#f5a623',
                 data: this.dataDalamPerawatan
                 },
@@ -189,12 +191,12 @@ export default {
             display: flex
             text-align: center
             width: 100%
-            li
-                flex: 1
+            margin: 15px 0
+            .cases
                 padding: 10px 0 20px 0
-                margin: 10px
                 border-radius: 5px
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+                transform: scale(0.95)
                 b
                     font-size: 30px
             .confirmed
@@ -210,9 +212,10 @@ export default {
                 b
                     color: #d8232a
         .province-group
-            height: 520px
-            overflow-y: scroll
             padding-left: 10px
+            .province-list
+                height: 390px
+                overflow-y: scroll
         .province-search
             display: block
             margin: 10px 0
@@ -239,10 +242,15 @@ export default {
             .deaths
                 strong
                     color: #d8232a
+    .covid-date
+        margin-top: 30px
+        display: block
+        text-align: center
+
 
     @media (prefers-color-scheme: dark)
         .covid
-            h2
+            h1
                 color: #51E3D4
             h3
                 color: #51E3D4
@@ -252,5 +260,10 @@ export default {
                     text-decoration: none
                 a:hover
                     color: #5b64a0
+
+    @media (min-width: 600px)
+        .covid
+            h1
+                font-size: 20px !important
 
 </style>
