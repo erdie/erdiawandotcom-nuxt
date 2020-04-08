@@ -178,6 +178,7 @@ export default {
             margin-bottom: 0
         h3
             margin-bottom: 0
+            margin: 0
         h4
             margin: 0
         ul
@@ -214,7 +215,7 @@ export default {
         .province-group
             padding-left: 10px
             .province-list
-                height: 390px
+                height: 410px
                 overflow-y: scroll
         .province-search
             display: block
