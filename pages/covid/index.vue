@@ -176,6 +176,7 @@ export default {
         h1
             color: #5b64a0
             margin-bottom: 0
+            line-height: 1.2
         h3
             margin-bottom: 0
             margin: 0
@@ -195,7 +196,7 @@ export default {
             margin: 15px 0
             .cases
                 padding: 10px 0 20px 0
-                border-radius: 5px
+                border-radius: 8px
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
                 transform: scale(0.95)
                 b
@@ -255,16 +256,14 @@ export default {
                 color: #51E3D4
             h3
                 color: #51E3D4
+            .indonesia
+                .cases
+                    background-color: #101010
             .covid-date
                 a
                     color: #51E3D4
                     text-decoration: none
                 a:hover
                     color: #5b64a0
-
-    @media (min-width: 600px)
-        .covid
-            h1
-                font-size: 20px !important
 
 </style>
