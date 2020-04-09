@@ -3,7 +3,7 @@
         <div class="container">
         <div class="covid-title">
             <h1>Kasus Covid19 di Indonesia</h1>
-            <small>(Total kasus di Indonesia)</small>
+            <small>( Data berdasarkan situs resmi pemerintah Indonesia untuk penanganan covid19. API oleh <a href="https://github.com/mathdroid/indonesia-covid-19-api" target="_blank" rel="noopener">Mathdroid</a> )</small>
         </div>
         <div class="item">
             <div class="d:item__8 t:item__8 m:item__12">
@@ -37,10 +37,6 @@
                 </div>
             </div>
         </div>
-        <small class="covid-date">
-            API dari <a href="https://github.com/mathdroid/indonesia-covid-19-api" target="_blank" rel="noopener">Mathdroid</a> <br>
-            Data berdasarkan situs resmi pemerintah Indonesia <a href="https://www.covid19.go.id/">covid19.go.id</a>
-        </small>
     </div>
     </div>
 </template>
@@ -187,6 +183,8 @@ export default {
         .covid-title
             text-align: center
             margin-bottom: 20px
+            small
+                font-weight: 300
         .indonesia
             list-style: none
             padding: 0
@@ -199,8 +197,10 @@ export default {
                 border-radius: 8px
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
                 transform: scale(0.95)
+                font-weight: 300
                 b
                     font-size: 30px
+                    font-weight: 600
             .confirmed
                 b
                     color: #f2c94c
@@ -230,8 +230,10 @@ export default {
         .province
             list-style: none
             padding: 0
+            font-size: 14px
             li
                 margin-left: 19px
+                font-weight: 300
             .confirmed
                 strong
                     color: #f2c94c
@@ -244,11 +246,6 @@ export default {
             .deaths
                 strong
                     color: #d8232a
-    .covid-date
-        margin-top: 30px
-        display: block
-        text-align: center
-
 
     @media (prefers-color-scheme: dark)
         .covid
@@ -259,11 +256,12 @@ export default {
             .indonesia
                 .cases
                     background-color: #101010
-            .covid-date
-                a
-                    color: #51E3D4
-                    text-decoration: none
-                a:hover
-                    color: #5b64a0
+            .covid-title
+                small
+                    a
+                        color: #51E3D4
+                        text-decoration: none
+                    a:hover
+                        color: #5b64a0
 
 </style>
