@@ -79,4 +79,12 @@ export default {
   generate: {
     fallback: true
   },
+  pwa: {
+    manifest: {
+      name: 'erdiawan.com',
+      short_name: "Erdiawan Anna",
+      lang: 'en',
+      description: "Anna Erdiawan Personal Site",
+    }
+  }
 }
