@@ -13,10 +13,26 @@
                 :options="options"/>
                 <!-- <line-chart :chart-data="datacollection"></line-chart> -->
                 <div class="indonesia item">
-                    <div class="cases confirmed d:item__3 t:item__3 m:item__6"><b>{{alldata.jumlahKasus}}</b><br>Terkonfirmasi</div>
-                    <div class="cases active d:item__3 t:item__3 m:item__6"><b>{{alldata.perawatan}}</b><br>Dalam Perawatan</div>
-                    <div class="cases recovered d:item__3 t:item__3 m:item__6"><b>{{alldata.sembuh}}</b><br>Sembuh</div>
-                    <div class="cases deaths d:item__3 t:item__3 m:item__6"><b>{{alldata.meninggal}}</b><br>Meninggal</div>
+                    <div class="cases confirmed d:item__3 t:item__3 m:item__6">
+                        <b>{{alldata.jumlahKasus}}</b>
+                        <br>Terkonfirmasi <br>
+                        <small>Penambahan <strong>{{dataKasusBaru}}</strong> Kasus Baru</small>
+                    </div>
+                    <div class="cases active d:item__3 t:item__3 m:item__6">
+                        <b>{{alldata.perawatan}}</b>
+                        <br>Dalam Perawatan <br>
+                        <small>Persentase Perawatan <strong>{{dataPersentasePerawatan}} %</strong></small>
+                    </div>
+                    <div class="cases recovered d:item__3 t:item__3 m:item__6">
+                        <b>{{alldata.sembuh}}</b>
+                        <br>Sembuh <br>
+                        <small>Persentase Kesembuhan <strong>{{dataPersentaseSembuh}} %</strong></small>
+                    </div>
+                    <div class="cases deaths d:item__3 t:item__3 m:item__6">
+                        <b>{{alldata.meninggal}}</b>
+                        <br>Meninggal <br>
+                        <small>Persentase Kematian <strong>{{dataPersentaseMeninggal}} %</strong></small>
+                    </div>
                 </div>
             </div>
             <div class="d:item__4 t:item__4 m:item__12">
@@ -98,10 +114,40 @@ export default {
             return compile.harike
         })
 
+        //Get last data from Harian
+        //penambahan kasus baru
+        const compileKasusBaru = thirdResponse.data.data.map(compile => {
+            return compile.jumlahKasusBaruperHari
+        })
+
+        const lastCompileKasusBaru = compileKasusBaru[compileKasusBaru.length-1]
+
+        //persentase kematian
+        const compilePersentaseMeninggal = thirdResponse.data.data.map(compile => {
+            return compile.persentasePasienMeninggal
+        })
+
+        const lastCompilePersentaseMeninggal = compilePersentaseMeninggal[compileKasusBaru.length-1].toFixed(1)
+
+        //persentase sembuh
+        const compilePersentaseSembuh = thirdResponse.data.data.map(compile => {
+            return compile.persentasePasienSembuh
+        })
+
+        const lastCompilePersentaseSembuh = compilePersentaseSembuh[compileKasusBaru.length-1].toFixed(1)
+
+        //persentase dalam perawatan
+        const compilePersentasePerawatan = thirdResponse.data.data.map(compile => {
+            return compile.persentasePasiendalamPerawatan
+        })
+
+        const lastCompilePersentasePerawatan = compilePersentasePerawatan[compileKasusBaru.length-1].toFixed(1)
+        
+
         //Convert Array to Object
         // const compileKasusKumulatifObject = Object.assign({}, compileKasusKumulatif)
 
-        // console.log(compileKasusKumulatif)
+        console.log()
 
         return {
             alldata: firstResponse.data,
@@ -110,7 +156,11 @@ export default {
             dataDalamPerawatan: compileDalamPerawatan,
             dataPasienSembuh: compilePasienSembuh,
             dataPasienMeninggal: compilePasienMeninggal,
-            dataLabels: compileHari
+            dataLabels: compileHari,
+            dataKasusBaru: lastCompileKasusBaru,
+            dataPersentaseMeninggal: lastCompilePersentaseMeninggal,
+            dataPersentaseSembuh: lastCompilePersentaseSembuh,
+            dataPersentasePerawatan: lastCompilePersentasePerawatan
         }
         
         asyncData().catch((error) => {
@@ -201,6 +251,10 @@ export default {
                 b
                     font-size: 30px
                     font-weight: 600
+                small
+                    display: block
+                    padding-top: 10px
+                    font-size: 11px
             .confirmed
                 b
                     color: #f2c94c
@@ -216,7 +270,7 @@ export default {
         .province-group
             padding-left: 10px
             .province-list
-                height: 410px
+                height: 435px
                 overflow-y: scroll
         .province-search
             display: block
