@@ -11,27 +11,26 @@
                 v-if="loaded" 
                 :chartdata="chartdata"
                 :options="options"/>
-                <!-- <line-chart :chart-data="datacollection"></line-chart> -->
                 <div class="indonesia item">
                     <div class="cases confirmed d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.jumlahKasus}}</b>
                         <br>Terkonfirmasi <br>
-                        <small>Penambahan <strong>{{dataKasusBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
                     </div>
                     <div class="cases active d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.perawatan}}</b>
                         <br>Dalam Perawatan <br>
-                        <small>Persentase Perawatan <strong>{{dataPersentasePerawatan}} %</strong></small>
+                        <small>Persentase <strong>{{dataPersentasePerawatan}} %</strong></small>
                     </div>
                     <div class="cases recovered d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.sembuh}}</b>
                         <br>Sembuh <br>
-                        <small>Persentase Kesembuhan <strong>{{dataPersentaseSembuh}} %</strong></small>
+                        <small>Persentase <strong>{{dataPersentaseSembuh}} %</strong></small>
                     </div>
                     <div class="cases deaths d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.meninggal}}</b>
                         <br>Meninggal <br>
-                        <small>Persentase Kematian <strong>{{dataPersentaseMeninggal}} %</strong></small>
+                        <small>Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
                     </div>
                 </div>
             </div>
