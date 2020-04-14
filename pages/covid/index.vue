@@ -15,22 +15,22 @@
                     <div class="cases confirmed d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.jumlahKasus}}</b>
                         <br>Terkonfirmasi <br>
-                        <small v-if="dataKasusBaru !== 'null'"><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
                     </div>
                     <div class="cases active d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.perawatan}}</b>
                         <br>Dalam Perawatan <br>
-                        <small v-if="dataPersentasePerawatan !== 'null'">Persentase <strong>{{dataPersentasePerawatan}} %</strong></small>
+                        <small>Persentase <strong>{{dataPersentasePerawatan}} %</strong></small>
                     </div>
                     <div class="cases recovered d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.sembuh}}</b>
                         <br>Sembuh <br>
-                        <small v-if="dataPersentaseSembuh !== 'null'">Persentase <strong>{{dataPersentaseSembuh}} %</strong></small>
+                        <small>Persentase <strong>{{dataPersentaseSembuh}} %</strong></small>
                     </div>
                     <div class="cases deaths d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.meninggal}}</b>
                         <br>Meninggal <br>
-                        <small v-if="dataPersentaseMeninggal !== 'null'">Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
+                        <small>Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@ export default {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
 
-        console.log(lastCompileKasusBaru)
+        // console.log(lastCompileKasusBaru)
 
         return {
             alldata: firstResponse.data,
