@@ -15,22 +15,22 @@
                     <div class="cases confirmed d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.jumlahKasus}}</b>
                         <br>Terkonfirmasi <br>
-                        <small><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
+                        <small v-if="dataKasusBaru !== 'null'"><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
                     </div>
                     <div class="cases active d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.perawatan}}</b>
                         <br>Dalam Perawatan <br>
-                        <small>Persentase <strong>{{dataPersentasePerawatan}} %</strong></small>
+                        <small v-if="dataPersentasePerawatan !== 'null'">Persentase <strong>{{dataPersentasePerawatan}} %</strong></small>
                     </div>
                     <div class="cases recovered d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.sembuh}}</b>
                         <br>Sembuh <br>
-                        <small>Persentase <strong>{{dataPersentaseSembuh}} %</strong></small>
+                        <small v-if="dataPersentaseSembuh !== 'null'">Persentase <strong>{{dataPersentaseSembuh}} %</strong></small>
                     </div>
                     <div class="cases deaths d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.meninggal}}</b>
                         <br>Meninggal <br>
-                        <small>Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
+                        <small v-if="dataPersentaseMeninggal !== 'null'">Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
                     </div>
                 </div>
             </div>
@@ -119,34 +119,46 @@ export default {
             return compile.jumlahKasusBaruperHari
         })
 
-        const lastCompileKasusBaru = compileKasusBaru[compileKasusBaru.length-1]
+        if (compileKasusBaru[compileKasusBaru.length-1] == null) {
+            var lastCompileKasusBaru = 'null'
+        } else {
+            var lastCompileKasusBaru = compileKasusBaru[compileKasusBaru.length-1]
+        }
 
         //persentase kematian
         const compilePersentaseMeninggal = thirdResponse.data.data.map(compile => {
             return compile.persentasePasienMeninggal
         })
 
-        const lastCompilePersentaseMeninggal = compilePersentaseMeninggal[compileKasusBaru.length-1].toFixed(1)
+        if (compilePersentaseMeninggal[compilePersentaseMeninggal.length-1] == null) {
+            var lastCompilePersentaseMeninggal = 'null'
+        } else {
+            var lastCompilePersentaseMeninggal = compilePersentaseMeninggal[compilePersentaseMeninggal.length-1].toFixed(1)
+        }
 
         //persentase sembuh
         const compilePersentaseSembuh = thirdResponse.data.data.map(compile => {
             return compile.persentasePasienSembuh
         })
 
-        const lastCompilePersentaseSembuh = compilePersentaseSembuh[compileKasusBaru.length-1].toFixed(1)
+        if (compilePersentaseSembuh[compilePersentaseSembuh.length-1] == null) {
+            var lastCompilePersentaseSembuh = 'null'
+        } else {
+            var lastCompilePersentaseSembuh = compilePersentaseSembuh[compilePersentaseSembuh.length-1].toFixed(1)
+        }
 
         //persentase dalam perawatan
         const compilePersentasePerawatan = thirdResponse.data.data.map(compile => {
             return compile.persentasePasiendalamPerawatan
         })
 
-        const lastCompilePersentasePerawatan = compilePersentasePerawatan[compileKasusBaru.length-1].toFixed(1)
-        
+        if (compilePersentasePerawatan[compilePersentasePerawatan.length-1] == null) {
+            var lastCompilePersentasePerawatan = 'null'
+        } else {
+            var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
+        }
 
-        //Convert Array to Object
-        // const compileKasusKumulatifObject = Object.assign({}, compileKasusKumulatif)
-
-        console.log()
+        console.log(lastCompileKasusBaru)
 
         return {
             alldata: firstResponse.data,
