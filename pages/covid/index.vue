@@ -33,6 +33,7 @@
                         <small>Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
                     </div>
                 </div>
+                <small class="notes">* Data diupdate setiap pukul 16.15 WIB</small>
             </div>
             <div class="d:item__4 t:item__4 m:item__12">
                 <div class="province-group">
@@ -85,8 +86,8 @@ export default {
         ]
     }},
     async asyncData() {
-        let firstURL = 'https://indonesia-covid-19-api.now.sh/api/'
-        let secondURL = 'https://indonesia-covid-19-api.now.sh/api/provinsi'
+        let firstURL = 'https://indonesia-covid-19.mathdro.id/api/'
+        let secondURL = 'https://indonesia-covid-19.mathdro.id/api/provinsi'
         let thirdURL = 'https://indonesia-covid-19.mathdro.id/api/harian'
 
         const firstResponse = await axios.get(firstURL)
@@ -120,7 +121,7 @@ export default {
         })
 
         if (compileKasusBaru[compileKasusBaru.length-1] == null) {
-            var lastCompileKasusBaru = 'null'
+            var lastCompileKasusBaru = compileKasusBaru[compileKasusBaru.length-2]
         } else {
             var lastCompileKasusBaru = compileKasusBaru[compileKasusBaru.length-1]
         }
@@ -131,7 +132,7 @@ export default {
         })
 
         if (compilePersentaseMeninggal[compilePersentaseMeninggal.length-1] == null) {
-            var lastCompilePersentaseMeninggal = 'null'
+            var lastCompilePersentaseMeninggal = compilePersentaseMeninggal[compilePersentaseMeninggal.length-2].toFixed(1)
         } else {
             var lastCompilePersentaseMeninggal = compilePersentaseMeninggal[compilePersentaseMeninggal.length-1].toFixed(1)
         }
@@ -142,7 +143,7 @@ export default {
         })
 
         if (compilePersentaseSembuh[compilePersentaseSembuh.length-1] == null) {
-            var lastCompilePersentaseSembuh = 'null'
+            var lastCompilePersentaseSembuh = compilePersentaseSembuh[compilePersentaseSembuh.length-2].toFixed(1)
         } else {
             var lastCompilePersentaseSembuh = compilePersentaseSembuh[compilePersentaseSembuh.length-1].toFixed(1)
         }
@@ -153,7 +154,7 @@ export default {
         })
 
         if (compilePersentasePerawatan[compilePersentasePerawatan.length-1] == null) {
-            var lastCompilePersentasePerawatan = 'null'
+            var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-2].toFixed(1)
         } else {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
@@ -278,6 +279,10 @@ export default {
             .deaths
                 b
                     color: #d8232a
+        .notes
+            font-size: 11px
+            margin-top: -5px
+            display: block
         .province-group
             padding-left: 10px
             .province-list
