@@ -25,6 +25,9 @@
                                 Meninggal <b>{{allGlobaldata.deaths.value.toLocaleString()}}</b>
                             </small>
                         </li>
+                        <li>
+                            <small>(Data oleh JHU CSSE)</small>
+                        </li>
                     </ul>
                 </div>
                 <line-chart
