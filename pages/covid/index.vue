@@ -11,24 +11,44 @@
                 v-if="loaded" 
                 :chartdata="chartdata"
                 :options="options"/>
+                <div class="globalcases item">
+                    <ul>
+                        <li><small class="textinfo"><b>Kasus Global: </b></small></li>
+                        <li>
+                            <small class="confirmed">
+                                Terkonfirmasi <b>{{allGlobaldata.confirmed.value.toLocaleString()}}</b>
+                            </small>
+                        </li>
+                        <li>
+                            <small class="recovered">
+                                Sembuh <b>{{allGlobaldata.recovered.value.toLocaleString()}}</b>
+                            </small>
+                        </li>
+                        <li>
+                            <small class="death">
+                                Meninggal <b>{{allGlobaldata.deaths.value.toLocaleString()}}</b>
+                            </small>
+                        </li>
+                    </ul>
+                </div>
                 <div class="indonesia item">
                     <div class="cases confirmed d:item__3 t:item__3 m:item__6">
-                        <b>{{alldata.jumlahKasus}}</b>
+                        <b>{{alldata.jumlahKasus.toLocaleString()}}</b>
                         <br>Terkonfirmasi <br>
                         <small><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
                     </div>
                     <div class="cases active d:item__3 t:item__3 m:item__6">
-                        <b>{{alldata.perawatan}}</b>
+                        <b>{{alldata.perawatan.toLocaleString()}}</b>
                         <br>Dalam Perawatan <br>
                         <small>Persentase <strong>{{dataPersentasePerawatan}} %</strong></small>
                     </div>
                     <div class="cases recovered d:item__3 t:item__3 m:item__6">
-                        <b>{{alldata.sembuh}}</b>
+                        <b>{{alldata.sembuh.toLocaleString()}}</b>
                         <br>Sembuh <br>
                         <small>Persentase <strong>{{dataPersentaseSembuh}} %</strong></small>
                     </div>
                     <div class="cases deaths d:item__3 t:item__3 m:item__6">
-                        <b>{{alldata.meninggal}}</b>
+                        <b>{{alldata.meninggal.toLocaleString()}}</b>
                         <br>Meninggal <br>
                         <small>Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
                     </div>
@@ -60,10 +80,14 @@
 <script>
 import axios from 'axios'
 import LineChart from './Chart'
+// import GlobalCovid from "~/components/GlobalCovid.vue";
 
 export default {
     name: 'LineChartContainer',
-    components: { LineChart },
+    components: { 
+        LineChart,
+        // GlobalCovid
+    },
     layout: 'journal',
     data() {
         return {
@@ -89,10 +113,12 @@ export default {
         let firstURL = 'https://indonesia-covid-19.mathdro.id/api/'
         let secondURL = 'https://indonesia-covid-19.mathdro.id/api/provinsi'
         let thirdURL = 'https://indonesia-covid-19.mathdro.id/api/harian'
+        let fourthURL = 'https://covid19.mathdro.id/api'
 
         const firstResponse = await axios.get(firstURL)
         const secondResponse = await axios.get(secondURL)
         const thirdResponse = await axios.get(thirdURL)
+        const fourthResponse = await axios.get(fourthURL)
 
         const compileKasusKumulatif = thirdResponse.data.data.map(compile => {
             return compile.jumlahKasusKumulatif
@@ -159,10 +185,11 @@ export default {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
 
-        // console.log(lastCompileKasusBaru)
+        console.log(fourthResponse)
 
         return {
             alldata: firstResponse.data,
+            allGlobaldata: fourthResponse.data,
             provincedata: secondResponse.data.data,
             dataKasusKumulatif: compileKasusKumulatif,
             dataDalamPerawatan: compileDalamPerawatan,
@@ -247,6 +274,26 @@ export default {
             margin-bottom: 20px
             small
                 font-weight: 300
+        .globalcases
+            padding: 5px 15px 10px 8px
+            border-radius: 8px
+            margin: 10px 5px 0 5px
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+            ul
+                list-style: none
+                margin: 0
+                li
+                    display: inline-block
+                    margin: 0 8px
+            .confirmed
+                b
+                    color: #f5a623
+            .recovered
+                b
+                    color: #219653
+            .death
+                b
+                    color: #d8232a
         .indonesia
             list-style: none
             padding: 0
@@ -269,10 +316,10 @@ export default {
                     font-size: 11px
             .confirmed
                 b
-                    color: #f2c94c
+                    color: #f5a623
             .active
                 b
-                    color: #f5a623
+                    color: #f2c94c
             .recovered
                 b
                     color: #219653
@@ -286,7 +333,7 @@ export default {
         .province-group
             padding-left: 10px
             .province-list
-                height: 435px
+                height: 490px
                 overflow-y: scroll
         .province-search
             display: block
@@ -326,6 +373,8 @@ export default {
             .indonesia
                 .cases
                     background-color: #101010
+            .globalcases
+                background-color: #101010
             .covid-title
                 small
                     a
