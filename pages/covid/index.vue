@@ -67,9 +67,9 @@
                         <ul v-for="cases in filterList" :key="cases.id">
                             <h4>📍{{cases.provinsi}}</h4>
                             <ul class="province">
-                                <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusPosi}}</strong></li>
-                                <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSemb}}</strong></li>
-                                <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeni}}</strong></li>
+                                <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusPosi.toLocaleString()}}</strong></li>
+                                <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSemb.toLocaleString()}}</strong></li>
+                                <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeni.toLocaleString()}}</strong></li>
                             </ul> 
                         </ul>
                     </div>
@@ -245,7 +245,7 @@ export default {
                 data: this.dataDalamPerawatan
                 },
                 {
-                label: 'Kasus Kumulatif',
+                label: 'Terkonfirmasi',
                 borderColor: '#f5a623',
                 borderWidth: 2,
                 pointBackgroundColor: '#f5a623',
@@ -328,6 +328,7 @@ export default {
                 transform: scale(0.95)
                 font-weight: 300
                 transition: 0.3s
+                background-color: white
                 b
                     font-size: 30px
                     font-weight: 600
@@ -335,6 +336,10 @@ export default {
                     display: block
                     padding-top: 10px
                     font-size: 11px
+            .cases:hover
+                transition: 0.3s
+                transform: scale(0.93)
+                z-index: 1
             .confirmed
                 b
                     color: #f5a623
