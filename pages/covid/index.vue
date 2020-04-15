@@ -185,7 +185,7 @@ export default {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
 
-        console.log(fourthResponse)
+        // console.log(fourthResponse)
 
         return {
             alldata: firstResponse.data,
