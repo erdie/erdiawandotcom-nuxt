@@ -7,10 +7,6 @@
         </div>
         <div class="item">
             <div class="d:item__8 t:item__8 m:item__12">
-                <line-chart
-                v-if="loaded" 
-                :chartdata="chartdata"
-                :options="options"/>
                 <div class="globalcases item">
                     <ul>
                         <li><small class="textinfo"><b>Kasus Global: </b></small></li>
@@ -31,6 +27,10 @@
                         </li>
                     </ul>
                 </div>
+                <line-chart
+                v-if="loaded" 
+                :chartdata="chartdata"
+                :options="options"/>
                 <div class="indonesia item">
                     <div class="cases confirmed d:item__3 t:item__3 m:item__6">
                         <b>{{alldata.jumlahKasus.toLocaleString()}}</b>
@@ -216,22 +216,38 @@ export default {
             datasets: [
                 {
                 label: 'Sembuh',
-                backgroundColor: '#219653',
+                borderColor: '#219653',
+                borderWidth: 2,
+                pointBackgroundColor: '#219653',
+                pointBorderWidth: 1,
+                backgroundColor: 'rgba(33, 150, 83, 0.3)',
                 data: this.dataPasienSembuh
                 },
                 {
                 label: 'Meninggal',
-                backgroundColor: '#d8232a',
+                borderColor: '#d8232a',
+                borderWidth: 2,
+                pointBackgroundColor: '#d8232a',
+                pointBorderWidth: 1,
+                backgroundColor: 'rgba(216, 35, 42, 0.3)',
                 data: this.dataPasienMeninggal
                 },
                 {
                 label: 'Dalam Perawatan',
-                backgroundColor: '#f5a623',
+                borderColor: '#f2c94c',
+                borderWidth: 2,
+                pointBackgroundColor: '#f2c94c',
+                pointBorderWidth: 1,
+                backgroundColor: 'rgba(242, 201, 76, 0.3)',
                 data: this.dataDalamPerawatan
                 },
                 {
                 label: 'Kasus Kumulatif',
-                backgroundColor: '#f2c94c',
+                borderColor: '#f5a623',
+                borderWidth: 2,
+                pointBackgroundColor: '#f5a623',
+                pointBorderWidth: 1,
+                backgroundColor: 'rgba(245, 166, 35, 0.3)',
                 data: this.dataKasusKumulatif
                 }
             ]
@@ -277,8 +293,9 @@ export default {
         .globalcases
             padding: 5px 15px 10px 8px
             border-radius: 8px
-            margin: 10px 5px 0 5px
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+            margin: 10px 5px 15px 5px
+            border: 1px solid #dedede
+            font-size: 15px
             ul
                 list-style: none
                 margin: 0
@@ -304,9 +321,10 @@ export default {
             .cases
                 padding: 10px 0 20px 0
                 border-radius: 8px
-                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+                box-shadow: 0px 0px 0px 1px rgba(222,222,222,1);
                 transform: scale(0.95)
                 font-weight: 300
+                transition: 0.3s
                 b
                     font-size: 30px
                     font-weight: 600
@@ -333,7 +351,7 @@ export default {
         .province-group
             padding-left: 10px
             .province-list
-                height: 490px
+                height: 500px
                 overflow-y: scroll
         .province-search
             display: block
@@ -372,9 +390,11 @@ export default {
                 color: #51E3D4
             .indonesia
                 .cases
-                    background-color: #101010
+                    background-color: #121212
+                    box-shadow: none
             .globalcases
-                background-color: #101010
+                background-color: #121212
+                border: none
             .covid-title
                 small
                     a
