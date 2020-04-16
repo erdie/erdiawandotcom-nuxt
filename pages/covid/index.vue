@@ -56,6 +56,10 @@
                         <small>Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
                     </div>
                 </div>
+                <line-chart
+                v-if="loaded" 
+                :dailychart="dailychart"
+                :options="options"/>
                 <small class="notes">* Data diupdate setiap pukul 16.15 WIB</small>
             </div>
             <div class="d:item__4 t:item__4 m:item__12">
@@ -82,14 +86,14 @@
 
 <script>
 import axios from 'axios'
-import LineChart from './Chart'
-// import GlobalCovid from "~/components/GlobalCovid.vue";
+import LineChart from './LineChart'
+// import DailyChart from './DailyChart'
 
 export default {
     name: 'LineChartContainer',
     components: { 
         LineChart,
-        // GlobalCovid
+        // DailyChart
     },
     layout: 'journal',
     data() {
@@ -99,6 +103,7 @@ export default {
             search: '',
             loaded: true,
             chartdata: null,
+            dailychart: null,
             options: {
                 responsive: true,
                 maintainAspectRatio: false
@@ -123,6 +128,7 @@ export default {
         const thirdResponse = await axios.get(thirdURL)
         const fourthResponse = await axios.get(fourthURL)
 
+        //Compile for LineChart 
         const compileKasusKumulatif = thirdResponse.data.data.map(compile => {
             return compile.jumlahKasusKumulatif
         })
@@ -139,8 +145,13 @@ export default {
             return compile.jumlahPasienMeninggal
         })
 
+        //Compile for LineChart and BarChart for Y
         const compileHari = thirdResponse.data.data.map(compile => {
             return compile.harike
+        })
+
+        const compileDailyCase = thirdResponse.data.data.map(compile => {
+            return compile.jumlahKasusBaruperHari
         })
 
         //Get last data from Harian
@@ -188,11 +199,12 @@ export default {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
 
-        // console.log(fourthResponse)
+        console.log(compileDailyCase)
 
         return {
             alldata: firstResponse.data,
             allGlobaldata: fourthResponse.data,
+            allDailycase: compileDailyCase,
             provincedata: secondResponse.data.data,
             dataKasusKumulatif: compileKasusKumulatif,
             dataDalamPerawatan: compileDalamPerawatan,
@@ -210,10 +222,11 @@ export default {
         })
     },
     mounted () {
-      this.fillData()
+      this.fillLineChart(),
+      this.fillBarChart()
     },
     methods: {
-        fillData () {
+        fillLineChart () {
             this.chartdata = {
             labels: this.dataLabels,
             datasets: [
@@ -252,6 +265,23 @@ export default {
                 pointBorderWidth: 1,
                 backgroundColor: 'rgba(245, 166, 35, 0.3)',
                 data: this.dataKasusKumulatif
+                }
+            ]
+            }
+            this.loaded = true
+      },
+      fillBarChart () {
+            this.dailychart = {
+            labels: this.dataLabels,
+            datasets: [
+                {
+                label: 'Penambahan Kasus Baru Perhari',
+                borderColor: '#4285F4',
+                borderWidth: 2,
+                pointBackgroundColor: '#4285F4',
+                pointBorderWidth: 1,
+                backgroundColor: 'rgba(66, 133, 244, 0.3)',
+                data: this.allDailycase
                 }
             ]
             }
@@ -354,12 +384,12 @@ export default {
                     color: #d8232a
         .notes
             font-size: 11px
-            margin-top: -5px
+            margin-top: 10px
             display: block
         .province-group
             padding-left: 10px
             .province-list
-                height: 500px
+                height: 920px
                 overflow-y: scroll
         .province-search
             display: block

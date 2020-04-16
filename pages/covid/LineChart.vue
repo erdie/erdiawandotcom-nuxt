@@ -8,6 +8,10 @@ export default {
       type: Object,
       default: null
     },
+    dailychart: {
+      type: Object,
+      default: null
+    },
     options: {
       type: Object,
       default: null
@@ -17,6 +21,11 @@ export default {
     chartdata(after) {
       if (after != null) {
         this.renderChart(this.chartdata, this.options)
+      }
+    },
+    dailychart(after) {
+      if (after != null) {
+        this.renderChart(this.dailychart, this.options)
       }
     }
   }
