@@ -1,15 +1,17 @@
 {
   "name": "erdiawan.com",
   "version": "1.0.0",
+  "private": true,
   "description": "Anna Erdiawan Personal Site",
   "author": "Erdiawan Anna",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "nuxt",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "start": "nuxt start",
+    "test": "jest"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.5",
@@ -23,6 +25,8 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@vue/cli-plugin-unit-jest": "^4.3.1",
+    "@vue/test-utils": "1.0.0-beta.31",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-nuxt": "^0.5.1"

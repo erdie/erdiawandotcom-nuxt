@@ -87,13 +87,10 @@
 <script>
 import axios from 'axios'
 import LineChart from './LineChart'
-// import DailyChart from './DailyChart'
 
 export default {
-    name: 'LineChartContainer',
     components: { 
-        LineChart,
-        // DailyChart
+        LineChart
     },
     layout: 'journal',
     data() {
@@ -118,17 +115,19 @@ export default {
         ]
     }},
     async asyncData() {
+        //Collect API
         let firstURL = 'https://indonesia-covid-19.mathdro.id/api/'
         let secondURL = 'https://indonesia-covid-19.mathdro.id/api/provinsi'
         let thirdURL = 'https://indonesia-covid-19.mathdro.id/api/harian'
         let fourthURL = 'https://covid19.mathdro.id/api'
 
+        //Collect response
         const firstResponse = await axios.get(firstURL)
         const secondResponse = await axios.get(secondURL)
         const thirdResponse = await axios.get(thirdURL)
         const fourthResponse = await axios.get(fourthURL)
 
-        //Compile for LineChart 
+        //Compile for Main Chart 
         const compileKasusKumulatif = thirdResponse.data.data.map(compile => {
             return compile.jumlahKasusKumulatif
         })
@@ -145,7 +144,7 @@ export default {
             return compile.jumlahPasienMeninggal
         })
 
-        //Compile for LineChart and BarChart for Y
+        //Compile for Daily Case
         const compileHari = thirdResponse.data.data.map(compile => {
             return compile.harike
         })
@@ -305,7 +304,6 @@ export default {
 <style lang="sass">
     .covid
         padding: 90px 0 10px 0
-        // height: 70vh
         margin: 0 15px
         h1
             color: #5b64a0
