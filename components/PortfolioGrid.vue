@@ -4,7 +4,7 @@
             <h2>Portfolio</h2>
             <div class="portfolio-grid item">
                 <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="../assets/portfolio/triv-frontend.jpg" class="lazyload" alt="Triv Frontend">
+                    <img src="../assets/portfolio/triv-frontend.jpg" loading="lazy" alt="Triv Frontend">
                     <h3>Triv Frontend</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ali Mahfud <br>
@@ -12,7 +12,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="../assets/portfolio/triv-dashboard.jpg" class="lazyload" alt="Triv Dashboard">
+                    <img src="../assets/portfolio/triv-dashboard.jpg" loading="lazy" alt="Triv Dashboard">
                     <h3>Triv Dashboard</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ali Mahfud <br>
@@ -20,7 +20,7 @@
                     </p>
                 </div> -->
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/kalikesia.jpg" class="lazyload" alt="Startup Pilihan Tempo">
+                    <img src="~/assets/img/portfolio/kalikesia.jpg" loading="lazy" alt="Startup Pilihan Tempo">
                     <h3>Kalikesia</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, REACTJS, NEXTJS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -29,7 +29,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/digitarasa.png" class="lazyload" alt="Digitarasa by GoFood">
+                    <img src="~/assets/img/portfolio/digitarasa.png" loading="lazy" alt="Digitarasa by GoFood">
                     <h3>Digitarasa by GoFood</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -38,7 +38,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/devfest-jakarta.png" class="lazyload" alt="DevFest 2019 Jakarta">
+                    <img src="~/assets/img/portfolio/devfest-jakarta.png" loading="lazy" alt="DevFest 2019 Jakarta">
                     <h3>DevFest 2019 Jakarta</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, NUXT, VUE JS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -47,7 +47,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/finest.png" class="lazyload" alt="Finest">
+                    <img src="~/assets/img/portfolio/finest.png" loading="lazy" alt="Finest">
                     <h3>Finest</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
@@ -56,7 +56,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/founder-asia.png" class="lazyload" alt="Startup Pilihan Tempo">
+                    <img src="~/assets/img/portfolio/founder-asia.png" loading="lazy" alt="Startup Pilihan Tempo">
                     <h3>Founder Asia</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -65,7 +65,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/exp-up.png" class="lazyload" alt="EXP-UP! Academy Esport">
+                    <img src="~/assets/img/portfolio/exp-up.png" loading="lazy" alt="EXP-UP! Academy Esport">
                     <h3>EXP Esport Academy</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -74,7 +74,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/spt.png" class="lazyload" alt="Startup Pilihan Tempo">
+                    <img src="~/assets/img/portfolio/spt.png" loading="lazy" alt="Startup Pilihan Tempo">
                     <h3>Startup Pilihan Tempo</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -83,7 +83,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/digitaraya.png" class="lazyload" alt="Digitaraya">
+                    <img src="~/assets/img/portfolio/digitaraya.png" loading="lazy" alt="Digitaraya">
                     <h3>Digitaraya</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -93,7 +93,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/digitaraya-tourism.jpg" class="lazyload" alt="Digitaraya Tourism Batch (One Pager)">
+                    <img src="~/assets/img/portfolio/digitaraya-tourism.jpg" loading="lazy" alt="Digitaraya Tourism Batch (One Pager)">
                     <h3>Digitaraya Tourism Batch (One Pager)</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -102,7 +102,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/simona.jpg" class="lazyload" alt="Simona Ventures">
+                    <img src="~/assets/img/portfolio/simona.jpg" loading="lazy" alt="Simona Ventures">
                     <h3>Simona Ventures</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -111,7 +111,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/simona-apacwomen.jpg" class="lazyload" alt="Simona Venture APAC Women ">
+                    <img src="~/assets/img/portfolio/simona-apacwomen.jpg" loading="lazy" alt="Simona Venture APAC Women ">
                     <h3>Simona Venture APAC Women (One Pager)</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -120,7 +120,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/lancong.jpg" class="lazyload" alt="Simona Ventures">
+                    <img src="~/assets/img/portfolio/lancong.jpg" loading="lazy" alt="Simona Ventures">
                     <h3>Lancong.id</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -129,7 +129,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/kinesys.jpg" class="lazyload" alt="Kinesys Ventures">
+                    <img src="~/assets/img/portfolio/kinesys.jpg" loading="lazy" alt="Kinesys Ventures">
                     <h3>Kinesys Ventures</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -138,7 +138,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/mariviu.jpg" class="lazyload" alt="Simona Ventures">
+                    <img src="~/assets/img/portfolio/mariviu.jpg" loading="lazy" alt="Simona Ventures">
                     <h3>Mariviu</h3>
                     <p>Tech Stack: WORDPRESS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -147,7 +147,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/chromplex.jpg" class="lazyload" alt="Chromplex">
+                    <img src="~/assets/img/portfolio/chromplex.jpg" loading="lazy" alt="Chromplex">
                     <h3>Chromplex</h3>
                     <p>Tech Stack: WORDPRESS, MATERIAL LITE DESIGN<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -156,7 +156,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/digiskul.jpg" class="lazyload" alt="Simona Ventures">
+                    <img src="~/assets/img/portfolio/digiskul.jpg" loading="lazy" alt="Simona Ventures">
                     <h3>Digiskul</h3>
                     <p>Tech Stack: HTML5, CSS3, VUE JS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -166,7 +166,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/perkim-sumbar.png" class="lazyload" alt="Perkim Sumbar">
+                    <img src="~/assets/img/portfolio/perkim-sumbar.png" loading="lazy" alt="Perkim Sumbar">
                     <h3>Perkim Sumatera Barat</h3>
                     <p>Tech Stack: HTML5, CSS3, BOOTSTRAP<br>
                         Frontend Dev: Anna Erdiawan<br>
