@@ -16,6 +16,14 @@ export default {
     Hero,
     Portfolio,
     Footer
+  },
+  methods: {
+    message() {
+      console.log('%cWhat are you looking for?', 'color: white; font-size: 18px; font-weight: bold;')
+    }
+  },
+  mounted () {
+    this.message()
   }
 }
 </script>
