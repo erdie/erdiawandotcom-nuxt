@@ -26,7 +26,7 @@
                             </small>
                         </li>
                         <li>
-                            <small>(Data oleh JHU CSSE)</small>
+                            <small>(Data oleh <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank" rel="noopener noreferrer">CSSE JHU</a>)</small>
                         </li>
                     </ul>
                 </div>
