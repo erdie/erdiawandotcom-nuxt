@@ -216,7 +216,7 @@ export default {
             var showDate = ddToday + '/' + mm + '/' + yyyy
         }
 
-        console.log(showDate)
+        // console.log(showDate)
 
         return {
             alldata: firstResponse.data,

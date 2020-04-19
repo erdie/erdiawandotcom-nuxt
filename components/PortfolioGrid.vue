@@ -1,7 +1,10 @@
 <template>
     <section id="portfolio">
         <div class="container">
-            <h2>Portfolio</h2>
+            <div class="title">
+                <h2>My Works</h2>
+                <small>For now, mostly website</small>
+            </div>
             <div class="portfolio-grid item">
                 <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                     <img src="../assets/portfolio/triv-frontend.jpg" loading="lazy" alt="Triv Frontend">
