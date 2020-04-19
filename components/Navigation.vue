@@ -9,7 +9,8 @@
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/#portfolio">portfolio</a></li>
-                        <li class="active"><a href="/journal">Journal</a></li>
+                        <li><a href="/journal">Journal</a></li>
+                        <li class="active"><a href="/covid">Covid19</a></li>
                     </ul>
                 </div>
                 <div class="social">
