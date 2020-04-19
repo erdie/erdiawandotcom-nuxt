@@ -60,7 +60,7 @@
                 v-if="loaded" 
                 :dailychart="dailychart"
                 :options="options"/>
-                <small class="notes">* Data diupdate setiap pukul 16.15 WIB</small>
+                <small class="notes">* Data tanggal <b>{{getCurrentDate}}</b> diupdate setiap pukul 16.15 WIB</small>
             </div>
             <div class="d:item__4 t:item__4 m:item__12">
                 <div class="province-group">
@@ -198,7 +198,25 @@ export default {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
 
-        // console.log(compileDailyCase)
+        //Get current and yesterday date
+        const today = new Date()
+        const yesterday = new Date(new Date().setDate(new Date().getDate()-1))
+
+        const ddToday = String(today.getDate()).padStart(2, '0')
+        const ddYesterday = String(yesterday.getDate()).padStart(2, '0')
+        const mm = String(today.getMonth() + 1).padStart(2, '0')
+        const yyyy = today.getFullYear()
+
+        const todayDate = ddToday + '/' + mm + '/' + yyyy
+        const yesterdayDate = ddYesterday + '/' + mm + '/' + yyyy
+
+        if (compileKasusBaru[compileKasusBaru.length-1] == null) {
+            var showDate = ddYesterday + '/' + mm + '/' + yyyy
+        } else {
+            var showDate = ddToday + '/' + mm + '/' + yyyy
+        }
+
+        console.log(showDate)
 
         return {
             alldata: firstResponse.data,
@@ -213,7 +231,8 @@ export default {
             dataKasusBaru: lastCompileKasusBaru,
             dataPersentaseMeninggal: lastCompilePersentaseMeninggal,
             dataPersentaseSembuh: lastCompilePersentaseSembuh,
-            dataPersentasePerawatan: lastCompilePersentasePerawatan
+            dataPersentasePerawatan: lastCompilePersentasePerawatan,
+            getCurrentDate: showDate
         }
         
         asyncData().catch((error) => {
