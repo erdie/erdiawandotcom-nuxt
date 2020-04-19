@@ -249,15 +249,6 @@ export default {
             labels: this.dataLabels,
             datasets: [
                 {
-                label: 'Sembuh',
-                borderColor: '#219653',
-                borderWidth: 2,
-                pointBackgroundColor: '#219653',
-                pointBorderWidth: 1,
-                backgroundColor: 'rgba(33, 150, 83, 0.3)',
-                data: this.dataPasienSembuh
-                },
-                {
                 label: 'Meninggal',
                 borderColor: '#d8232a',
                 borderWidth: 2,
@@ -265,6 +256,15 @@ export default {
                 pointBorderWidth: 1,
                 backgroundColor: 'rgba(216, 35, 42, 0.3)',
                 data: this.dataPasienMeninggal
+                },
+                {
+                label: 'Sembuh',
+                borderColor: '#219653',
+                borderWidth: 2,
+                pointBackgroundColor: '#219653',
+                pointBorderWidth: 1,
+                backgroundColor: 'rgba(33, 150, 83, 0.3)',
+                data: this.dataPasienSembuh
                 },
                 {
                 label: 'Dalam Perawatan',
