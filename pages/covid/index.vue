@@ -30,6 +30,7 @@
                         </li>
                     </ul>
                 </div>
+                <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> diupdate setiap pukul 16.15 WIB</small>
                 <line-chart
                 v-if="loaded" 
                 :chartdata="chartdata"
@@ -60,13 +61,15 @@
                 v-if="loaded" 
                 :dailychart="dailychart"
                 :options="options"/>
-                <small class="notes">* Data tanggal <b>{{getCurrentDate}}</b> diupdate setiap pukul 16.15 WIB</small>
+                <!-- <small class="notes">* Data tanggal <b>{{getCurrentDate}}</b> diupdate setiap pukul 16.15 WIB</small> -->
             </div>
             <div class="d:item__4 t:item__4 m:item__12">
                 <div class="province-group">
                     <h3>Data Per Provinsi</h3>
                     <small>(Total kasus Per Provinsi)</small>
-                    <input class="province-search" type="text" v-model="search" placeholder="Ketikkan nama provinsi">
+                    <label for="search">
+                        <input class="province-search" id="search" type="text" v-model="search" placeholder="Ketikkan nama provinsi">
+                    </label>
                     <div class="province-list">
                         <ul v-for="cases in filterList" :key="cases.id">
                             <h4>📍{{cases.provinsi}}</h4>
@@ -401,8 +404,9 @@ export default {
                     color: #d8232a
         .notes
             font-size: 11px
-            margin-top: 10px
+            margin: -5px 0 10px 0
             display: block
+            text-align: center
         .province-group
             padding-left: 10px
             .province-list
