@@ -38,7 +38,11 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'erdiawan-open-graph.jpg',
+        content: 'https://erdiawan.com/erdiawan-open-graph.jpg',
+      },
+      {
+        property: 'fb:app_id',
+        content: '988591554889425',
       },
       {
         property: 'twitter:card',
@@ -58,7 +62,7 @@ export default {
       },
       {
         property: 'twitter:image',
-        content: 'erdiawan-open-graph.jpg',
+        content: 'https://erdiawan.com/erdiawan-open-graph.jpg',
       },
     ],
     link: [
