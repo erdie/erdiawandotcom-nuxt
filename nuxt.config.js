@@ -51,6 +51,13 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://erdiawan.com',
+    generate: true, // Enable me when using nuxt generate
+    exclude: [],
+    routes: []
+},
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
