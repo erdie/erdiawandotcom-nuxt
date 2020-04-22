@@ -115,7 +115,13 @@ export default {
         title: this.title,
         meta: [
             { hid: 'description', name: 'description', content: 'Kasus Covid19 di Indonesia' }
-        ]
+        ],
+        link: [
+            { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg?v=1' },
+            { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg' },
+            { rel: 'mask-icon', href: 'favicon.svg', color: '#ffffff' },
+            { rel: 'apple-touch-icon', sizes: '512x512', href: 'favicon.png?v=1' }
+            ]
     }},
     async asyncData() {
         //Collect API

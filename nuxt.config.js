@@ -9,11 +9,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      // { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'Oh hi, this is Anna Erdiawan personal site. You can call me Erdi. Live in Yogyakarta, i am Web developer that interested with UI and UX.' }
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg?v=1' },
-      { rel: 'shortcut icon', type: 'image/png', href: 'favicon.png' },
+      { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg' },
       { rel: 'mask-icon', href: 'favicon.svg', color: '#ffffff' },
       { rel: 'apple-touch-icon', sizes: '512x512', href: 'favicon.png?v=1' }
     ]
