@@ -7,10 +7,59 @@ export default {
   head: {
     title: process.env.npm_package_name || '"personal site"',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { 
+        charset: 'utf-8' 
+      },
+      { 
+        name: 'viewport', 
+        content: 'width=device-width, initial-scale=1' 
+      },
       // { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'Oh hi, this is Anna Erdiawan personal site. You can call me Erdi. Live in Yogyakarta, i am Web developer that interested with UI and UX.' }
+      { 
+        hid: 'description', 
+        name: 'description', 
+        content: process.env.npm_package_description || "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX." 
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:url',
+        content: 'https://erdiawan.com',
+      },
+      {
+        property: 'og:title',
+        content: "erdiawan.com - Hi, I'm Erdi!",
+      },
+      {
+        property: 'og:description',
+        content: "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX.",
+      },
+      {
+        property: 'og:image',
+        content: 'erdiawan-open-graph.jpg',
+      },
+      {
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        property: 'twitter:url',
+        content: 'https://erdiawan.com',
+      },
+      {
+        property: 'twitter:title',
+        content: "erdiawan.com - Hi, I'm Erdi!",
+      },
+      {
+        property: 'twitter:description',
+        content: "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX.",
+      },
+      {
+        property: 'twitter:image',
+        content: 'erdiawan-open-graph.jpg',
+      },
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg?v=1' },

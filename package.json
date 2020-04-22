@@ -2,7 +2,7 @@
   "name": "erdiawan.com",
   "version": "1.0.0",
   "private": true,
-  "description": "Oh hi, this is Anna Erdiawan personal site. You can call me Erdi. Live in Yogyakarta, i'm Web developer that interested with UI and UX.",
+  "description": "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX.",
   "author": "Erdiawan Anna",
   "scripts": {
     "build": "nuxt build",
