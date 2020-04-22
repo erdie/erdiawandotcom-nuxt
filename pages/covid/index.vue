@@ -454,6 +454,13 @@ export default {
             .globalcases
                 background-color: #121212
                 border: none
+                ul
+                    li
+                        small
+                            a
+                                color: #51e3d4
+                            a:hover
+                                color: #474f85
             .covid-title
                 small
                     a
