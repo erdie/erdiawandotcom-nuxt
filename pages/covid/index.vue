@@ -30,7 +30,14 @@
                         </li>
                     </ul>
                 </div>
-                <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> diupdate setiap pukul 16.15 WIB</small>
+                <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> dan  
+                <b v-if="statusTerbaru == 'belum'">
+                    <b style="color:red;">{{statusTerbaru}}</b>
+                </b>
+                <b v-else>
+                    <b style="color:green;">{{statusTerbaru}}</b>
+                </b>
+                diperbaharui. (Diperbaharui setiap hari pukul 16.15 WIB)</small>
                 <line-chart
                 v-if="loaded" 
                 :chartdata="chartdata"
@@ -207,6 +214,13 @@ export default {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
 
+        // Status
+        if (compileKasusBaru[compileKasusBaru.length-1] == null) {
+            var statusUpdate = 'belum'
+        } else {
+            var statusUpdate = 'telah'
+        }
+
         //Get current and yesterday date
         const today = new Date()
         const yesterday = new Date(new Date().setDate(new Date().getDate()-1))
@@ -241,7 +255,8 @@ export default {
             dataPersentaseMeninggal: lastCompilePersentaseMeninggal,
             dataPersentaseSembuh: lastCompilePersentaseSembuh,
             dataPersentasePerawatan: lastCompilePersentasePerawatan,
-            getCurrentDate: showDate
+            getCurrentDate: showDate,
+            statusTerbaru: statusUpdate
         }
         
         asyncData().catch((error) => {
@@ -413,6 +428,7 @@ export default {
             margin: -5px 0 10px 0
             display: block
             text-align: center
+            line-height: 2
         .province-group
             padding-left: 10px
             .province-list
