@@ -31,7 +31,7 @@
                     </ul>
                 </div>
                 <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> dan  
-                <b v-if="statusTerbaru == 'belum'">
+                <b v-if="statusTerbaru !== 'telah'">
                     <b style="color:red;">{{statusTerbaru}}</b>
                 </b>
                 <b v-else>
