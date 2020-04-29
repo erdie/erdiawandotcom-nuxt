@@ -44,6 +44,7 @@
                             <li><a href="https://www.linkedin.com/in/erdiawan/" target="_blank" rel="noopener"><i class="icon-linkedin"></i></a></li>
                             <li><a href="https://gitlab.com/erdie" target="_blank" rel="noopener"><i class="icon-gitlab"></i></a></li>
                             <li><a href="https://github.com/erdie" target="_blank" rel="noopener"><i class="icon-github"></i></a></li>
+                            <li><a href="https://twitter.com/aerdiawan_" target="_blank" rel="noopener"><i class="icon-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
