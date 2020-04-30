@@ -1,5 +1,5 @@
 <template>
-    <div class="covid">
+    <div class="covid" v-if="loading">
         <div class="container">
         <div class="covid-title">
             <h1>Kasus Covid19 di Indonesia</h1>
@@ -262,6 +262,12 @@ export default {
       this.fillBarChart()
     },
     methods: {
+        start () {
+          this.loading = true
+        },
+        finish () {
+          this.loading = false
+        },
         fillLineChart () {
             this.chartdata = {
             labels: this.dataLabels,

@@ -206,6 +206,7 @@ export default {
     margin: 0 auto
     padding: 8px 25px
     transition: 0.3s
+    margin-top: 15px
   .btn-show:hover
     opacity: 0.9
     transition: 0.3s
