@@ -7,7 +7,7 @@
                         <a href="/"><img src="~/assets/img/erdiawan-4.svg" alt="Anna Erdiawan"></a>
                     </div>
                     <ul>
-                        <li><a href="/">Home</a></li>
+                        <!-- <li><a href="/">Home</a></li> -->
                         <li><a href="/#portfolio">My Works</a></li>
                         <li><a href="/journal">Journal</a></li>
                         <li class="active"><a href="/covid">Covid19</a></li>

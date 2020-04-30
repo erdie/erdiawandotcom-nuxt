@@ -30,16 +30,10 @@
                         </li>
                     </ul>
                 </div>
-                <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> dan  
-                <span v-if="statusTerbaru !== 'telah'">
-                    <b style="color:red;">{{statusTerbaru}}</b>
-                </span>
-                <span v-else>
-                    <b style="color:green;">{{statusTerbaru}}</b>
-                </span>
-                diperbaharui. (Diperbaharui setiap hari pukul 16.15 WIB)</small>
+                <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> dan
+                <b>{{statusTerbaru}}</b>diperbaharui. (Diperbaharui setiap hari pukul 16.15 WIB)</small>
                 <line-chart
-                v-if="loaded" 
+                v-if="loaded"
                 :chartdata="chartdata"
                 :options="options"/>
                 <div class="indonesia item">
@@ -65,7 +59,7 @@
                     </div>
                 </div>
                 <line-chart
-                v-if="loaded" 
+                v-if="loaded"
                 :dailychart="dailychart"
                 :options="options"/>
                 <!-- <small class="notes">* Data tanggal <b>{{getCurrentDate}}</b> diupdate setiap pukul 16.15 WIB</small> -->
@@ -84,7 +78,7 @@
                                 <li class="confirmed">Terkonfirmasi Akumulatif: <strong>{{cases.kasusPosi.toLocaleString()}}</strong></li>
                                 <li class="recovered">Sembuh Akumulatif: <strong>{{cases.kasusSemb.toLocaleString()}}</strong></li>
                                 <li class="deaths">Meninggal Akumulatif: <strong>{{cases.kasusMeni.toLocaleString()}}</strong></li>
-                            </ul> 
+                            </ul>
                         </ul>
                     </div>
                 </div>
@@ -99,7 +93,7 @@ import axios from 'axios'
 import LineChart from './LineChart'
 
 export default {
-    components: { 
+    components: {
         LineChart
     },
     layout: 'journal',
@@ -143,7 +137,7 @@ export default {
         const thirdResponse = await axios.get(thirdURL)
         const fourthResponse = await axios.get(fourthURL)
 
-        //Compile for Main Chart 
+        //Compile for Main Chart
         const compileKasusKumulatif = thirdResponse.data.data.map(compile => {
             return compile.jumlahKasusKumulatif
         })
@@ -258,7 +252,7 @@ export default {
             getCurrentDate: showDate,
             statusTerbaru: statusUpdate
         }
-        
+
         asyncData().catch((error) => {
             console.log(error)
         })
@@ -337,7 +331,7 @@ export default {
                 filtering = filtering.filter((cases) => {
                     return cases.provinsi.toLowerCase().match(this.search.toLowerCase())
                 })
-            } 
+            }
             return filtering
         }
     }
