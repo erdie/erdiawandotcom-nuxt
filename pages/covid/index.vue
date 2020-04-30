@@ -31,12 +31,12 @@
                     </ul>
                 </div>
                 <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> dan  
-                <b v-if="statusTerbaru !== 'telah'">
+                <span v-if="statusTerbaru !== 'telah'">
                     <b style="color:red;">{{statusTerbaru}}</b>
-                </b>
-                <b v-else>
+                </span>
+                <span v-else>
                     <b style="color:green;">{{statusTerbaru}}</b>
-                </b>
+                </span>
                 diperbaharui. (Diperbaharui setiap hari pukul 16.15 WIB)</small>
                 <line-chart
                 v-if="loaded" 
