@@ -31,7 +31,7 @@
                     </ul>
                 </div>
                 <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> dan
-                <b>{{statusTerbaru}}</b>diperbaharui. (Diperbaharui setiap hari pukul 16.15 WIB)</small>
+                <b>{{statusTerbaru}}</b> diperbaharui. (Diperbaharui setiap hari pukul 16.15 WIB)</small>
                 <line-chart
                 v-if="loaded"
                 :chartdata="chartdata"
@@ -90,7 +90,7 @@
 
 <script>
 import axios from 'axios'
-import LineChart from './LineChart'
+import LineChart from '~/components/LineChart'
 
 export default {
     components: {

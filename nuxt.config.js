@@ -102,7 +102,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
   sitemap: {
     path: '/sitemap.xml',
@@ -112,7 +113,12 @@ export default {
       '/covid/**'
     ],
     routes: []
-},
+  },
+  robots: {
+    UserAgent: '*',
+    Allow: '/',
+    Sitemap: 'https://erdiawan.com/sitemap.xml'
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
