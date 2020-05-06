@@ -150,7 +150,11 @@ export default {
   //   }
   // },
   generate: {
-    fallback: true
+    fallback: true,
+    routes: [
+      '/covid',
+      '/journal',
+    ]
   },
   pwa: {
     manifest: {
