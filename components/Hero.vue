@@ -3,20 +3,20 @@
         <div class="container">
             <div class="hero-group container-flex justify-between align-center flex-column-mobile">
                 <div class="hero-title">
-                    <p>Hello I Am</p>
-                    <div class="name hide-dark">
+                    <p class="animated animatedFadeInUp fadeInUp">Hello I Am</p>
+                    <div class="name hide-dark animated animatedFadeInUp fadeInUpName">
                         <img src="~/assets/img/erdiawan-2.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>
-                    <div class="name hide-light">
+                    <div class="name hide-light animated animatedFadeInUp fadeInUpName">
                         <img src="~/assets/img/erdiawan-3.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>
                     <!-- <div class="name-type">
                         <h1>Anna Erdiawan</h1>
                     </div> -->
-                    <p class="desc">You can call me Erdi. Live in Yogyakarta, i'm Web developer since 4 years ago. Interested with User Interface, User Interaction and User Experience.</p>
-                    <p class="desc">I love being a part of community. Now i manage a community called GDG Jogjakarta as a Co-Manager. GDG Jogjakarta is Google Developer Group community based in Yogyakarta.</p>
+                    <p class="desc animated animatedFadeInUp fadeInUp">You can call me Erdi. Live in Yogyakarta, i'm Web developer since 4 years ago. Interested with User Interface, User Interaction and User Experience.</p>
+                    <p class="desc animated animatedFadeInUp fadeInUp">I love being a part of community. Now i manage a community called GDG Jogjakarta as a Co-Manager. GDG Jogjakarta is Google Developer Group community based in Yogyakarta.</p>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image animated animatedFadeInUp fadeInUp">
                     <img src="~/assets/img/erdi.jpg" loading="lazy" alt="Anna Erdiawan">
                     <div class="btn-hire">
                         <a href="mailto:hi@erdiawan"><button class="btn btn-primary"><i class="icon-mail"></i> Send Me a Message</button></a>
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="hero-footer">
+        <div class="hero-footer animated animatedFadeInUp fadeInUp">
             <div class="container">
                 <div class="footer-group">
                     <div class="menu">

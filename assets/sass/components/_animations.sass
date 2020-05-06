@@ -1,0 +1,60 @@
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+  -webkit-animation-duration: 1s
+  -webkit-animation-fill-mode: both
+
+.animatedFadeInUp
+  opacity: 0
+
+.fadeInUp
+  opacity: 0
+  animation-name: fadeInUp
+  -webkit-animation-name: fadeInUp
+
+.fadeInUpName
+  opacity: 0
+  animation-name: fadeInUpName
+  -webkit-animation-name: fadeInUpName
+
+.name.animated
+  animation-delay: 0.4s
+
+.desc.animated
+  animation-delay: 0.8s
+
+.hero-image.animated
+  animation-delay: 1.2s
+
+.hero-footer.animated
+  animation-delay: 1.6s
+
+@keyframes fadeInUpName
+  from
+      transform: translate3d(0,40px,0) rotate(-3deg)
+
+  to
+      transform: translate3d(0,0,0) rotate(-3deg)
+      opacity: 1
+
+@keyframes fadeInUp
+  from
+      transform: translate3d(0,40px,0)
+
+  to
+      transform: translate3d(0,0,0)
+      opacity: 1
+
+
+@include respond(phone)
+  .name.animated
+    animation-delay: 0.8s
+
+  .desc.animated
+    animation-delay: 1.2s
+
+  .hero-image.animated
+    animation-delay: 0s
+
+  .animated
+    animation-delay: 0.4s
