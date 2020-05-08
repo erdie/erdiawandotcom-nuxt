@@ -84,12 +84,12 @@ export default {
         page: 1,
         page_size: 10
         }).then(res => {
-            console.log(res.data.data)
             return res.data.data.map((post) => {
+              console.log(post.slug)
               return '/blog/' + post.slug
             })
           })
-      },
+      }
   },
   created() {
     this.getPosts()

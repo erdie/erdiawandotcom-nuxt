@@ -114,27 +114,38 @@ export default {
     exclude: [
       '/covid/**'
     ],
-    routes: [
-      '/covid',
-      '/journal',
-      '/blog',
-      {
-        url () {
-          butter.post.list({
-          page: 1,
-          page_size: 10
-          }).then(res => {
-              console.log(res.data.data)
-              return res.data.data.map((post) => {
-                return '/blog/' + post.slug
-              })
-            })
-        },
-        changefreq: 'daily',
-        priority: 1,
-        lastmod: '2020-05-09T13:30:00.000Z'
-      }
-    ],
+    // routes: [
+    //   '/covid',
+    //   '/journal',
+    //   '/blog',
+    //   {
+    //     url () {
+    //       butter.post.list({
+    //       page: 1,
+    //       page_size: 10
+    //       }).then(res => {
+    //           console.log(res.data.data)
+    //           return res.data.data.map((post) => {
+    //             return '/blog/' + post.slug
+    //           })
+    //         })
+    //     },
+    //     changefreq: 'daily',
+    //     priority: 1,
+    //     lastmod: '2020-05-09T13:30:00.000Z'
+    //   }
+    // ],
+    routes () {
+      butter.post.list({
+      page: 1,
+      page_size: 10
+      }).then(res => {
+          console.log(res.data.data)
+          return res.data.data.map((post) => {
+            return '/blog/' + post.slug
+          })
+        })
+    },
   },
   robots: {
     UserAgent: '*',
