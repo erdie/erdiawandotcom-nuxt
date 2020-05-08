@@ -1,3 +1,5 @@
+import Butter from 'buttercms'
+const butter = Butter('b1b4910662f0264ee73a62f21934b2e0a2c84d4e')
 
 export default {
   mode: 'universal',
@@ -112,7 +114,24 @@ export default {
     exclude: [
       '/covid/**'
     ],
-    routes: []
+    routes: [
+      '/covid',
+      '/journal',
+      '/blog',
+      {
+        url () {
+          butter.post
+            .then((res) => {
+              return res.data.map((post) => {
+                return '/blog/' + post.slug
+              })
+            })
+        },
+        changefreq: 'daily',
+        priority: 1,
+        lastmod: '2020-05-09T13:30:00.000Z'
+      }
+    ],
   },
   robots: {
     UserAgent: '*',
@@ -151,17 +170,20 @@ export default {
   // },
   generate: {
     fallback: true,
-    hostname: 'https://erdiawan.com',
-    gzip: true,
-    // exclude: [
-    //   '/journal',
-    //   '/journal/**'
-    // ],
     routes: [
       '/covid',
-      '/blog',
       '/journal',
-    ]
+      {
+        url () {
+          butter.post
+            .then((res) => {
+              return res.data.map((post) => {
+                return '/blog/' + post.slug
+              })
+            })
+        }
+      }
+    ],
   },
   pwa: {
     manifest: {
