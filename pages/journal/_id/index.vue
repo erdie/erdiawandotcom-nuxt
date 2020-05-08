@@ -2,6 +2,7 @@
     <div>
         <section id="blog-detail">
             <div class="container">
+              <client-only>
                 <div>
                     <div class="breadcrumb">
                         <ul>
@@ -20,16 +21,19 @@
                             <!-- <p>Anna Erdiawan</p> -->
                         </div>
                         <div>
-                            <p>Published at {{post.date_gmt.substring(0,10)}}</p>
+                            <p>Published at {{distanceFromNow}}</p>
                         </div>
                     </div>
                     <div class="blog-image">
                         <img v-bind:src="post.jetpack_featured_media_url" alt="">
                     </div>
                     <div class="blog-article" v-html="post.content.rendered">
+                      <no-ssr>
                         {{post.content.rendered}}
+                      </no-ssr>
                     </div>
                 </div>
+              </client-only>
             </div>
         </section>
     </div>
@@ -37,24 +41,25 @@
 
 <script>
 import axios from 'axios'
+import moment from 'moment'
 
 export default {
     layout: 'journal',
-    async asyncData ({ store, route }) { 
-        let { data } = await axios.get('https://chromplex.com/wp-json/wp/v2/posts/' + route.params.id + '/') 
+    async asyncData ({ store, route }) {
+        let { data } = await axios.get('https://mariviu.com/wp-json/wp/v2/posts/' + route.params.id + '/')
         return {
             post: data
         }
     },
-    // async asyncData ({ store, route }) { 
-    //     let { data } = await axios.get('https://chromplex.com/wp-json/wp/v2/posts?slug=' + route.params.slug + '/') 
+    // async asyncData ({ store, route }) {
+    //     let { data } = await axios.get('https://chromplex.com/wp-json/wp/v2/posts?slug=' + route.params.slug + '/')
     //     return {
-    //         post: data 
+    //         post: data
     //     }
     // },
     head() {
-        let metadata = this.post
-        
+        const metadata = this.post
+
         return {
             title: `${metadata.title.rendered}`,
             meta: [{
@@ -69,5 +74,10 @@ export default {
             }]
         }
     },
+    computed: {
+      distanceFromNow() {
+          return moment(this.post.date_gmt).format("MMM Do YY")
+      }
+    }
 }
 </script>

@@ -20,16 +20,7 @@ export default {
   },
   data: () => ({
     loading: true,
-    title: 'erdiawan.com - Journal of Anna Erdiawan'
   }),
-  head () {
-    return {
-      title: this.title,
-      meta: [
-        { hid: 'description', name: 'description', content: 'List Journal of Anna Erdiawan' }
-      ]
-    }
-  },
   methods: {
     start () {
       this.loading = true

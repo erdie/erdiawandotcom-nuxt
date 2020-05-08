@@ -151,8 +151,15 @@ export default {
   // },
   generate: {
     fallback: true,
+    hostname: 'https://erdiawan.com',
+    gzip: true,
+    // exclude: [
+    //   '/journal',
+    //   '/journal/**'
+    // ],
     routes: [
       '/covid',
+      '/blog',
       '/journal',
     ]
   },
