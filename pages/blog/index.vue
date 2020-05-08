@@ -41,6 +41,13 @@
 import moment from 'moment'
 import Butter from 'buttercms'
 const butter = Butter('b1b4910662f0264ee73a62f21934b2e0a2c84d4e')
+const params = {
+  "preview": 1,
+  "page": 1,
+  "page_size": 10,
+  "locale": 'en',
+  "levels": 2
+}
 
 export default {
   layout: 'journal',
@@ -71,10 +78,24 @@ export default {
       }).then(res => {
         this.posts = res.data.data
       })
-    }
+    },
+    url () {
+        butter.post.list({
+        page: 1,
+        page_size: 10
+        }).then(res => {
+            console.log(res.data.data)
+            return res.data.data.map((post) => {
+              return '/blog/' + post.slug
+            })
+          })
+      },
   },
   created() {
     this.getPosts()
+  },
+  mounted() {
+    this.url()
   },
   computed: {
     distanceFromNow() {
