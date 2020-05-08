@@ -1,5 +1,3 @@
-import Butter from 'buttercms'
-const butter = Butter('b1b4910662f0264ee73a62f21934b2e0a2c84d4e')
 
 export default {
   mode: 'universal',
@@ -114,38 +112,7 @@ export default {
     exclude: [
       '/covid/**'
     ],
-    // routes: [
-    //   '/covid',
-    //   '/journal',
-    //   '/blog',
-    //   {
-    //     url () {
-    //       butter.post.list({
-    //       page: 1,
-    //       page_size: 10
-    //       }).then(res => {
-    //           console.log(res.data.data)
-    //           return res.data.data.map((post) => {
-    //             return '/blog/' + post.slug
-    //           })
-    //         })
-    //     },
-    //     changefreq: 'daily',
-    //     priority: 1,
-    //     lastmod: '2020-05-09T13:30:00.000Z'
-    //   }
-    // ],
-    routes () {
-      butter.post.list({
-      page: 1,
-      page_size: 10
-      }).then(res => {
-          console.log(res.data.data)
-          return res.data.data.map((post) => {
-            return '/blog/' + post.slug
-          })
-        })
-    },
+    routes: []
   },
   robots: {
     UserAgent: '*',
@@ -187,28 +154,9 @@ export default {
     routes: [
       '/covid',
       '/journal',
-      {
-        routes () {
-          butter.post.list({
-          page: 1,
-          page_size: 10
-          }).then(res => {
-              console.log(res.data.data)
-              return res.data.data.map((post) => {
-                return '/blog/' + post.slug
-              })
-            })
-        }
-      }
+      '/blog',
+      '/blog/**',
     ]
-    // routes () {
-    //   butter.page.list('*', params)
-    //     .then((res) => {
-    //       return res.data.map((post) => {
-    //         return '/blog/' + post.slug
-    //       })
-    //     })
-    // }
   },
   pwa: {
     manifest: {
