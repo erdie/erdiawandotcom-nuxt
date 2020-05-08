@@ -1,5 +1,12 @@
 import Butter from 'buttercms'
 const butter = Butter('b1b4910662f0264ee73a62f21934b2e0a2c84d4e')
+const params = {
+  "preview": 1,
+  "page": 1,
+  "page_size": 10,
+  "locale": 'en',
+  "levels": 2
+}
 
 export default {
   mode: 'universal',
@@ -121,6 +128,7 @@ export default {
       {
         url () {
           butter.post
+          butter.page.list('*', params)
             .then((res) => {
               return res.data.map((post) => {
                 return '/blog/' + post.slug
@@ -174,8 +182,8 @@ export default {
       '/covid',
       '/journal',
       {
-        url () {
-          butter.post
+        routes () {
+          butter.page.list('*', params)
             .then((res) => {
               return res.data.map((post) => {
                 return '/blog/' + post.slug
@@ -183,7 +191,15 @@ export default {
             })
         }
       }
-    ],
+    ]
+    // routes () {
+    //   butter.page.list('*', params)
+    //     .then((res) => {
+    //       return res.data.map((post) => {
+    //         return '/blog/' + post.slug
+    //       })
+    //     })
+    // }
   },
   pwa: {
     manifest: {
