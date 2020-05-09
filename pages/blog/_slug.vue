@@ -103,7 +103,7 @@ export default {
   },
   computed: {
     distanceFromNow() {
-         return moment(this.post.created).startOf('hour').fromNow()
+         return moment(this.post.created).format('ll')
     }
   }
 }

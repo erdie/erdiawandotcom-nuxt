@@ -124,12 +124,12 @@
             transition: 0.3s
             margin: 15px 15px
             figure
-              width: 100%
-              height: 200px
-              border-radius: 6px
-              object-fit: cover
-              object-position: center
-              margin: 0
+                width: 100%
+                height: 200px
+                border-radius: 6px
+                object-fit: cover
+                object-position: center
+                margin: 0
             img
                 width: 100%
                 height: 200px
@@ -152,18 +152,48 @@
                     padding: 10px 0
                     font-weight: 300
 
+        .loading-card
+            .loading-image
+                width: 100%
+                height: 200px !important
+                border-radius: 6px
+                @extend .animated-background
+            .loading-title
+                width: 100%
+                height: 20px !important
+                @extend .animated-background
+                margin: 10px 0
+
+            @keyframes placeHolderShimmer
+                0%
+                    background-position: -468px 0
+                100%
+                    background-position: 468px 0
+
+            .animated-background
+                animation-duration: 1.25s
+                animation-fill-mode: forwards
+                animation-iteration-count: infinite
+                animation-name: placeHolderShimmer
+                animation-timing-function: linear
+                background: #F6F6F6
+                background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%)
+                background-size: 800px 104px
+                height: 96px
+                position: relative
+
     .blog-card:hover
         transform: translateY(-10px)
         transition: 0.3s
     .powered-by
-      text-align: center
-      small
-        margin-bottom: 0
-        display: block
-      img
-        width: 200px
-        height: auto
-        margin: 0 auto
+        text-align: center
+        small
+            margin-bottom: 0
+            display: block
+        img
+            width: 200px
+            height: auto
+            margin: 0 auto
 
 @include respond(phone)
     #navigation

@@ -11,3 +11,15 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.{js,json,sass}]
+indent_size = 4
+
+[*.{php,html,vue}]
+indent_size = 4
+
+# Special files
+# -------------
+
+[package.json]
+indent_size = 2
