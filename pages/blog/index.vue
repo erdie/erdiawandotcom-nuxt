@@ -11,17 +11,23 @@
                             <div class="blog-author"></div>
                             <div class="blog-desc"></div>
                         </div>
-                        <div v-else class="blog-card">
-                            <!-- <nuxt-link :to="'/journal/'+post.slug"> -->
+                        <div v-if="post" class="blog-card">
                             <figure>
-                            <img v-if="post.featured_image" :src="post.featured_image" alt="">
-                            <img v-else src="http://via.placeholder.com/500x500" alt="" >
+                                <img v-if="post.featured_image" :src="post.featured_image" alt="">
+                                <img v-else src="http://via.placeholder.com/500x500" alt="" >
                             </figure>
                             <div class="blog-title">
                                 <h2>{{ post.title }}</h2>
                             </div>
                             <div class="blog-author">
-                                <small><strong><i class="icon-date"></i> </strong> {{distanceFromNow}}</small>
+                                <div>
+                                    <span><img src="~/assets/img/erdi.jpg" alt="Anna Erdiawan"></span>
+                                    <span>{{ post.author.first_name }}</span>
+                                    <span>{{ post.author.last_name }}</span>
+                                </div>
+                                <div>
+                                    <p><i class="icon-date"></i> {{distanceFromNow}}</p>
+                                </div>
                             </div>
                             <div class="blog-desc">
                                 <p>{{post.summary.substring(0,200)+".."}}</p>
@@ -74,8 +80,8 @@ export default {
                 page: 1,
                 page_size: 10
             }).then(res => {
-                this.posts = res.data.data
                 this.loading = false
+                this.posts = res.data.data
             })
         },
         url () {
@@ -98,7 +104,7 @@ export default {
     },
     computed: {
         distanceFromNow() {
-            return moment(this.posts.created).format('ll')
+            return moment(this.posts.published).format('ll')
         }
     }
 }

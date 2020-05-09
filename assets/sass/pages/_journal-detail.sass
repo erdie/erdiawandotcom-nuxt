@@ -10,6 +10,8 @@
             padding: 0
             li
                 display: inline-block
+                opacity: 0.6
+                font-size: 14px
                 a
                     text-decoration: none
                     color: black
@@ -32,18 +34,31 @@
                 line-height: 1.4
                 font-weight: 500
                 margin: 0
+                color: #474F85
     .blog-author
         max-width: 750px
         width: 100%
-        margin-left: auto
-        margin-right: auto
+        margin: 20px auto
         display: flex
         align-items: center
+        span
+            font-size: 14px
+            opacity: 0.8
+        img
+            max-width: 25px
+            border-radius: 50%
+            object-fit: cover
+            vertical-align: middle
+            margin-right: 5px
+            border: 1px solid #474F85
         p
             padding: 15px 10px 15px 0
             font-size: 14px
+            opacity: 0.8
+            vertical-align: middle
+            margin: 0
         div
-          margin-right: 10px
+          margin-right: 20px
     .blog-image
         img
             width: 100%
@@ -60,9 +75,7 @@
         line-height: 1.6
         font-weight: 300
         font-size: 18px
-        // .embed-youtube
-        //     iframe
-        //         width: 100% !important
+        opacity: 0.8
         img
             display: block
             margin: 20px auto
@@ -127,6 +140,8 @@
                 height: 250px
         .blog-article
             transform: scale(0.92)
+            margin-top: -45px
+            font-size: 18.5px
             .embed-youtube
                 iframe
                     width: 100%

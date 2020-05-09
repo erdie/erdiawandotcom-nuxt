@@ -17,10 +17,11 @@
                         </div>
                     </div>
                     <div class="blog-author">
-                        <!-- <div>
+                        <div>
+                            <span><img src="~/assets/img/erdi.jpg" alt="Anna Erdiawan"></span>
                             <span>{{ post.data.author.first_name }}</span>
                             <span>{{ post.data.author.last_name }}</span>
-                        </div> -->
+                        </div>
                         <div>
                             <p><i class="icon-date"></i> {{distanceFromNow}}</p>
                         </div>
@@ -56,55 +57,55 @@ import Butter from 'buttercms'
 const butter = Butter('b1b4910662f0264ee73a62f21934b2e0a2c84d4e')
 
 export default {
-  layout: 'journal',
-  name: 'blog-post',
-  head() {
-    const metadata = this.post
-    return {
-        title: `${metadata.data.seo_title}`,
-        meta: [
-        {
-            hid: `description`,
-            name: 'description',
-            content: `${metadata.data.meta_description}`
-        }]
+    layout: 'journal',
+    name: 'blog-post',
+    head() {
+        const metadata = this.post
+        return {
+            title: `${metadata.data.seo_title}`,
+            meta: [
+            {
+                hid: `description`,
+                name: 'description',
+                content: `${metadata.data.meta_description}`
+            }]
+        }
+    },
+    data() {
+        return {
+            post: {
+                data: {
+                author: {}
+                },
+                meta: {}
+            }
+        }
+    },
+    methods: {
+        getPost() {
+        butter.post
+            .retrieve(this.$route.params.slug)
+            .then((res) => {
+                console.log(res.data)
+                this.post = res.data
+            })
+            .catch((res) => {
+                console.log(res)
+            })
+        }
+    },
+    watch: {
+        $route(to, from) {
+            this.getPost()
+        }
+    },
+    created() {
+        this.getPost()
+    },
+    computed: {
+        distanceFromNow() {
+            return moment(this.post.published).format('ll')
+        }
     }
-  },
-  data() {
-    return {
-      post: {
-        data: {
-          author: {}
-        },
-        meta: {}
-      }
-    }
-  },
-  methods: {
-    getPost() {
-      butter.post
-        .retrieve(this.$route.params.slug)
-        .then((res) => {
-          console.log(res.data)
-          this.post = res.data
-        })
-        .catch((res) => {
-          console.log(res)
-        })
-    }
-  },
-  watch: {
-    $route(to, from) {
-      this.getPost()
-    }
-  },
-  created() {
-    this.getPost()
-  },
-  computed: {
-    distanceFromNow() {
-         return moment(this.post.created).format('ll')
-    }
-  }
 }
 </script>
