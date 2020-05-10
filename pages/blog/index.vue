@@ -84,7 +84,7 @@ export default {
                 this.posts = res.data.data
             })
         },
-        url () {
+        url() {
             butter.post.list({
             page: 1,
             page_size: 10
