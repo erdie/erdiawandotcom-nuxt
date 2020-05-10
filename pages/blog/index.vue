@@ -90,7 +90,7 @@ export default {
             page_size: 10
             }).then(res => {
                 return res.data.data.map((post) => {
-                console.log('/blog/' + post.slug)
+                // console.log('/blog/' + post.slug)
                 return '/blog/' + post.slug
                 })
             })
