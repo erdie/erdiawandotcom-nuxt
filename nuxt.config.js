@@ -138,6 +138,7 @@ export default {
       app.disable('x-powered-by')
     }
   },
+  buildDir: 'build',
   // layoutTransition: {
   //   name: 'layout',
   //   mode: 'out-in'
