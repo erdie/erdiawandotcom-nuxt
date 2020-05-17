@@ -1,8 +1,6 @@
 backend:
   name: git-gateway
   branch: master
-  repo: erdiawandotcom-nuxt/erdie.github.io
-  site_domain: erdie.github.io
 
 media_folder: static/img
 public_folder: /img

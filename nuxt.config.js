@@ -163,8 +163,8 @@ export default {
             return {
                 route: `/blog/${path.parse(file).name}`, // Return the slug
                 payload: require(`./assets/content/blog/${file}`),
-            };
-        });
+            }
+        })
     },
   },
   pwa: {
