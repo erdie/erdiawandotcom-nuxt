@@ -344,7 +344,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     .covid
         padding: 90px 0 10px 0
         margin: 0 15px

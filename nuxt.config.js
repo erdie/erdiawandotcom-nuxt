@@ -103,8 +103,12 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    ['@nuxtjs/markdownit'],
   ],
+  markdownit: {
+    injected: true,
+  },
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://erdiawan.com',
@@ -152,12 +156,16 @@ export default {
   // },
   generate: {
     fallback: true,
-    routes: [
-      '/covid',
-      '/journal',
-      '/blog',
-      '/blog/**',
-    ]
+    routes: function() {
+        const fs = require('fs');
+        const path = require('path');
+        return fs.readdirSync('./assets/content/blog').map(file => {
+            return {
+                route: `/blog/${path.parse(file).name}`, // Return the slug
+                payload: require(`./assets/content/blog/${file}`),
+            };
+        });
+    },
   },
   pwa: {
     manifest: {

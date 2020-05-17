@@ -12,19 +12,24 @@ import Portfolio from '~/components/PortfolioGrid.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
-  components: {
-    Hero,
-    Portfolio,
-    Footer
-  },
-  methods: {
-    message() {
-      console.log('%cWhat are you looking for?', 'color: white; font-size: 18px; font-weight: bold;')
+    head() {
+        return {
+            script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+        }
+    },
+    components: {
+        Hero,
+        Portfolio,
+        Footer
+    },
+    methods: {
+        message() {
+        console.log('%cWhat are you looking for?', 'color: white; font-size: 18px; font-weight: bold;')
+        }
+    },
+    mounted () {
+        this.message()
     }
-  },
-  mounted () {
-    this.message()
-  }
 }
 </script>
 
