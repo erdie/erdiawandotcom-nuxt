@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="blog-desc">
-                                <p>{{post.body.substring(0,200)+".."}}</p>
+                                <p>{{post.description.substring(0,200)+".."}}</p>
                             </div>
                         </div>
                     </nuxt-link>

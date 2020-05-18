@@ -29,7 +29,7 @@
                         <img v-bind:src="post.data.featured_image" alt="post.data.featured_image.alt">
                     </div> -->
                     <div class="blog-article">
-                        <article>{{blogPost.body}}</article>
+                        <article v-html="$md.render(blogPost.body)"></article>
                     </div>
                     <!-- <nuxt-link
                       v-if="post.meta.previous_post"
