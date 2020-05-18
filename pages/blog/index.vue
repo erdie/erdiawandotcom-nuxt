@@ -12,8 +12,8 @@
                     </div>
                     <div v-else class="blog-card">
                         <figure>
-                            <img v-if="post.featured_image" :src="post.featured_image" alt="">
-                            <img v-else src="http://via.placeholder.com/500x500" alt="" >
+                            <img v-if="post.featured_image" :src="post.featured_image.src" :alt="post.featured_image.alt">
+                            <img v-else :src="post.featured_image.src" :alt="post.featured_image.src.alt" >
                         </figure>
                         <div class="blog-title">
                             <h2>{{ post.title }}</h2>
@@ -25,7 +25,7 @@
                                 <span>{{ post.author.last_name }}</span>
                             </div> -->
                             <div>
-                                <p><i class="icon-date"></i> {{distanceFromNow}}</p>
+                                <p><i class="icon-date"></i> {{moment(post.date).format('ll')}}</p>
                             </div>
                         </div>
                         <div class="blog-desc">
@@ -45,10 +45,12 @@ import moment from 'moment'
 export default {
     layout: 'journal',
     computed: mapState({
-        blogPosts: state => state.blogPosts,
-        distanceFromNow() {
-            return moment(this.blogPosts.date).format('ll')
-        }
+        blogPosts: state => state.blogPosts
     }),
+    methods: {
+        moment: (date) => {
+            return moment(date)
+        }
+    }
 }
 </script>

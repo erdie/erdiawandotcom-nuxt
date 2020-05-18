@@ -22,12 +22,12 @@
                             <span>{{ post.data.author.last_name }}</span>
                         </div> -->
                         <div>
-                            <p><i class="icon-date"></i> {{blogPost.date}}</p>
+                            <p><i class="icon-date"></i> {{ moment(blogPost.date).format('ll') }}</p>
                         </div>
                     </div>
-                    <!-- <div class="blog-image">
-                        <img v-bind:src="post.data.featured_image" alt="post.data.featured_image.alt">
-                    </div> -->
+                    <div class="blog-image">
+                        <img v-bind:src="blogPost.featured_image.src" :alt="blogPost.featured_image.alt">
+                    </div>
                     <div class="blog-article">
                         <article v-html="$md.render(blogPost.body)"></article>
                     </div>
@@ -63,10 +63,10 @@ export default {
             blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
         };
     },
-    // computed: {
-    //     distanceFromNow() {
-    //         return moment(this.blogPosts.date).format('ll')
-    //     }
-    // }
+    methods: {
+        moment: (date) => {
+            return moment(date);
+        }
+    }
 }
 </script>
