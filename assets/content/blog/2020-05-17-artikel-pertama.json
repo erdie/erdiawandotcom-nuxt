@@ -2,5 +2,10 @@
   "date": "2020-05-17T08:37:29.033Z",
   "title": "Artikel Pertama",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "body": "![Erdiawan Anna](/img/erdiawan-wallpaper.jpg)\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna. Arcu dui vivamus arcu felis bibendum ut tristique. Sit amet tellus cras adipiscing enim eu turpis egestas. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Imperdiet sed euismod nisi porta lorem mollis. \n\nEnim nunc faucibus a pellentesque. Odio ut enim blandit volutpat. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. A scelerisque purus semper eget duis at tellus at. Diam ut venenatis tellus in metus vulputate eu scelerisque. Sagittis eu volutpat odio facilisis. At erat pellentesque adipiscing commodo. Massa enim nec dui nunc mattis enim ut tellus. Sit amet luctus venenatis lectus magna fringilla urna. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Magna ac placerat vestibulum lectus mauris. Nibh tellus molestie nunc non blandit massa."
+  "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna. Arcu dui vivamus arcu felis bibendum ut tristique. Sit amet tellus cras adipiscing enim eu turpis egestas. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Imperdiet sed euismod nisi porta lorem mollis. \n\nEnim nunc faucibus a pellentesque. Odio ut enim blandit volutpat. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. A scelerisque purus semper eget duis at tellus at. Diam ut venenatis tellus in metus vulputate eu scelerisque. Sagittis eu volutpat odio facilisis. At erat pellentesque adipiscing commodo. Massa enim nec dui nunc mattis enim ut tellus. Sit amet luctus venenatis lectus magna fringilla urna. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Magna ac placerat vestibulum lectus mauris. Nibh tellus molestie nunc non blandit massa.",
+  "featured_image": {
+    "src": "/img/erdiawan-wallpaper.jpg",
+    "alt": "Erdiawan Anna",
+    "title": "Erdiawan Anna"
+  }
 }
