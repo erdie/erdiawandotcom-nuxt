@@ -55,6 +55,7 @@ import moment from 'moment'
 
 export default {
     layout: 'journal',
+    name: 'blog-post',
     head() {
         const metadata = this.blogPost
         return {
