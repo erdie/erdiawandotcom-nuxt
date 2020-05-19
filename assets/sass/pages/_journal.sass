@@ -57,6 +57,7 @@
             .active
                 display: block
                 width: 130px
+                z-index: 10
             ul
                 display: none
                 position: absolute
@@ -152,8 +153,8 @@
                     font-size: 14px
                     margin-right: 20px
                     img
-                        max-width: 20px
-                        height: 20%
+                        width: 20px
+                        height: 20px !important
                         object-fit: cover
                         vertical-align: middle
                         border-radius: 50%
@@ -170,6 +171,7 @@
                     font-size: 15px
 
         .loading-card
+            padding: 15px
             .loading-image
                 width: 100%
                 height: 200px !important
@@ -177,9 +179,24 @@
                 @extend .animated-background
             .loading-title
                 width: 100%
-                height: 20px !important
+                height: 15px !important
                 @extend .animated-background
-                margin: 10px 0
+                margin: 15px 0 10px 0
+            .loading-author
+                width: 80%
+                height: 15px !important
+                @extend .animated-background
+                margin: 10px 0 15px 0
+            .loading-desc
+                width: 100%
+                height: 6px !important
+                @extend .animated-background
+                margin: 8px 0
+            .loading-desc-short
+                width: 70%
+                height: 6px !important
+                @extend .animated-background
+                margin: 8px 0
 
             @keyframes placeHolderShimmer
                 0%

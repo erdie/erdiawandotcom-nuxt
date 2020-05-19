@@ -9,6 +9,11 @@
 
 .fadeInUp
   opacity: 0
+  animation-name: fadeIn
+  -webkit-animation-name: fadeIn
+
+.fadeInUp
+  opacity: 0
   animation-name: fadeInUp
   -webkit-animation-name: fadeInUp
 
@@ -43,6 +48,13 @@
 
   to
       transform: translate3d(0,0,0)
+      opacity: 1
+
+@keyframes fadeIn
+  from
+      opacity: 0
+
+  to
       opacity: 1
 
 

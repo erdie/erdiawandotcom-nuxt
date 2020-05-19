@@ -4,13 +4,17 @@
             <div class="blog item">
                 <div class="d:item__4 t:item__6 m:item__12" v-for="(post,index) in blogPosts" :key="post.slug + '_' + index">
                 <nuxt-link :to="'/blog/' + post.slug">
-                    <div v-if="loading" class="loading-card">
+                    <div v-if="loading" class="loading-card fadeIn animated">
                         <div class="loading-image"></div>
                         <div class="loading-title"></div>
-                        <div class="blog-author"></div>
-                        <div class="blog-desc"></div>
+                        <div class="loading-author"></div>
+                        <div class="loading-desc"></div>
+                        <div class="loading-desc"></div>
+                        <div class="loading-desc"></div>
+                        <div class="loading-desc"></div>
+                        <div class="loading-desc-short"></div>
                     </div>
-                    <div v-else class="blog-card">
+                    <div v-else class="blog-card fadeIn animated">
                         <figure>
                             <img v-if="post.featured_image" :src="post.featured_image.src" :alt="post.featured_image.alt">
                             <img v-else :src="post.featured_image.src" :alt="post.featured_image.src.alt" >
@@ -44,6 +48,11 @@ import moment from 'moment'
 export default {
     layout: 'journal',
     name: 'blog',
+    data() {
+        return {
+            loading: false
+        }
+    },
     head() {
         const metadata = this.blogPosts
         return {
@@ -62,7 +71,16 @@ export default {
     methods: {
         moment: (date) => {
             return moment(date)
+        },
+        delay() {
+            this.loading = true
+            setTimeout(() => {
+                this.loading = false
+            }, 1500)
         }
+    },
+    mounted() {
+        this.delay()
     }
 }
 </script>
