@@ -165,7 +165,10 @@ footer
         span
             color: red
 
-
+@include respond(tablet)
+    #hero
+        .hero-footer
+            margin-bottom: 56px
 @include respond(phone)
     #hero
         height: auto !important

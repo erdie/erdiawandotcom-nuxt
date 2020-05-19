@@ -105,6 +105,16 @@
             border-radius: 5px
             margin: 20px 0
 
+@include respond(tablet)
+    #blog-detail
+        .breadcrumb
+            ul
+                margin: 5px auto
+        .blog-image
+            img
+                border-radius: 0
+        .blog-author
+            margin: 5px auto
 
 @include respond(phone)
     #navigation-mobile
