@@ -22,13 +22,13 @@ collections:
         name: "tags"
         widget: "list"
         allow_add: false
-        default: ["news","story","devs"]
+        default: ["Stories"]
       - name: author
         label: Author
         widget: object
         fields:
-          - {label: Name, name: name, widget: string, default: "Emmet"}
-          - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+          - {label: Name, name: name, widget: string, default: "Erdiawan Anna"}
+          - {label: Avatar, name: avatar, widget: image, default: "/img/erdi-3.jpg"}
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - name: featured_image
         label: Featured image
