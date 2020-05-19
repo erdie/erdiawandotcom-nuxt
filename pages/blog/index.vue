@@ -76,7 +76,7 @@ export default {
             this.loading = true
             setTimeout(() => {
                 this.loading = false
-            }, 1500)
+            }, 2000)
         }
     },
     mounted() {

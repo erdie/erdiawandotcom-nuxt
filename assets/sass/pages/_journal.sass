@@ -182,21 +182,25 @@
                 height: 15px !important
                 @extend .animated-background
                 margin: 15px 0 10px 0
+                border-radius: 6px
             .loading-author
                 width: 80%
                 height: 15px !important
                 @extend .animated-background
                 margin: 10px 0 15px 0
+                border-radius: 6px
             .loading-desc
                 width: 100%
                 height: 6px !important
                 @extend .animated-background
                 margin: 8px 0
+                border-radius: 6px
             .loading-desc-short
                 width: 70%
                 height: 6px !important
                 @extend .animated-background
                 margin: 8px 0
+                border-radius: 6px
 
             @keyframes placeHolderShimmer
                 0%
@@ -257,3 +261,11 @@
         .blog-card
             img
                 height: 230px !important
+
+@media (prefers-color-scheme: dark)
+    #blog
+        .blog
+            .loading-card
+                .animated-background
+                    background: #121212
+                    background: linear-gradient(to right, #121212 8%, #161616 18%, #121212 33%)
