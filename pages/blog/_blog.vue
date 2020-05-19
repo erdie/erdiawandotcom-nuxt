@@ -16,11 +16,10 @@
                         </div>
                     </div>
                     <div class="blog-author">
-                        <!-- <div>
-                            <span><img src="~/assets/img/erdi.jpg" alt="Anna Erdiawan"></span>
-                            <span>{{ post.data.author.first_name }}</span>
-                            <span>{{ post.data.author.last_name }}</span>
-                        </div> -->
+                        <div>
+                            <span><img v-bind:src="blogPost.author.avatar" alt="Anna Erdiawan"></span>
+                            <span>{{ blogPost.author.name }}</span>
+                        </div>
                         <div>
                             <p><i class="icon-date"></i> {{ moment(blogPost.date).format('ll') }}</p>
                         </div>
@@ -56,6 +55,18 @@ import moment from 'moment'
 
 export default {
     layout: 'journal',
+    head() {
+        const metadata = this.blogPost
+        return {
+            title: `${metadata.title}`,
+            meta: [
+            {
+                hid: `description`,
+                name: 'description',
+                content: `${metadata.description}`
+            }]
+        }
+    },
     async asyncData({ params, payload }) {
         if (payload) return { blogPost: payload };
         else

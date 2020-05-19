@@ -19,11 +19,10 @@
                             <h2>{{ post.title }}</h2>
                         </div>
                         <div class="blog-author">
-                            <!-- <div>
-                                <span><img src="~/assets/img/erdi.jpg" alt="Anna Erdiawan"></span>
-                                <span>{{ post.author.first_name }}</span>
-                                <span>{{ post.author.last_name }}</span>
-                            </div> -->
+                            <div>
+                                <span><img v-bind:src="post.author.avatar" alt="Anna Erdiawan"></span>
+                                <span>{{ post.author.name }}</span>
+                            </div>
                             <div>
                                 <p><i class="icon-date"></i> {{moment(post.date).format('ll')}}</p>
                             </div>
@@ -44,6 +43,19 @@ import moment from 'moment'
 
 export default {
     layout: 'journal',
+    name: 'blog',
+    head() {
+        const metadata = this.blogPosts
+        return {
+            title: `erdiwan.com - Erdiwan Anna Blog`,
+            meta: [
+            {
+                hid: `description`,
+                name: 'description',
+                content: `Ini merupakan halaman blog Erdiawan Anna`
+            }]
+        }
+    },
     computed: mapState({
         blogPosts: state => state.blogPosts
     }),
