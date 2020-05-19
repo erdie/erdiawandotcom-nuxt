@@ -11,13 +11,24 @@ collections:
     format: 'json'
     folder: 'assets/content/blog'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: false
+        default: ["news","story","devs"]
+      - name: author
+        label: Author
+        widget: object
+        fields:
+          - {label: Name, name: name, widget: string, default: "Emmet"}
+          - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - name: featured_image
         label: Featured image
