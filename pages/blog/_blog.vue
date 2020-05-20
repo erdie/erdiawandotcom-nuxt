@@ -56,63 +56,63 @@ import moment from 'moment'
 export default {
     layout: 'journal',
     name: 'blog-post',
-    head () {
+    head() {
         const metadata = this.blogPost
         return {
             title: `${metadata.title}`,
             meta: [
             {
-                hid: 'description',
+                hid: `description`,
                 name: 'description',
                 content: `${metadata.description}`
             },
             {
                 property: 'og:type',
-                content: 'website'
+                content: 'website',
             },
             {
                 property: 'og:url',
-                content: `https://erdiawan.com/blog/`+`${params.blog}`
+                content: `https://erdiawan.com/blog/`+`${metadata.slug}`,
             },
             {
                 property: 'og:title',
-                content: `${metadata.title}`
+                content: `${metadata.title}`,
             },
             {
                 property: 'og:description',
-                content: `${metadata.description}`
+                content: `${metadata.description}`,
             },
             {
                 property: 'og:image',
-                content: `https://erdiawan.com`+`${metadata.featured_image.src}`
+                content: 'https://erdiawan.com'+`${metadata.featured_image.src}`,
             },
             {
                 property: 'fb:app_id',
-                content: '988591554889425'
+                content: '988591554889425',
             },
             {
                 property: 'twitter:card',
-                content: 'summary_large_image'
+                content: 'summary_large_image',
             },
             {
                 property: 'twitter:url',
-                content: `https://erdiawan.com/blog/`+`${params.blog}`
+                content: `https://erdiawan.com/blog/`+`${metadata.slug}`,
             },
             {
                 property: 'twitter:title',
-                content: `${metadata.title}`
+                content: `${metadata.title}`,
             },
             {
                 property: 'twitter:description',
-                content: `${metadata.description}`
+                content: `${metadata.description}`,
             },
             {
                 property: 'twitter:image',
-                content: `https://erdiawan.com`+`${metadata.featured_image.src}`
+                content: 'https://erdiawan.com'+`${metadata.featured_image.src}`,
             }],
             link: [
-                { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
-                { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' }
+                { rel: 'shortcut icon', type: 'image/svg+xml', href: '~/favicon.svg' },
+                { rel: 'mask-icon', href: '~/favicon.svg', color: '#ffffff' }
             ]
         }
     },
