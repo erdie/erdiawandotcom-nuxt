@@ -84,7 +84,7 @@ export default {
             },
             {
                 property: 'og:image',
-                content: 'https://erdiawan.com/img/'+`${metadata.featured_image.src}`,
+                content: 'https://erdiawan.com'+`${metadata.featured_image.src}`,
             },
             {
                 property: 'fb:app_id',
@@ -108,7 +108,7 @@ export default {
             },
             {
                 property: 'twitter:image',
-                content: 'https://erdiawan.com/img/'+`${metadata.featured_image.src}`,
+                content: 'https://erdiawan.com'+`${metadata.featured_image.src}`,
             }],
             link: [
                 { rel: 'shortcut icon', type: 'image/svg+xml', href: '~/favicon.svg' },
