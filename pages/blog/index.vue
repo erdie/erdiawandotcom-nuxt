@@ -62,7 +62,56 @@ export default {
                 hid: `description`,
                 name: 'description',
                 content: `Ini merupakan halaman blog Erdiawan Anna`
-            }]
+            },
+            {
+                property: 'og:type',
+                content: 'website',
+            },
+            {
+                property: 'og:url',
+                content: 'https://erdiawan.com/blog',
+            },
+            {
+                property: 'og:title',
+                content: "Anna Erdiawan Blog",
+            },
+            {
+                property: 'og:description',
+                content: "Oh hi, this is Anna Erdiawan's blog",
+            },
+            {
+                property: 'og:image',
+                content: 'https://erdiawan.com/erdiawan-open-graph.jpg',
+            },
+            {
+                property: 'fb:app_id',
+                content: '988591554889425',
+            },
+            {
+                property: 'twitter:card',
+                content: 'summary_large_image',
+            },
+            {
+                property: 'twitter:url',
+                content: 'https://erdiawan.com',
+            },
+            {
+                property: 'twitter:title',
+                content: "Anna Erdiawan Blog",
+            },
+            {
+                property: 'twitter:description',
+                content: "Oh hi, this is Anna Erdiawan's blog",
+            },
+            {
+                property: 'twitter:image',
+                content: 'https://erdiawan.com/erdiawan-open-graph.jpg',
+            },
+            ],
+            link: [
+                { rel: 'shortcut icon', type: 'image/svg+xml', href: '~/favicon.svg' },
+                { rel: 'mask-icon', href: '~/favicon.svg', color: '#ffffff' }
+            ]
         }
     },
     computed: mapState({

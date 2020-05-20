@@ -65,7 +65,55 @@ export default {
                 hid: `description`,
                 name: 'description',
                 content: `${metadata.description}`
-            }]
+            },
+            {
+                property: 'og:type',
+                content: 'website',
+            },
+            {
+                property: 'og:url',
+                content: `https://erdiawan.com/blog/`+`${metadata.slug}`,
+            },
+            {
+                property: 'og:title',
+                content: `${metadata.title}`,
+            },
+            {
+                property: 'og:description',
+                content: `${metadata.description}`,
+            },
+            {
+                property: 'og:image',
+                content: 'https://erdiawan.com/img/'+`${metadata.featured_image.src}`,
+            },
+            {
+                property: 'fb:app_id',
+                content: '988591554889425',
+            },
+            {
+                property: 'twitter:card',
+                content: 'summary_large_image',
+            },
+            {
+                property: 'twitter:url',
+                content: `https://erdiawan.com/blog/`+`${metadata.slug}`,
+            },
+            {
+                property: 'twitter:title',
+                content: `${metadata.title}`,
+            },
+            {
+                property: 'twitter:description',
+                content: `${metadata.description}`,
+            },
+            {
+                property: 'twitter:image',
+                content: 'https://erdiawan.com/img/'+`${metadata.featured_image.src}`,
+            }],
+            link: [
+                { rel: 'shortcut icon', type: 'image/svg+xml', href: '~/favicon.svg' },
+                { rel: 'mask-icon', href: '~/favicon.svg', color: '#ffffff' }
+            ]
         }
     },
     async asyncData({ params, payload }) {
