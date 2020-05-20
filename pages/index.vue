@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         message() {
-        console.log('%cWhat are you looking for?', 'color: white; font-size: 18px; font-weight: bold;')
+        console.log('%cWhat are you looking for?', 'color: red; font-size: 18px; font-weight: bold;')
         }
     },
     mounted () {

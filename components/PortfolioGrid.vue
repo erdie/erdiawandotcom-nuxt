@@ -23,7 +23,7 @@
                     </p>
                 </div> -->
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/kalikesia.jpg" loading="lazy" alt="Startup Pilihan Tempo">
+                    <img src="~/assets/img/portfolio/kalikesia.jpg" loading="lazy" alt="Kalikesia">
                     <h3>Kalikesia</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, REACTJS, NEXTJS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -32,7 +32,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/devfest-jakarta.png" loading="lazy" alt="DevFest 2019 Jakarta">
+                    <img src="~/assets/img/portfolio/devfest-jakarta.jpg" loading="lazy" alt="DevFest 2019 Jakarta">
                     <h3>DevFest 2019 Jakarta</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, NUXT, VUE JS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -41,7 +41,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/digitaraya.png" loading="lazy" alt="Digitaraya">
+                    <img src="~/assets/img/portfolio/digitaraya.jpg" loading="lazy" alt="Digitaraya">
                     <h3>Digitaraya</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -51,7 +51,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/finest.png" loading="lazy" alt="Finest">
+                    <img src="~/assets/img/portfolio/finest.jpg" loading="lazy" alt="Finest">
                     <h3>Finest</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
@@ -59,11 +59,11 @@
                         Source Code: <strong>Private</strong>
                     </p>
                 </div>
-              </div>
-              <transition name="fade" mode="out-in">
+            </div>
+            <transition name="fade" mode="out-in">
                 <div class="portfolio-grid item" key="3" v-show="isShowing">
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/digitarasa.png" loading="lazy" alt="Digitarasa by GoFood">
+                        <img src="~/assets/img/portfolio/digitarasa.jpg" loading="lazy" alt="Digitarasa by GoFood">
                         <h3>Digitarasa by GoFood</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -72,7 +72,7 @@
                         </p>
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/founder-asia.png" loading="lazy" alt="Startup Pilihan Tempo">
+                        <img src="~/assets/img/portfolio/founder-asia.jpg" loading="lazy" alt="FounderAsia">
                         <h3>Founder Asia</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -81,7 +81,7 @@
                         </p>
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/exp-up.png" loading="lazy" alt="EXP-UP! Academy Esport">
+                        <img src="~/assets/img/portfolio/exp-up.jpg" loading="lazy" alt="EXP-UP! Academy Esport">
                         <h3>EXP Esport Academy</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -90,7 +90,7 @@
                         </p>
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/spt.png" loading="lazy" alt="Startup Pilihan Tempo">
+                        <img src="~/assets/img/portfolio/spt.jpg" loading="lazy" alt="Startup Pilihan Tempo">
                         <h3>Startup Pilihan Tempo</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -126,7 +126,7 @@
                         </p>
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/lancong.jpg" loading="lazy" alt="Simona Ventures">
+                        <img src="~/assets/img/portfolio/lancong.jpg" loading="lazy" alt="Lancong">
                         <h3>Lancong.id</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -144,7 +144,7 @@
                         </p>
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/mariviu.jpg" loading="lazy" alt="Simona Ventures">
+                        <img src="~/assets/img/portfolio/mariviu.jpg" loading="lazy" alt="Mariviu">
                         <h3>Mariviu</h3>
                         <p>Tech Stack: WORDPRESS<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -162,7 +162,7 @@
                         </p>
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/digiskul.jpg" loading="lazy" alt="Simona Ventures">
+                        <img src="~/assets/img/portfolio/digiskul.jpg" loading="lazy" alt="Digiskul">
                         <h3>Digiskul</h3>
                         <p>Tech Stack: HTML5, CSS3, VUE JS<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -172,7 +172,7 @@
                         </p>
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                        <img src="~/assets/img/portfolio/perkim-sumbar.png" loading="lazy" alt="Perkim Sumbar">
+                        <img src="~/assets/img/portfolio/perkim-sumbar.jpg" loading="lazy" alt="Perkim Sumbar">
                         <h3>Perkim Sumatera Barat</h3>
                         <p>Tech Stack: HTML5, CSS3, BOOTSTRAP<br>
                             Frontend Dev: Anna Erdiawan<br>
@@ -192,28 +192,28 @@
 
 <script>
 export default {
-  data() {
-    return {
-      isShowing:false
+    data() {
+        return {
+            isShowing: false
+        }
     }
-  }
 }
 </script>
 
 <style lang="sass" scoped>
-  .btn-show
-    display: block
-    margin: 0 auto
-    padding: 8px 25px
-    transition: 0.3s
-    margin-top: 15px
-  .btn-show:hover
-    opacity: 0.9
-    transition: 0.3s
-  .fade-enter-active,
-  .fade-leave-active
-    transition: opacity 1s
-  .fade-enter,
-  .fade-leave-to
-    opacity: 0
+    .btn-show
+        display: block
+        margin: 0 auto
+        padding: 8px 25px
+        transition: 0.3s
+        margin-top: 15px
+    .btn-show:hover
+        opacity: 0.9
+        transition: 0.3s
+    .fade-enter-active,
+    .fade-leave-active
+        transition: opacity 1s
+    .fade-enter,
+    .fade-leave-to
+        opacity: 0
 </style>

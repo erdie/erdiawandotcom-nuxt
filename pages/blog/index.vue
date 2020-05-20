@@ -16,8 +16,8 @@
                     </div>
                     <div v-else class="blog-card fadeIn animated">
                         <figure>
-                            <img v-if="post.featured_image" :src="post.featured_image.src" :alt="post.featured_image.alt">
-                            <img v-else :src="post.featured_image.src" :alt="post.featured_image.src.alt" >
+                            <img v-if="post.featured_image" :src="post.featured_image.src" loading="lazy" :alt="post.featured_image.alt">
+                            <img v-else :src="post.featured_image.src" loading="lazy" :alt="post.featured_image.src.alt" >
                         </figure>
                         <div class="blog-title">
                             <h2>{{ post.title }}</h2>
