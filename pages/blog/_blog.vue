@@ -64,7 +64,7 @@ export default {
             {
                 hid: 'description',
                 name: 'description',
-                content: '${metadata.description}'
+                content: `${metadata.description}`
             },
             {
                 property: 'og:type',
@@ -72,19 +72,19 @@ export default {
             },
             {
                 property: 'og:url',
-                content: 'https://erdiawan.com/blog/'+'${metadata.slug}'
+                content: `https://erdiawan.com/blog/`+`${params.blog}`
             },
             {
                 property: 'og:title',
-                content: '${metadata.title}'
+                content: `${metadata.title}`
             },
             {
                 property: 'og:description',
-                content: '${metadata.description}'
+                content: `${metadata.description}`
             },
             {
                 property: 'og:image',
-                content: 'https://erdiawan.com'+'${metadata.featured_image.src}'
+                content: `https://erdiawan.com`+`${metadata.featured_image.src}`
             },
             {
                 property: 'fb:app_id',
@@ -96,19 +96,19 @@ export default {
             },
             {
                 property: 'twitter:url',
-                content: `https://erdiawan.com/blog/`+'${metadata.slug}'
+                content: `https://erdiawan.com/blog/`+`${params.blog}`
             },
             {
                 property: 'twitter:title',
-                content: '${metadata.title}'
+                content: `${metadata.title}`
             },
             {
                 property: 'twitter:description',
-                content: '${metadata.description}'
+                content: `${metadata.description}`
             },
             {
                 property: 'twitter:image',
-                content: 'https://erdiawan.com'+'${metadata.featured_image.src}'
+                content: `https://erdiawan.com`+`${metadata.featured_image.src}`
             }],
             link: [
                 { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
