@@ -113,8 +113,8 @@ export default {
   generate: {
     fallback: true,
     routes: [
+        '/',
         '/covid',
-        '/blog',
     ],
     routes: function() {
         const fs = require('fs')
