@@ -114,6 +114,8 @@ export default {
     fallback: true,
     routes: [
         '/',
+        '/blog',
+        '/blog/**',
         '/covid',
     ],
     routes: function() {
