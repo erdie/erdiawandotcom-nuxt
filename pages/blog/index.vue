@@ -109,8 +109,8 @@ export default {
             },
             ],
             link: [
-                { rel: 'shortcut icon', type: 'image/svg+xml', href: '~/favicon.svg' },
-                { rel: 'mask-icon', href: '~/favicon.svg', color: '#ffffff' }
+                { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
+                { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' }
             ]
         }
     },

@@ -71,6 +71,7 @@
                     <label for="search">
                         <input class="province-search" id="search" type="text" v-model="search" placeholder="Ketikkan nama provinsi">
                     </label>
+                    <div v-if="!filterList.length"><small>Data tidak ditemukan</small></div>
                     <div class="province-list">
                         <ul v-for="cases in filterList" :key="cases.id">
                             <h4>📍{{cases.provinsi}}</h4>
@@ -113,17 +114,18 @@ export default {
     },
     head () {
         return {
-        title: this.title,
-        meta: [
-            { hid: 'description', name: 'description', content: 'Kasus Covid19 di Indonesia' }
-        ],
-        link: [
-            { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg?v=1' },
-            { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
-            { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' },
-            { rel: 'apple-touch-icon', sizes: '512x512', href: '/favicon.png?v=1' }
+            title: this.title,
+            meta: [
+                { hid: 'description', name: 'description', content: 'Kasus Covid19 di Indonesia' }
+            ],
+            link: [
+                { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg?v=1' },
+                { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
+                { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' },
+                { rel: 'apple-touch-icon', sizes: '512x512', href: '/favicon.png?v=1' }
             ]
-    }},
+        }
+    },
     async asyncData() {
         //Collect API
         let firstURL = 'https://indonesia-covid-19.mathdro.id/api/'
