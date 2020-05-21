@@ -145,6 +145,7 @@ export default {
       short_name: "erdiawan.com - Anna Erdiawan Personal Site",
       lang: 'en',
       dispplay: 'standalone',
+      theme_color: '#474f85',
       description: "Anna Erdiawan Personal Site",
       icons: [
           {

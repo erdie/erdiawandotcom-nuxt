@@ -112,8 +112,8 @@ export default {
             }],
             link: [
                 { rel: 'canonical', href: 'https://erdiawan.com/blog/'+`${metadata.slug}`+`/` },
-                { rel: 'shortcut icon', type: 'image/svg+xml', href: '~/favicon.svg' },
-                { rel: 'mask-icon', href: '~/favicon.svg', color: '#ffffff' }
+                { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
+                { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' }
             ]
         }
     },
