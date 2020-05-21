@@ -183,7 +183,7 @@
                 </div>
             </transition>
             <button @click="isShowing = !isShowing" v-show="!isShowing" class="btn btn-primary btn-show">
-              Show All
+            Show All
             </button>
         </div>
     </section>
