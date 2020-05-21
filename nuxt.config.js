@@ -142,10 +142,12 @@ export default {
   pwa: {
     manifest: {
       name: 'erdiawan.com - Anna Erdiawan Personal Site',
-      short_name: "erdiawan.com - Anna Erdiawan Personal Site",
+      short_name: "erdiawan.com",
       lang: 'en',
       dispplay: 'standalone',
       theme_color: '#474f85',
+      scope: "/",
+      start_url: "/?source=pwa",
       description: "Anna Erdiawan Personal Site",
       icons: [
           {
@@ -183,6 +185,44 @@ export default {
             sizes: "256x256",
             type: "image/png"
           }
+      ],
+      shortcuts: [
+          {
+              name: "erdiawan.com - Anna Erdiawan Blog",
+              short_name: "Anna Erdiawan Blog",
+              description: "erdiawan.com - Anna Erdiawan Blog",
+              url: "/blog?source=pwa",
+              icons: [
+                {
+                    src: "/icons/erdi192.png",
+                    sizes: "192x192",
+                    type: "image/png"
+                },
+                {
+                    src: "/icons/erdi256.png",
+                    sizes: "256x256",
+                    type: "image/png"
+                }
+              ]
+          },
+          {
+            name: "erdiawan.com - COVID-19 Cases in Indonesia",
+            short_name: "COVID-19 Cases in Indonesia",
+            description: "erdiawan.com - COVID-19 Cases in Indonesia",
+            url: "/covid?source=pwa",
+            icons: [
+              {
+                src: "/icons/erdi192.png",
+                sizes: "192x192",
+                type: "image/png"
+              },
+              {
+                src: "/icons/erdi256.png",
+                sizes: "256x256",
+                type: "image/png"
+              }
+            ]
+        }
       ]
     }
   }
