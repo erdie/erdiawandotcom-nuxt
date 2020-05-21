@@ -141,10 +141,48 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'erdiawan.com',
-      short_name: "Erdiawan Anna",
+      name: 'erdiawan.com - Anna Erdiawan Personal Site',
+      short_name: "erdiawan.com - Anna Erdiawan Personal Site",
       lang: 'en',
+      dispplay: 'standalone',
       description: "Anna Erdiawan Personal Site",
+      icons: [
+          {
+            src: "/icons/erdi48.png",
+            sizes: "48x48",
+            type: "image/png"
+          },
+          {
+            src: "/icons/erdi72.png",
+            sizes: "72x72",
+            type: "image/png"
+          },
+          {
+            src: "/icons/erdi96.png",
+            sizes: "96x96",
+            type: "image/png"
+          },
+          {
+            src: "/icons/erdi144.png",
+            sizes: "144x144",
+            type: "image/png"
+          },
+          {
+            src: "/icons/erdi168.png",
+            sizes: "168x168",
+            type: "image/png"
+          },
+          {
+            src: "/icons/erdi192.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "/icons/erdi256.png",
+            sizes: "256x256",
+            type: "image/png"
+          }
+      ]
     }
   }
 }

@@ -11,7 +11,7 @@
                     <h3>Triv Frontend</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ali Mahfud <br>
-                        Demo: <a href="https://triv-frontend.erdiawan.com" target="_blank" rel="noopener">triv-frontend.erdiawan.com</a>
+                        Demo: <a href="https://triv-frontend.erdiawan.com" target="_blank" rel="noopener noreferrer">triv-frontend.erdiawan.com</a>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -19,7 +19,7 @@
                     <h3>Triv Dashboard</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ali Mahfud <br>
-                        Demo: <a href="https://triv-dashboard.erdiawan.com" target="_blank" rel="noopener">triv-dashboard.erdiawan.com</a>
+                        Demo: <a href="https://triv-dashboard.erdiawan.com" target="_blank" rel="noopener noreferrer">triv-dashboard.erdiawan.com</a>
                     </p>
                 </div> -->
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -27,7 +27,7 @@
                     <h3>Kalikesia</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, REACTJS, NEXTJS<br>
                         Frontend Dev: Anna Erdiawan<br>
-                        Demo: <a target="_blank" rel="noopener"><b>Unavailable</b></a><br>
+                        Demo: <a target="_blank" rel="noopener noreferrer"><b>Unavailable</b></a><br>
                         Source Code: <strong>Private</strong>
                     </p>
                 </div>
@@ -36,8 +36,8 @@
                     <h3>DevFest 2019 Jakarta</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, NUXT, VUE JS<br>
                         Frontend Dev: Anna Erdiawan<br>
-                        Demo: <a href="https://devfest.gdgjakarta.org" target="_blank" rel="noopener">devfest.gdgjakarta.org</a><br>
-                        Source Code: <a href="https://github.com/gdgindonesia/devfest-19-landing" target="_blank">Github</a>
+                        Demo: <a href="https://devfest.gdgjakarta.org" target="_blank" rel="noopener noreferrer">devfest.gdgjakarta.org</a><br>
+                        Source Code: <a href="https://github.com/gdgindonesia/devfest-19-landing" target="_blank"  rel="noopener noreferrer">Github</a>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -45,8 +45,8 @@
                     <h3>Digitaraya</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
-                        Demo: <a href="https://digitaraya.com" target="_blank" rel="noopener">digitaraya.com</a><br>
-                        <!-- Demo v1: <a href="https://v1.digitaraya.com" target="_blank" rel="noopener">v1.digitaraya.com</a> (Wordpress) <br> -->
+                        Demo: <a href="https://digitaraya.com" target="_blank" rel="noopener noreferrer">digitaraya.com</a><br>
+                        <!-- Demo v1: <a href="https://v1.digitaraya.com" target="_blank" rel="noopener noreferrer">v1.digitaraya.com</a> (Wordpress) <br> -->
                         Source Code: <strong>Private</strong>
                     </p>
                 </div>
@@ -55,7 +55,7 @@
                     <h3>Finest</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
-                        Demo: <a href="https://finest.co.id" target="_blank" rel="noopener">finest.co.id</a><br>
+                        Demo: <a href="https://finest.co.id" target="_blank" rel="noopener noreferrer">finest.co.id</a><br>
                         Source Code: <strong>Private</strong>
                     </p>
                 </div>
@@ -67,7 +67,7 @@
                         <h3>Digitarasa by GoFood</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://digitarasa.id" target="_blank" rel="noopener">digitarasa.id</a><br>
+                            Demo: <a href="https://digitarasa.id" target="_blank" rel="noopener noreferrer">digitarasa.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -76,7 +76,7 @@
                         <h3>Founder Asia</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://founderasia.com/" target="_blank" rel="noopener">founderasia.com</a> <br>
+                            Demo: <a href="https://founderasia.com/" target="_blank" rel="noopener noreferrer">founderasia.com</a> <br>
                             Source Code: <strong> Private</strong>
                         </p>
                     </div>
@@ -85,7 +85,7 @@
                         <h3>EXP Esport Academy</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://exp-up.id" target="_blank" rel="noopener">exp-up.id</a> & <a href="https://exp-academy.id" target="_blank" rel="noopener">exp-academy.id</a><br>
+                            Demo: <a href="https://exp-up.id" target="_blank" rel="noopener noreferrer">exp-up.id</a> & <a href="https://exp-academy.id" target="_blank" rel="noopener noreferrer">exp-academy.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -94,7 +94,7 @@
                         <h3>Startup Pilihan Tempo</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://digitaraya.com/startuppilihantempo/" target="_blank" rel="noopener">digitaraya.com/startuppilihantempo/</a><br>
+                            Demo: <a href="https://digitaraya.com/startuppilihantempo/" target="_blank" rel="noopener noreferrer">digitaraya.com/startuppilihantempo/</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -103,7 +103,7 @@
                         <h3>Digitaraya Tourism Batch (One Pager)</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://digitaraya.com/tiketcom-tourismbatch/" target="_blank" rel="noopener">digitaraya.com/tiketcom-tourismbatch/</a> <br>
+                            Demo: <a href="https://digitaraya.com/tiketcom-tourismbatch/" target="_blank" rel="noopener noreferrer">digitaraya.com/tiketcom-tourismbatch/</a> <br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -112,7 +112,7 @@
                         <h3>Simona Ventures</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://simona.ventures" target="_blank" rel="noopener">simona.ventures</a><br>
+                            Demo: <a href="https://simona.ventures" target="_blank" rel="noopener noreferrer">simona.ventures</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -121,7 +121,7 @@
                         <h3>Simona Venture APAC Women (One Pager)</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://simona.ventures/apacwomen/" target="_blank" rel="noopener">simona.ventures/apacwomen/</a><br>
+                            Demo: <a href="https://simona.ventures/apacwomen/" target="_blank" rel="noopener noreferrer">simona.ventures/apacwomen/</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -130,7 +130,7 @@
                         <h3>Lancong.id</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="http://lancong.id" target="_blank" rel="noopener">lancong.id</a><br>
+                            Demo: <a href="http://lancong.id" target="_blank" rel="noopener noreferrer">lancong.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -139,7 +139,7 @@
                         <h3>Kinesys Ventures</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://kinesysgroup.com" target="_blank" rel="noopener">kinesysgroup.com</a><br>
+                            Demo: <a href="https://kinesysgroup.com" target="_blank" rel="noopener noreferrer">kinesysgroup.com</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -148,7 +148,7 @@
                         <h3>Mariviu</h3>
                         <p>Tech Stack: WORDPRESS<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://mariviu.com" target="_blank" rel="noopener">mariviu.com</a> <br>
+                            Demo: <a href="https://mariviu.com" target="_blank" rel="noopener noreferrer">mariviu.com</a> <br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -157,7 +157,7 @@
                         <h3>Chromplex</h3>
                         <p>Tech Stack: WORDPRESS, MATERIAL LITE DESIGN<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://chromplex.com" target="_blank" rel="noopener">chromplex.com</a> <br>
+                            Demo: <a href="https://chromplex.com" target="_blank" rel="noopener noreferrer">chromplex.com</a> <br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -167,7 +167,7 @@
                         <p>Tech Stack: HTML5, CSS3, VUE JS<br>
                             Frontend Dev: Anna Erdiawan<br>
                             Backend Dev: Rio Swarawan & Ali Mahfud<br>
-                            Demo: <a href="http://digiskul.nuansa.id" target="_blank" rel="noopener">digiskul.nuansa.id</a><br>
+                            Demo: <a href="http://digiskul.nuansa.id" target="_blank" rel="noopener noreferrer">digiskul.nuansa.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -176,7 +176,7 @@
                         <h3>Perkim Sumatera Barat</h3>
                         <p>Tech Stack: HTML5, CSS3, BOOTSTRAP<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="http://perkim.sumbarprov.go.id" target="_blank" rel="noopener">perkim.sumbarprov.go.id</a><br>
+                            Demo: <a href="http://perkim.sumbarprov.go.id" target="_blank" rel="noopener noreferrer">perkim.sumbarprov.go.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>

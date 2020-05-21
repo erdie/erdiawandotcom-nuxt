@@ -109,6 +109,7 @@ export default {
             },
             ],
             link: [
+                { rel: 'canonical', href: 'https://erdiawan.com/blog/' },
                 { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
                 { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' }
             ]

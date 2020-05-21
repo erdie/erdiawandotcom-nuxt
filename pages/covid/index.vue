@@ -3,7 +3,7 @@
         <div class="container">
         <div class="covid-title">
             <h1>Kasus Covid19 di Indonesia</h1>
-            <small>( Data berdasarkan situs resmi pemerintah Indonesia untuk penanganan covid19. API oleh <a href="https://github.com/mathdroid/indonesia-covid-19-api" target="_blank" rel="noopener">Mathdroid</a> )</small>
+            <small>( Data berdasarkan situs resmi pemerintah Indonesia untuk penanganan covid19. API oleh <a href="https://github.com/mathdroid/indonesia-covid-19-api" target="_blank" rel="noopener noreferrer">Mathdroid</a> )</small>
         </div>
         <div class="item">
             <div class="d:item__8 t:item__8 m:item__12">
@@ -119,6 +119,7 @@ export default {
                 { hid: 'description', name: 'description', content: 'Kasus Covid19 di Indonesia' }
             ],
             link: [
+                { rel: 'canonical', href: 'https://erdiawan.com/covid/' },
                 { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg?v=1' },
                 { rel: 'shortcut icon', type: 'image/svg+xml', href: '/favicon.svg' },
                 { rel: 'mask-icon', href: '/favicon.svg', color: '#ffffff' },

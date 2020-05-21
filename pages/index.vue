@@ -64,6 +64,7 @@ export default {
             content: 'https://erdiawan.com/erdiawan-open-graph.jpg',
         }],
         link: [
+            { rel: 'canonical', href: 'https://erdiawan.com' },
             { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg?v=1' },
             { rel: 'shortcut icon', type: 'image/svg+xml', href: 'favicon.svg' },
             { rel: 'mask-icon', href: 'favicon.svg', color: '#ffffff' },
