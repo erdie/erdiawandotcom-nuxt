@@ -1,5 +1,17 @@
 <template>
     <section id="hero">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
         <div class="container">
             <div class="hero-group container-flex justify-between align-center flex-column-mobile">
                 <div class="hero-title">
