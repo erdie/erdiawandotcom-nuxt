@@ -437,6 +437,9 @@ export default {
             .province-list
                 height: 920px
                 overflow-y: scroll
+                ul
+                    font-family: system-ui
+                    line-height: 1.5
         .province-search
             display: block
             margin: 10px 0
