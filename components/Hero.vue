@@ -15,7 +15,7 @@
         <div class="container">
             <div class="hero-group container-flex justify-between align-center flex-column-mobile">
                 <div class="hero-title">
-                    <p class="hello animated animatedFadeInUp fadeInUp">Oh, Hi! 👋  I Am</p>
+                    <p class="hello animated animatedFadeInUp fadeInUp">Oh, Hi! 👋 It's Me</p>
                     <div class="name hide-dark animated animatedFadeInUp fadeInUpName">
                         <img src="~/assets/img/erdiawan-2.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>

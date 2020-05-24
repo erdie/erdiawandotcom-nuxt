@@ -31,7 +31,7 @@
                     </ul>
                 </div>
                 <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b>. Status:
-                <b>{{statusTerbaru}}</b> diperbaharui.</small>
+                <b v-html="statusTerbaru"></b></small>
                 <line-chart
                 v-if="loaded"
                 :chartdata="chartdata"
@@ -213,9 +213,9 @@ export default {
 
         // Status
         if (compileKasusBaru[compileKasusBaru.length-1] == null) {
-            var statusUpdate = 'belum'
+            var statusUpdate = '<span style="color:red;">belum diperbaharui</span>.'
         } else {
-            var statusUpdate = 'telah'
+            var statusUpdate = '<span style="color:green;">telah diperbaharui</span>.'
         }
 
         //Get current and yesterday date
@@ -477,10 +477,10 @@ export default {
                 color: #51E3D4
             .indonesia
                 .cases
-                    background-color: #121212
+                    background-color: #161616
                     box-shadow: none
             .globalcases
-                background-color: #121212
+                background-color: #161616
                 border: none
                 ul
                     li
