@@ -15,24 +15,21 @@
         <div class="container">
             <div class="hero-group container-flex justify-between align-center flex-column-mobile">
                 <div class="hero-title">
-                    <p class="hello animated animatedFadeInUp fadeInUp">Oh, Hi! 👋 It's Me</p>
-                    <div class="name hide-dark animated animatedFadeInUp fadeInUpName">
+                    <p class="hello animated fadeInUp">Oh, Hi! 👋 It's Me</p>
+                    <div class="name hide-dark animated fadeInUpName first-delay">
                         <img src="~/assets/img/erdiawan-2.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>
-                    <div class="name hide-light animated animatedFadeInUp fadeInUpName">
+                    <div class="name hide-light animated fadeInUpName first-delay">
                         <img src="~/assets/img/erdiawan-3.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>
-                    <!-- <div class="name-type">
-                        <h1>Anna Erdiawan</h1>
-                    </div> -->
-                    <div class="desc animated animatedFadeInUp fadeInUp">
+                    <div class="desc animated fadeInUp second-delay">
                         <h3>Web Developer, IU/UX Enthusiast, Deep Understanding How SEO Works</h3>
                         <p>You can call me Erdi. Lives in Yogyakarta. Web Developer since 4 years ago who interested in IU/UX. Having been involved in building a media startup, I have a deep understanding of how SEO works.</p>
 
                         <p>I have a lot getting involved with the developer community and fans of Open Source technology. I love being part of the community since I was on campus and helping it grow in my city. Now I am organizing GDG Jogjakarta as a Co-Organizer.</p>
                     </div>
                 </div>
-                <div class="hero-image animated animatedFadeInUp fadeInUp">
+                <div class="hero-image animated fadeInUp third-delay">
                     <img src="~/assets/img/erdi.jpg" loading="lazy" alt="Anna Erdiawan">
                     <div class="btn-hire">
                         <a href="mailto:hi@erdiawan"><button class="btn btn-primary"><i class="icon-mail"></i> Send Me a Message</button></a>
@@ -40,13 +37,11 @@
                 </div>
             </div>
         </div>
-        <div class="hero-footer animated animatedFadeInUp fadeInUp">
+        <div class="hero-footer animated fadeInUp fourth-delay">
             <div class="container">
                 <div class="footer-group">
                     <div class="menu">
                         <ul>
-                            <!-- <li class="active"><nuxt-link to="/">Home</nuxt-link></li> -->
-                            <!-- <li><nuxt-link to="/#portfolio">Portfolio</nuxt-link></li> -->
                             <li><nuxt-link :to="{ path: '/',hash:'#portfolio'}">My Works</nuxt-link></li>
                             <li><nuxt-link to="/blog">Blog</nuxt-link></li>
                             <li><nuxt-link to="/covid">Covid19</nuxt-link></li>

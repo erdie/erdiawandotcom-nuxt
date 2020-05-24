@@ -36,6 +36,11 @@ export default {
     color: '#51e3d4'
   },
   /*
+  pageTransition: {
+    name: "page",
+    mode: ""
+  },*/
+  /*
   ** Global CSS
   */
  css: [{ src: '~/assets/sass/style.sass', lang: 'sass' }],

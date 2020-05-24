@@ -1,5 +1,5 @@
 <template>
-    <nav id="navigation">
+    <nav id="navigation" class="animated fadeIn">
         <div class="container">
             <div class="navigation-group container-flex justify-between">
                 <div class="menu container-flex align-center">
@@ -29,3 +29,7 @@
         </div>
     </nav>
 </template>
+
+<style lang="sass" scoped>
+
+</style>
