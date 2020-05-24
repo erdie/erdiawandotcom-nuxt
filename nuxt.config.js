@@ -18,7 +18,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX."
+        content: "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX."
+        // content: process.env.npm_package_description || "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX."
       }
     ],
     link: [

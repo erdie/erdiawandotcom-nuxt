@@ -30,8 +30,8 @@
                         </li>
                     </ul>
                 </div>
-                <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b> dan
-                <b>{{statusTerbaru}}</b> diperbaharui. (Diperbaharui setiap hari pukul 16.15 WIB)</small>
+                <small class="notes"><i class="icon-information"></i> Data tanggal <b>{{getCurrentDate}}</b>. Status:
+                <b>{{statusTerbaru}}</b> diperbaharui.</small>
                 <line-chart
                 v-if="loaded"
                 :chartdata="chartdata"
