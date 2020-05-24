@@ -15,7 +15,7 @@
         <div class="container">
             <div class="hero-group container-flex justify-between align-center flex-column-mobile">
                 <div class="hero-title">
-                    <p class="animated animatedFadeInUp fadeInUp">Hello I Am</p>
+                    <p class="hello animated animatedFadeInUp fadeInUp">Oh, Hi! 👋  I Am</p>
                     <div class="name hide-dark animated animatedFadeInUp fadeInUpName">
                         <img src="~/assets/img/erdiawan-2.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>
@@ -25,8 +25,12 @@
                     <!-- <div class="name-type">
                         <h1>Anna Erdiawan</h1>
                     </div> -->
-                    <p class="desc animated animatedFadeInUp fadeInUp">You can call me Erdi. Live in Yogyakarta, i'm Web developer since 4 years ago. Interested with User Interface, User Interaction and User Experience.</p>
-                    <p class="desc animated animatedFadeInUp fadeInUp">I love being a part of community. Now i manage a community called GDG Jogjakarta as a Co-Manager. GDG Jogjakarta is Google Developer Group community based in Yogyakarta.</p>
+                    <div class="desc animated animatedFadeInUp fadeInUp">
+                        <h3>Web Developer, IU/UX Enthusiast, Deep Understanding How SEO Works</h3>
+                        <p>You can call me Erdi. Lives in Yogyakarta. Web Developer since 4 years ago who interested in IU/UX. Having been involved in building a media startup, I have a deep understanding of how SEO works.</p>
+
+                        <p>I have a lot getting involved with the developer community and fans of Open Source technology. I love being part of the community since I was on campus and helping it grow in my city. Now I am organizing GDG Yogyakarta as a Co-Organizer.</p>
+                    </div>
                 </div>
                 <div class="hero-image animated animatedFadeInUp fadeInUp">
                     <img src="~/assets/img/erdi.jpg" loading="lazy" alt="Anna Erdiawan">
