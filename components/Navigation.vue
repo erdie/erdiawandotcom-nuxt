@@ -15,17 +15,14 @@
                     </ul>
                 </div>
                 <div class="social">
-                    <div class="dark-mode-toggle">
+                    <!-- <div class="dark-mode-toggle">
                         <select v-model="$colorMode.preference">
-                            <option value="system">
-                                <span v-if="$colorMode.preference === 'light'"><i>☀️ </i> </span>
-                                <span v-else=""><i>🌙 </i></span>
-                                System
-                            </option>
-                            <option value="light"><i class="icon-sun"></i>☀️ Light</option>
-                            <option value="dark"><i class="icon-moon"></i>🌙 Dark</option>
+                            <option value="system">💻 System</option>
+                            <option value="light">☀️ Light</option>
+                            <option value="dark">🌙 Dark</option>
                         </select>
-                    </div>
+                    </div> -->
+                    <DarkModeToggle />
                     <div class="sub-social">
                         <small>Find me on social media</small>
                         <ul>
@@ -43,6 +40,16 @@
     </nav>
 </template>
 
+<script>
+import DarkModeToggle from '~/components/DarkModeToggle.vue'
+
+export default {
+    components: {
+        DarkModeToggle
+    }
+}
+</script>
+
 <style lang="sass" scoped>
     #navigation
         .navigation-group
@@ -59,25 +66,4 @@
                     li
                         display: inline-block
                         margin: 0 5px
-                .dark-mode-toggle
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    justify-content: center
-                    margin-right: 20px
-                    select
-                        -webkit-appearance: none
-                        appearance: none
-                        background-color: transparent
-                        color: white
-                        outline: none
-                        border-radius: 30px
-                        padding: 0px 10px 3px 10px
-                        transition: 0.3s
-                        border: 1px solid rgba(222, 222, 222, 0.2)
-                        option
-                            padding: 10px 20px
-                    select:hover
-                        background-color: rgba(255, 255, 255, 0.1)
-                        transition: 0.3s
 </style>

@@ -56,7 +56,7 @@ export default {
     head() {
         const metadata = this.blogPosts
         return {
-            title: `erdiwan.com - Erdiwan Anna Blog`,
+            title: `erdiawan.com - Erdiawan Anna Blog`,
             meta: [
             {
                 hid: `description`,

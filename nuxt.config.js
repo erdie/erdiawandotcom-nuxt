@@ -57,6 +57,10 @@ export default {
         // '@nuxtjs/eslint-module'
         '@nuxtjs/color-mode',
     ],
+    colorMode: {
+        preference: 'dark', // default value of $colorMode.preference
+        fallback: 'light', // fallback value if not system preference found
+    },
     /*
     ** Nuxt.js modules
     */

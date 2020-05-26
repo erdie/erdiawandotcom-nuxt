@@ -59,20 +59,20 @@
                                 <li><a href="https://twitter.com/aerdiawan_" target="_blank" rel="noopener noreferrer" aria-label="Twitter" aria-hidden="true"><i class="icon-twitter"></i></a></li>
                             </ul>
                         </div>
-                        <div class="dark-mode-toggle">
-                            <select v-model="$colorMode.preference">
-                                <option value="system">
-                                    <span v-if="$colorMode.preference === 'light'"><i>☀️ </i> </span>
-                                    <span v-else=""><i>🌙 </i></span>
-                                    System
-                                </option>
-                                <option value="light"><i class="icon-sun"></i>☀️ Light</option>
-                                <option value="dark"><i class="icon-moon"></i>🌙 Dark</option>
-                            </select>
-                        </div>
+                        <DarkModeToggle />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+import DarkModeToggle from '~/components/DarkModeToggle.vue'
+
+export default {
+    components: {
+        DarkModeToggle
+    }
+}
+</script>
