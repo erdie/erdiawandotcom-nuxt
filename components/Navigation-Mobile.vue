@@ -20,17 +20,6 @@
         </div>
         <div class="container social-mobile">
             <div class="social">
-<<<<<<< HEAD
-                <small>Find me on social media</small>
-                <ul>
-                    <li><a href="http://fb.me/aerdiawan" target="_blank" rel="noopener noreferrer" aria-label="Facebook" aria-hidden="true"><i class="icon-facebook"></i></a></li>
-                    <!-- <li><a href="https://instagram.com/aerdiawan" target="_blank" rel="noopener noreferrer" aria-label="Instagram" aria-hidden="true"><i class="icon-instagram"></i></a></li> -->
-                    <li><a href="https://www.linkedin.com/in/erdiawan/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin" aria-hidden="true"><i class="icon-linkedin"></i></a></li>
-                    <!-- <li><a href="https://gitlab.com/erdie" target="_blank" rel="noopener noreferrer" aria-label="Gitlab" aria-hidden="true"><i class="icon-gitlab"></i></a></li> -->
-                    <li><a href="https://github.com/erdie" target="_blank" rel="noopener noreferrer " aria-label="Github" aria-hidden="true"><i class="icon-github"></i></a></li>
-                    <li><a href="https://twitter.com/aerdiawan_" target="_blank" rel="noopener noreferrer" aria-label="Twitter" aria-hidden="true"><i class="icon-twitter"></i></a></li>
-                </ul>
-=======
                 <div class="sub-social">
                     <small>Find me on social media</small>
                     <ul>
@@ -43,7 +32,6 @@
                     </ul>
                 </div>
                 <DarkModeToggle />
->>>>>>> darkmode
             </div>
         </div>
     </nav>

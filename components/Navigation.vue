@@ -44,9 +44,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-<<<<<<< HEAD
-
-=======
     #navigation
         .navigation-group
             .social
@@ -62,5 +59,4 @@ export default {
                     li
                         display: inline-block
                         margin: 0 5px
->>>>>>> darkmode
 </style>
