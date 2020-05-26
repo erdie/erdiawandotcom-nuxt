@@ -497,4 +497,57 @@ export default {
                     a:hover
                         color: #5b64a0
 
+    .dark-mode body
+        .covid
+            h1
+                color: #51E3D4
+            h3
+                color: #51E3D4
+            .indonesia
+                .cases
+                    background-color: #161616
+                    box-shadow: none
+            .globalcases
+                background-color: #161616
+                border: none
+                ul
+                    li
+                        small
+                            a
+                                color: #51e3d4
+                            a:hover
+                                color: #474f85
+            .covid-title
+                small
+                    a
+                        color: #51E3D4
+                        text-decoration: none
+                    a:hover
+                        color: #5b64a0
+
+    .light-mode body
+        .covid
+            h1, h3
+                color: #474F85
+            .covid-title
+                small
+                    a
+                        color: #474F85
+                    a:hover
+                        color: #51E3D4
+            .globalcases
+                background-color: white
+                border: 1px solid  #dedede
+                ul
+                    li
+                        small
+                            a
+                                color: #474F85
+                            a:hover
+                                color: #51E3D4
+            .indonesia
+                .cases
+                    background-color: white
+                    box-shadow: 0px 0px 0px 1px #dedede
+
 </style>

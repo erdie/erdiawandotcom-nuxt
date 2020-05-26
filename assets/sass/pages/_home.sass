@@ -204,7 +204,32 @@
                     li
                         display: inline-block
                         margin: 0 5px
-
+                .sub-social
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: row
+                .dark-mode-toggle
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    margin-left: 20px
+                    select
+                        -webkit-appearance: none
+                        appearance: none
+                        background-color: transparent
+                        color: white
+                        outline: none
+                        border-radius: 30px
+                        padding: 0px 10px 3px 10px
+                        transition: 0.3s
+                        border: 1px solid rgba(222, 222, 222, 0.2)
+                        option
+                            padding: 10px 20px
+                    select:hover
+                        background-color: rgba(255, 255, 255, 0.1)
+                        transition: 0.3s
 
 #portfolio
     padding: 50px 0
@@ -319,19 +344,24 @@ footer
                             a
                                 padding: 10px
                 .social
-                    // transform: scale(0.9)
                     padding: 7px 0
                     background-color: #5b64a0
                     width: 100%
                     p
                         margin: 0
                         margin-left: 10px
+                        font-size: 13px
                         transform: scale(0.9)
                     ul
                         margin: 0
                         padding: 0
                         margin-right: 10px
                         margin-bottom: 2px
+                        transform: scale(0.9)
+                    .dark-mode-toggle
+                        display: block
+                        margin-left: 0
+                        margin-right: 15px
                         transform: scale(0.9)
 
     #portfolio
@@ -402,3 +432,29 @@ footer
         .circles
             li
                 background: rgba(71, 79, 133, 0.3)
+.dark-mode body
+    #hero
+        .circles
+            li
+                background: rgba(71, 79, 133, 0.3)
+        .hero-group
+            .hero-title
+                .hide-light
+                    display: block
+
+.light-mode body
+    #hero
+        .circles
+            li
+                background: rgba(220, 223, 245, 0.6)
+        .hero-group
+            .hero-title
+                .hide-dark
+                    display: block
+    #portfolio
+        .portfolio-grid
+            .portfolio-card
+                a
+                    color: $primary-color
+                a:hover
+                    color: $accent-color
