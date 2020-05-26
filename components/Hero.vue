@@ -76,3 +76,12 @@ export default {
     }
 }
 </script>
+
+<style lang="sass" scoped>
+    #hero
+        .hero-footer
+            .social
+                .sub-social
+                    display: flex
+                    flex-direction: row
+</style>
