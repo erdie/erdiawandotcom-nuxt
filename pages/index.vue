@@ -18,7 +18,14 @@ export default {
         }
     },
     head: {
+        title: 'Anna Erdiawan | Web Developer',
         meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: "Oh hi, this is Anna Erdiawan's portfolio site. I'm a Web developer interested in UI and UX."
+            // content: process.env.npm_package_description || "Oh hi, this is Anna Erdiawan's personal site. I'm a Web developer interested in UI and UX."
+        },
         {
             property: 'og:type',
             content: 'website',

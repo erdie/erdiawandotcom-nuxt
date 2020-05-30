@@ -101,7 +101,6 @@ export default {
     data() {
         return {
             loading: true,
-            title: 'Kasus Covid19 di Indonesia',
             search: '',
             loaded: true,
             chartdata: null,
@@ -114,9 +113,9 @@ export default {
     },
     head () {
         return {
-            title: this.title,
+            title: 'Data Kasus COVID-19 di Indonesia',
             meta: [
-                { hid: 'description', name: 'description', content: 'Kasus Covid19 di Indonesia' }
+                { hid: 'description', name: 'description', content: 'Data kasus COVID-19 di Indonesia dalam angka dan grafik atau kurva.' }
             ],
             link: [
                 { rel: 'canonical', href: 'https://erdiawan.com/covid/' },

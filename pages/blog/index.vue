@@ -56,12 +56,12 @@ export default {
     head() {
         const metadata = this.blogPosts
         return {
-            title: `erdiawan.com - Erdiawan Anna Blog`,
+            title: `Anna Erdiawan | Blog, Opinion, How To, Tutorials, Notes, Articles`,
             meta: [
             {
                 hid: `description`,
                 name: 'description',
-                content: `Ini merupakan halaman blog Erdiawan Anna`
+                content: `Anna Erdiawan's Blog, writes about web development, opinion, tutorials, how to and more`
             },
             {
                 property: 'og:type',
