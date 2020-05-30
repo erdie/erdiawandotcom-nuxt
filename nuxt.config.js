@@ -170,14 +170,14 @@ export default {
     },
     pwa: {
         manifest: {
-        name: 'erdiawan.com - Anna Erdiawan Personal Site',
+        name: 'Anna Erdiawan',
         short_name: "erdiawan.com",
         lang: 'en',
         dispplay: 'standalone',
         theme_color: '#474f85',
         scope: "/",
         start_url: "/?source=pwa",
-        description: "Anna Erdiawan Personal Site",
+        description: "Oh hi, this is Anna Erdiawan's portfolio site. I'm a Web developer interested in UI and UX.",
         icons: [
             {
                 src: "/icons/erdi48.png",
@@ -230,9 +230,9 @@ export default {
         ],
         shortcuts: [
             {
-                name: "erdiawan.com - Anna Erdiawan Blog",
+                name: "Anna Erdiawan | Blog",
                 short_name: "Anna Erdiawan Blog",
-                description: "erdiawan.com - Anna Erdiawan Blog",
+                description: "AAnna Erdiawan's Blog, writes about web development, opinion, tutorials, how to and more",
                 url: "/blog?source=pwa",
                 icons: [
                     {
@@ -256,9 +256,9 @@ export default {
                 ]
             },
             {
-                name: "erdiawan.com - COVID-19 Cases in Indonesia",
+                name: "Data Kasus COVID-19 di Indonesia",
                 short_name: "COVID-19 Cases in Indonesia",
-                description: "erdiawan.com - COVID-19 Cases in Indonesia",
+                description: "Data kasus COVID-19 di Indonesia dalam angka dan grafik atau kurva.",
                 url: "/covid?source=pwa",
                 icons: [
                 {
