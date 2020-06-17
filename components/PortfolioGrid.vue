@@ -7,14 +7,6 @@
             </div>
             <div class="portfolio-grid item">
                 <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="../assets/portfolio/triv-frontend.jpg" loading="lazy" alt="Triv Frontend">
-                    <h3>Triv Frontend</h3>
-                    <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
-                        Frontend Dev: Anna Erdiawan & Ali Mahfud <br>
-                        Demo: <a href="https://triv-frontend.erdiawan.com" target="_blank" rel="noopener noreferrer">triv-frontend.erdiawan.com</a>
-                    </p>
-                </div>
-                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                     <img src="../assets/portfolio/triv-dashboard.jpg" loading="lazy" alt="Triv Dashboard">
                     <h3>Triv Dashboard</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
@@ -62,6 +54,15 @@
             </div>
             <transition name="fade" mode="out-in">
                 <div class="portfolio-grid item" key="3" v-show="isShowing">
+                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                        <img src="~/assets/img/portfolio/triv-frontend.jpg" loading="lazy" alt="Triv Frontend">
+                        <h3>Triv</h3>
+                        <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
+                            Frontend Dev: Anna Erdiawan & Ali Mahfud <br>
+                            Demo: <a href="https://triv.id" target="_blank" rel="noopener noreferrer">triv.id</a><br>
+                            Source Code: <strong>Private</strong>
+                        </p>
+                    </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/digitarasa.jpg" loading="lazy" alt="Digitarasa by GoFood">
                         <h3>Digitarasa by GoFood</h3>
