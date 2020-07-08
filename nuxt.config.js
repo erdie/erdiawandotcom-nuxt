@@ -58,7 +58,7 @@ export default {
         '@nuxtjs/color-mode',
     ],
     colorMode: {
-        preference: 'dark', // default value of $colorMode.preference
+        preference: 'light', // default value of $colorMode.preference
         fallback: 'light', // fallback value if not system preference found
     },
     /*

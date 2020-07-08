@@ -475,10 +475,10 @@ export default {
                 color: #51E3D4
             .indonesia
                 .cases
-                    background-color: #161616
+                    background-color: rgba(72, 72, 74, 1)
                     box-shadow: none
             .globalcases
-                background-color: #161616
+                background-color: rgba(72, 72, 74, 1)
                 border: none
                 ul
                     li
@@ -502,10 +502,10 @@ export default {
                 color: #51E3D4
             .indonesia
                 .cases
-                    background-color: #161616
+                    background-color: #1b1e3a
                     box-shadow: none
             .globalcases
-                background-color: #161616
+                background-color: #1b1e3a
                 border: none
                 ul
                     li
