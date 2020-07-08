@@ -37,25 +37,35 @@
                 :chartdata="chartdata"
                 :options="options"/>
                 <div class="indonesia item">
-                    <div class="cases confirmed d:item__3 t:item__3 m:item__6">
+                    <div class="cases confirmed d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.jumlahKasus.toLocaleString()}}</b>
                         <br>Terkonfirmasi <br>
                         <small><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
                     </div>
-                    <div class="cases active d:item__3 t:item__3 m:item__6">
+                    <div class="cases active d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.perawatan.toLocaleString()}}</b>
                         <br>Dalam Perawatan <br>
-                        <small>Persentase <strong>{{dataPersentasePerawatan}} %</strong></small>
+                        <small><strong>+{{dataPerawatanBaru}}</strong> Kasus Baru</small>
                     </div>
-                    <div class="cases recovered d:item__3 t:item__3 m:item__6">
+                    <div class="cases recovered d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.sembuh.toLocaleString()}}</b>
                         <br>Sembuh <br>
-                        <small>Persentase <strong>{{dataPersentaseSembuh}} %</strong></small>
+                        <small><strong>+{{dataSembuhBaru}}</strong> Kasus Baru</small>
                     </div>
-                    <div class="cases deaths d:item__3 t:item__3 m:item__6">
+                    <div class="cases deaths d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.meninggal.toLocaleString()}}</b>
                         <br>Meninggal <br>
-                        <small>Persentase <strong>{{dataPersentaseMeninggal}} %</strong></small>
+                        <small><strong>+{{dataMeninggalBaru}}</strong> Kasus Baru</small>
+                    </div>
+                    <div class="cases speciment d:item__4 t:item__4 m:item__6">
+                        <b>{{dataSpesimenDiperiksa.toLocaleString()}}</b>
+                        <br>Spesimen Dites <br>
+                        <small><strong>+{{dataSpesimenBaru}}</strong> Kasus Baru</small>
+                    </div>
+                    <div class="cases tested d:item__4 t:item__4 m:item__6">
+                        <b>{{dataOrangDiperiksa.toLocaleString()}}</b>
+                        <br>Orang Dites<br>
+                        <small><strong>+{{dataDiperiksaBaru}}</strong> Kasus Baru</small>
                     </div>
                 </div>
                 <line-chart
@@ -156,6 +166,28 @@ export default {
             return compile.jumlahPasienMeninggal
         })
 
+        //jumlah spesimen diperiksa
+        const compileSpesimenDiperiksa = thirdResponse.data.data.map(compile => {
+            return compile.jumlahSpesimenDiperiksa
+        })
+
+        if (compileSpesimenDiperiksa[compileSpesimenDiperiksa.length-1] == null) {
+            var lastCompileSpesimenDiperiksa = compileSpesimenDiperiksa[compileSpesimenDiperiksa.length-2]
+        } else {
+            var lastCompileSpesimenDiperiksa = compileSpesimenDiperiksa[compileSpesimenDiperiksa.length-1]
+        }
+
+        //jumlah orang diperiksa
+        const compileOrangDiperiksa = thirdResponse.data.data.map(compile => {
+            return compile.jumlahKasusDiperiksa
+        })
+
+        if (compileOrangDiperiksa[compileOrangDiperiksa.length-1] == null) {
+            var lastCompileOrangDiperiksa = compileOrangDiperiksa[compileOrangDiperiksa.length-2]
+        } else {
+            var lastCompileOrangDiperiksa = compileOrangDiperiksa[compileOrangDiperiksa.length-1]
+        }
+
         //Compile for Daily Case
         const compileHari = thirdResponse.data.data.map(compile => {
             return compile.harike
@@ -175,6 +207,61 @@ export default {
             var lastCompileKasusBaru = compileKasusBaru[compileKasusBaru.length-2]
         } else {
             var lastCompileKasusBaru = compileKasusBaru[compileKasusBaru.length-1]
+        }
+
+        //penambahan sembuh baru
+        const compileSembuhBaru = thirdResponse.data.data.map(compile => {
+            return compile.jumlahKasusSembuhperHari
+        })
+
+        if (compileSembuhBaru[compileSembuhBaru.length-1] == null) {
+            var lastCompileSembuhBaru = compileSembuhBaru[compileSembuhBaru.length-2]
+        } else {
+            var lastCompileSembuhBaru = compileSembuhBaru[compileSembuhBaru.length-1]
+        }
+
+        //penambahan dalam perawatan baru
+        const compilePerawatanBaru = thirdResponse.data.data.map(compile => {
+            return compile.jumlahKasusDirawatperHari
+        })
+
+        if (compilePerawatanBaru[compilePerawatanBaru.length-1] == null) {
+            var lastCompilePerawatanBaru = compilePerawatanBaru[compilePerawatanBaru.length-2]
+        } else {
+            var lastCompilePerawatanBaru = compilePerawatanBaru[compilePerawatanBaru.length-1]
+        }
+
+        //penambahan meninggal baru
+        const compileMeninggalBaru = thirdResponse.data.data.map(compile => {
+            return compile.jumlahKasusDirawatperHari
+        })
+
+        if (compileMeninggalBaru[compileMeninggalBaru.length-1] == null) {
+            var lastCompileMeninggalBaru = compileMeninggalBaru[compileMeninggalBaru.length-2]
+        } else {
+            var lastCompileMeninggalBaru = compileMeninggalBaru[compileMeninggalBaru.length-1]
+        }
+
+        //penambahan spesimen diperiksa baru
+        const compileSpesimenBaru = thirdResponse.data.data.map(compile => {
+            return compile.spesimenDiperiksaBaruHarian
+        })
+
+        if (compileSpesimenBaru[compileSpesimenBaru.length-1] == null) {
+            var lastCompileSpesimenBaru = compileSpesimenBaru[compileSpesimenBaru.length-2]
+        } else {
+            var lastCompileSpesimenBaru = compileSpesimenBaru[compileSpesimenBaru.length-1]
+        }
+
+        //penambahan orang diperiksa baru
+        const compileDiperiksaBaru = thirdResponse.data.data.map(compile => {
+            return compile.kasusDiperiksaBaruHarian
+        })
+
+        if (compileDiperiksaBaru[compileDiperiksaBaru.length-1] == null) {
+            var lastCompileDiperiksaBaru = compileDiperiksaBaru[compileDiperiksaBaru.length-2]
+        } else {
+            var lastCompileDiperiksaBaru = compileDiperiksaBaru[compileDiperiksaBaru.length-1]
         }
 
         //persentase kematian
@@ -209,6 +296,7 @@ export default {
         } else {
             var lastCompilePersentasePerawatan = compilePersentasePerawatan[compilePersentasePerawatan.length-1].toFixed(1)
         }
+
 
         // Status
         if (compileKasusBaru[compileKasusBaru.length-1] == null) {
@@ -246,8 +334,15 @@ export default {
             dataDalamPerawatan: compileDalamPerawatan,
             dataPasienSembuh: compilePasienSembuh,
             dataPasienMeninggal: compilePasienMeninggal,
+            dataSpesimenDiperiksa: lastCompileSpesimenDiperiksa,
+            dataOrangDiperiksa: lastCompileOrangDiperiksa,
             dataLabels: compileHari,
             dataKasusBaru: lastCompileKasusBaru,
+            dataSembuhBaru: lastCompileSembuhBaru,
+            dataPerawatanBaru: lastCompilePerawatanBaru,
+            dataMeninggalBaru: lastCompileMeninggalBaru,
+            dataSpesimenBaru: lastCompileSpesimenBaru,
+            dataDiperiksaBaru: lastCompileDiperiksaBaru,
             dataPersentaseMeninggal: lastCompilePersentaseMeninggal,
             dataPersentaseSembuh: lastCompilePersentaseSembuh,
             dataPersentasePerawatan: lastCompilePersentasePerawatan,
@@ -425,6 +520,12 @@ export default {
             .deaths
                 b
                     color: #d8232a
+            .speciment
+                b
+                    color: #f7e19f
+            .tested
+                b
+                    color: #f36f74
         .notes
             font-size: 11px
             margin: -5px 0 10px 0
