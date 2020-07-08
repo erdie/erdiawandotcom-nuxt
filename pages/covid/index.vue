@@ -535,7 +535,7 @@ export default {
         .province-group
             padding-left: 10px
             .province-list
-                height: 920px
+                height: 1080px
                 overflow-y: scroll
                 ul
                     font-family: system-ui
