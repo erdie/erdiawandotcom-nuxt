@@ -10,6 +10,8 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt",
     "generate": "nuxt generate",
+    "serve": "nuxt serve",
+    "export": "nuxt export",
     "start": "nuxt start",
     "test": "jest"
   },
