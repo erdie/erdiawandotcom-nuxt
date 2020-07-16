@@ -17,10 +17,10 @@
                 <div class="hero-title">
                     <p class="hello animated fadeInUp">Oh, Hi! 👋 It's Me</p>
                     <div class="name hide-dark animated fadeInUpName first-delay">
-                        <img src="~/assets/img/erdiawan-2.svg" loading="lazy" alt="Anna Erdiawan">
+                        <img src="~/assets/img/erdiawan-2.svg" rel="preload" loading="lazy" alt="Anna Erdiawan">
                     </div>
                     <div class="name hide-light animated fadeInUpName first-delay">
-                        <img src="~/assets/img/erdiawan-3.svg" loading="lazy" alt="Anna Erdiawan">
+                        <img src="~/assets/img/erdiawan-3.svg" rel="preload" loading="lazy" alt="Anna Erdiawan">
                     </div>
                     <div class="desc animated fadeInUp second-delay">
                         <h3>Web Developer, IU/UX Enthusiast, Deep Understanding How SEO Works</h3>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="hero-image animated fadeInUp third-delay">
-                    <img src="~/assets/img/erdi.jpg" loading="lazy" alt="Anna Erdiawan">
+                    <img src="~/assets/img/erdi.jpg" rel="preload" loading="lazy" alt="Anna Erdiawan">
                     <div class="btn-hire">
                         <a href="mailto:hi@erdiawan"><button class="btn btn-primary"><i class="icon-mail"></i> Send Me a Message</button></a>
                     </div>

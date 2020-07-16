@@ -15,7 +15,7 @@
                     </p>
                 </div> -->
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/kalikesia.jpg" loading="lazy" alt="Kalikesia">
+                    <img src="~/assets/img/portfolio/kalikesia.jpg" rel="preload" loading="lazy" alt="Kalikesia">
                     <h3>Kalikesia</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, REACTJS, NEXTJS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -24,7 +24,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/devfest-jakarta.jpg" loading="lazy" alt="DevFest 2019 Jakarta">
+                    <img src="~/assets/img/portfolio/devfest-jakarta.jpg"  rel="preload" loading="lazy" alt="DevFest 2019 Jakarta">
                     <h3>DevFest 2019 Jakarta</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, NUXT, VUE JS<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -33,7 +33,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/digitaraya.jpg" loading="lazy" alt="Digitaraya">
+                    <img src="~/assets/img/portfolio/digitaraya.jpg" rel="preload" loading="lazy" alt="Digitaraya">
                     <h3>Digitaraya</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                         Frontend Dev: Anna Erdiawan<br>
@@ -43,7 +43,7 @@
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/finest.jpg" loading="lazy" alt="Finest">
+                    <img src="~/assets/img/portfolio/finest.jpg" rel="preload" loading="lazy" alt="Finest">
                     <h3>Finest</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                         Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
