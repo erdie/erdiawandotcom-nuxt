@@ -1,5 +1,6 @@
 export default {
     mode: 'universal',
+    target: 'static',
     /*
     ** Headers of the page
     */
@@ -47,7 +48,8 @@ export default {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        { src: '~plugins/ga.js', mode: 'client' }
+        { src: '~plugins/ga.js', mode: 'client' },
+        { src: '~/plugins/preview.client'}
     ],
     /*
     ** Nuxt.js dev-modules
