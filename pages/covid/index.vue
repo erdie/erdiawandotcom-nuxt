@@ -40,32 +40,32 @@
                     <div class="cases confirmed d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.jumlahKasus.toLocaleString()}}</b>
                         <br>Terkonfirmasi <br>
-                        <small><strong>+{{dataKasusBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataKasusBaru}}</strong><span class="blink">baru</span></small>
                     </div>
                     <div class="cases active d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.perawatan.toLocaleString()}}</b>
                         <br>Dalam Perawatan <br>
-                        <small><strong>+{{dataPerawatanBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataPerawatanBaru}}</strong><span class="blink">baru</span></small>
                     </div>
                     <div class="cases recovered d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.sembuh.toLocaleString()}}</b>
                         <br>Sembuh <br>
-                        <small><strong>+{{dataSembuhBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataSembuhBaru}}</strong><span class="blink">baru</span></small>
                     </div>
                     <div class="cases deaths d:item__4 t:item__4 m:item__6">
                         <b>{{alldata.meninggal.toLocaleString()}}</b>
                         <br>Meninggal <br>
-                        <small><strong>+{{dataMeninggalBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataMeninggalBaru}}</strong><span class="blink">baru</span></small>
                     </div>
                     <div class="cases speciment d:item__4 t:item__4 m:item__6">
                         <b>{{dataSpesimenDiperiksa.toLocaleString()}}</b>
                         <br>Spesimen Dites <br>
-                        <small><strong>+{{dataSpesimenBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataSpesimenBaru}}</strong><span class="blink">baru</span></small>
                     </div>
                     <div class="cases tested d:item__4 t:item__4 m:item__6">
                         <b>{{dataOrangDiperiksa.toLocaleString()}}</b>
                         <br>Orang Dites<br>
-                        <small><strong>+{{dataDiperiksaBaru}}</strong> Kasus Baru</small>
+                        <small><strong>+{{dataDiperiksaBaru}}</strong><span class="blink">baru</span></small>
                     </div>
                 </div>
                 <line-chart
@@ -646,4 +646,21 @@ export default {
                 .cases
                     background-color: white
                     box-shadow: 0px 0px 0px 1px #dedede
+    .blink
+        background-color: red
+        padding: 0 5px 4px 5px
+        border-radius: 3px
+        color: white
+        margin-left: 5px
+        margin-top: -5px
+        font-size: 8px
+        font-weight: 500
+        animation: blink-animation 2s steps(5, start) infinite
+        -webkit-animation: blink-animation 2s steps(5, start) infinite
+    @keyframes blink-animation
+        to
+            visibility: hidden
+    @-webkit-keyframes blink-animation
+        to
+            visibility: hidden
 </style>
