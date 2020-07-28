@@ -116,15 +116,20 @@ export default {
         ]
     },
     robots: {
-            UserAgent: '*',
-            Allow: '/',
-            Sitemap: 'https://erdiawan.com/sitemap.xml'
+        UserAgent: '*',
+        Allow: '/',
+        Sitemap: 'https://erdiawan.com/sitemap.xml'
     },
     /*
     ** Axios module configuration
     ** See https://axios.nuxtjs.org/options
     */
     axios: {
+    },
+    workbox: {
+        runtimeCaching: [
+          { urlPattern: `https://indonesia-covid-19.mathdro.id/api/*` }
+        ]
     },
     /*
     ** Build configuration
