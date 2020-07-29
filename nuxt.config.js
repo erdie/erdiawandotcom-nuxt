@@ -288,8 +288,7 @@ export default {
         workbox: {
             runtimeCaching: [
                 {
-                  urlPattern: `https://indonesia-covid-19.mathdro.id/api/*`,
-                  urlPattern: `https://erdiawan.com/*`
+                  urlPattern: `https://erdiawan.com/.*`
                 }
             ]
         }
