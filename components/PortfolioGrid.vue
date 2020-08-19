@@ -72,7 +72,7 @@
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
-                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/founder-asia.jpg" loading="lazy" alt="FounderAsia">
                         <h3>Founder Asia</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
@@ -80,13 +80,13 @@
                             Demo: <a href="https://founderasia.com/" target="_blank" rel="noopener noreferrer">founderasia.com</a> <br>
                             Source Code: <strong> Private</strong>
                         </p>
-                    </div>
+                    </div> -->
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/exp-up.jpg" loading="lazy" alt="EXP-UP! Academy Esport">
                         <h3>EXP Esport Academy</h3>
                         <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://exp-up.id" target="_blank" rel="noopener noreferrer">exp-up.id</a> & <a href="https://exp-academy.id" target="_blank" rel="noopener noreferrer">exp-academy.id</a><br>
+                            Demo: <a href="https://exp-academy.id" target="_blank" rel="noopener noreferrer">exp-academy.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -119,10 +119,10 @@
                     </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/simona-apacwomen.jpg" loading="lazy" alt="Simona Venture APAC Women ">
-                        <h3>Simona Venture APAC Women (One Pager)</h3>
+                        <h3>Simona Accelerator (One Pager)</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
                             Frontend Dev: Anna Erdiawan<br>
-                            Demo: <a href="https://simona.ventures/apacwomen/" target="_blank" rel="noopener noreferrer">simona.ventures/apacwomen/</a><br>
+                            Demo: <a href="https://digitaraya.com/simona/" target="_blank" rel="noopener noreferrer">digitaraya.com/simona/</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -135,7 +135,7 @@
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
-                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/kinesys.jpg" loading="lazy" alt="Kinesys Ventures">
                         <h3>Kinesys Ventures</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
@@ -143,7 +143,7 @@
                             Demo: <a href="https://kinesysgroup.com" target="_blank" rel="noopener noreferrer">kinesysgroup.com</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
-                    </div>
+                    </div> -->
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/mariviu.jpg" loading="lazy" alt="Mariviu">
                         <h3>Mariviu</h3>
@@ -162,7 +162,7 @@
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
-                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/digiskul.jpg" loading="lazy" alt="Digiskul">
                         <h3>Digiskul</h3>
                         <p>Tech Stack: HTML5, CSS3, VUE JS<br>
@@ -171,7 +171,7 @@
                             Demo: <a href="http://digiskul.nuansa.id" target="_blank" rel="noopener noreferrer">digiskul.nuansa.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
-                    </div>
+                    </div> -->
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/perkim-sumbar.jpg" loading="lazy" alt="Perkim Sumbar">
                         <h3>Perkim Sumatera Barat</h3>

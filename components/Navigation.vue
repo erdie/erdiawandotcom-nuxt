@@ -11,7 +11,7 @@
                         <!-- <li><nuxt-link to="/#portfolio">Portfolio</nuxt-link></li> -->
                         <li><nuxt-link :to="{ path: '/',hash:'#portfolio'}">My Works</nuxt-link></li>
                         <li><nuxt-link to="/blog">Blog</nuxt-link></li>
-                        <li><nuxt-link to="/covid">Covid19</nuxt-link></li>
+                        <!-- <li><nuxt-link to="/covid">Covid19</nuxt-link></li> -->
                     </ul>
                 </div>
                 <div class="social">
