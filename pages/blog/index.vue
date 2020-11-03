@@ -1,6 +1,10 @@
 <template>
     <section id="blog">
         <div class="container">
+            <div class="blog-title">
+                <h1>BLOG</h1>
+                <p>Erdiawan Personal Log</p>
+            </div>
             <div class="blog item">
                 <div class="d:item__4 t:item__6 m:item__12" v-for="(post,index) in blogPosts" :key="post.slug + '_' + index">
                 <nuxt-link :to="'/blog/' + post.slug">
