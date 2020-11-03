@@ -22,7 +22,7 @@
             color: white
             outline: none
             border-radius: 30px
-            padding: 0px 10px 3px 10px
+            padding: 3px 10px 3px 10px
             transition: 0.3s
             border: 1px solid rgba(222, 222, 222, 0.2)
             option
