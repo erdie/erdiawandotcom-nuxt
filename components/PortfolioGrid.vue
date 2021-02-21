@@ -15,12 +15,12 @@
                     </p>
                 </div> -->
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/kalikesia.jpg" rel="preload" loading="lazy" alt="Kalikesia">
-                    <h3>Kalikesia</h3>
-                    <p>Tech Stack: HTML5, CSS3, SASS, REACTJS, NEXTJS<br>
+                    <img src="~/assets/img/portfolio/tld-finder.jpg" rel="preload" loading="lazy" alt="Kalikesia">
+                    <h3>TLD Finder</h3>
+                    <p>Tech Stack: HTML5, CSS3, SASS, VUEJS, NUXT<br>
                         Frontend Dev: Anna Erdiawan<br>
-                        Demo: <a target="_blank" rel="noopener noreferrer"><b>Unavailable</b></a><br>
-                        Source Code: <strong>Private</strong>
+                        Demo: <a href="https://tld-finder.erdiawan.com" target="_blank" rel="noopener noreferrer"><b>tld-finder.erdiawan.com</b></a><br>
+                        Source Code: <a href="https://github.com/erdie/tld-finder" target="_blank"  rel="noopener noreferrer">Github</a>
                     </p>
                 </div>
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
@@ -54,6 +54,15 @@
             </div>
             <transition name="fade" mode="out-in">
                 <div class="portfolio-grid item" key="3" v-show="isShowing">
+                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                        <img src="~/assets/img/portfolio/kalikesia.jpg" rel="preload" loading="lazy" alt="Kalikesia">
+                        <h3>Kalikesia</h3>
+                        <p>Tech Stack: HTML5, CSS3, SASS, REACTJS, NEXTJS<br>
+                            Frontend Dev: Anna Erdiawan<br>
+                            Demo: <a target="_blank" rel="noopener noreferrer"><b>Unavailable</b></a><br>
+                            Source Code: <strong>Private</strong>
+                        </p>
+                    </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/triv-frontend.jpg" loading="lazy" alt="Triv Frontend">
                         <h3>Triv</h3>

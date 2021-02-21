@@ -16,20 +16,20 @@
             <div class="hero-group container-flex justify-between align-center flex-column-mobile">
                 <div class="hero-title">
                     <p class="hello">Oh, Hi! 👋 It's Me</p>
-                    <div class="name hide-dark first-delay">
+                    <div class="name hide-dark">
                         <img src="~/assets/img/erdiawan-2.svg" alt="Anna Erdiawan">
                     </div>
-                    <div class="name hide-light first-delay">
+                    <div class="name hide-light">
                         <img src="~/assets/img/erdiawan-3.svg" alt="Anna Erdiawan">
                     </div>
-                    <div class="desc second-delay">
+                    <div class="desc">
                         <h3>Web Developer, User Interface Enthusiast</h3>
                         <p>You can call me Erdi. Lives in Yogyakarta. Web Developer since 4 years ago who interested in UI/UX. Having been involved in building a media startup, I have a deep understanding of how SEO works.</p>
 
                         <p>I also have a lot of getting involved with the developer and open-source software community. I love being part of the community since I was on campus and helping it grow in my city. Now I am organizing GDG Jogjakarta as a Co-Organizer.</p>
                     </div>
                 </div>
-                <div class="hero-image third-delay">
+                <div class="hero-image">
                     <img src="~/assets/img/erdiawan.jpg" rel="preload" loading="lazy" alt="Anna Erdiawan">
                     <div class="btn-hire">
                         <a href="mailto:hi@erdiawan"><button class="btn btn-primary"><i class="icon-mail"></i> Send Me a Message</button></a>
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="hero-footer fourth-delay">
+        <div class="hero-footer">
             <div class="container">
                 <div class="footer-group">
                     <div class="menu">
