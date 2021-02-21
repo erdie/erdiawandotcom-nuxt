@@ -17,10 +17,10 @@
                 <div class="hero-title">
                     <p class="hello">Oh, Hi! 👋 It's Me</p>
                     <div class="name hide-dark first-delay">
-                        <img src="~/assets/img/erdiawan-2.svg" rel="preload" loading="lazy" alt="Anna Erdiawan">
+                        <img src="~/assets/img/erdiawan-2.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>
                     <div class="name hide-light first-delay">
-                        <img src="~/assets/img/erdiawan-3.svg" rel="preload" loading="lazy" alt="Anna Erdiawan">
+                        <img src="~/assets/img/erdiawan-3.svg" loading="lazy" alt="Anna Erdiawan">
                     </div>
                     <div class="desc second-delay">
                         <h3>Web Developer, IU Interface Enthusiast</h3>
