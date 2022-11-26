@@ -24,9 +24,9 @@
                     </div>
                     <div class="desc">
                         <h3>Web Developer, User Interface Enthusiast</h3>
-                        <p>You can call me Erdi. Lives in Yogyakarta. Web Developer since 4 years ago who interested in UI/UX. Having been involved in building a media startup, I have a deep understanding of how SEO works.</p>
+                        <p>You can call me Erdi. Web developer & interested in UI/UX who lives in Yogyakarta. I'm not a fanatic of one web technology. The selected technology should be able to solve problems.</p>
 
-                        <p>I also have a lot of getting involved with the developer and open-source software community. I love being part of the community since I was on campus and helping it grow in my city. Now I am organizing GDG Jogjakarta as a Co-Organizer.</p>
+                        <p>I also have a lot of getting involved with the developer and open-source software community. I have loved being part of the community since I was on campus and helping it grow in my city. Now I work at DomaiNesia as a Frontend Developer.</p>
                     </div>
                 </div>
                 <div class="hero-image">
