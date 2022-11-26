@@ -15,6 +15,24 @@
                     </p>
                 </div> -->
                 <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <img src="~/assets/img/portfolio/lancong.jpg" loading="lazy" alt="Lancong">
+                    <h3>Lancong.id</h3>
+                    <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
+                        Frontend Dev: Anna Erdiawan<br>
+                        Demo: <a href="http://lancong.id" target="_blank" rel="noopener noreferrer">lancong.id</a><br>
+                        Source Code: <strong>Private</strong>
+                    </p>
+                </div>
+                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <img src="~/assets/img/portfolio/mariviu.jpg" loading="lazy" alt="Mariviu">
+                    <h3>Mariviu</h3>
+                    <p>Tech Stack: WORDPRESS<br>
+                        Frontend Dev: Anna Erdiawan<br>
+                        Demo: <a href="https://mariviu.com" target="_blank" rel="noopener noreferrer">mariviu.com</a> <br>
+                        Source Code: <strong>Private</strong>
+                    </p>
+                </div>
+                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                     <img src="~/assets/img/portfolio/tld-finder.jpg" rel="preload" loading="lazy" alt="Kalikesia">
                     <h3>TLD Finder</h3>
                     <p>Tech Stack: HTML5, CSS3, SASS, VUEJS, NUXT<br>
@@ -32,17 +50,7 @@
                         Source Code: <a href="https://github.com/gdgindonesia/devfest-19-landing" target="_blank"  rel="noopener noreferrer">Github</a>
                     </p>
                 </div>
-                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
-                    <img src="~/assets/img/portfolio/digitaraya.jpg" rel="preload" loading="lazy" alt="Digitaraya">
-                    <h3>Digitaraya</h3>
-                    <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
-                        Frontend Dev: Anna Erdiawan<br>
-                        Demo: <a href="https://digitaraya.com" target="_blank" rel="noopener noreferrer">digitaraya.com</a><br>
-                        <!-- Demo v1: <a href="https://v1.digitaraya.com" target="_blank" rel="noopener noreferrer">v1.digitaraya.com</a> (Wordpress) <br> -->
-                        Source Code: <strong>Private</strong>
-                    </p>
-                </div>
-                <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                     <img src="~/assets/img/portfolio/finest.jpg" rel="preload" loading="lazy" alt="Finest">
                     <h3>Finest</h3>
                     <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
@@ -50,10 +58,20 @@
                         Demo: <a href="https://finest.co.id" target="_blank" rel="noopener noreferrer">finest.co.id</a><br>
                         Source Code: <strong>Private</strong>
                     </p>
-                </div>
+                </div> -->
             </div>
             <transition name="fade" mode="out-in">
                 <div class="portfolio-grid item" key="3" v-show="isShowing">
+                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                        <img src="~/assets/img/portfolio/digitaraya.jpg" rel="preload" loading="lazy" alt="Digitaraya">
+                        <h3>Digitaraya</h3>
+                        <p>Tech Stack: HTML5, CSS3, SASS, JQUERY<br>
+                            Frontend Dev: Anna Erdiawan<br>
+                            Demo: <a href="https://digitaraya.com" target="_blank" rel="noopener noreferrer">digitaraya.com</a><br>
+                            <!-- Demo v1: <a href="https://v1.digitaraya.com" target="_blank" rel="noopener noreferrer">v1.digitaraya.com</a> (Wordpress) <br> -->
+                            Source Code: <strong>Private</strong>
+                        </p>
+                    </div>
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/kalikesia.jpg" rel="preload" loading="lazy" alt="Kalikesia">
                         <h3>Kalikesia</h3>
@@ -135,12 +153,21 @@
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
-                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/lancong.jpg" loading="lazy" alt="Lancong">
                         <h3>Lancong.id</h3>
                         <p>Tech Stack: SASS, HTML5, CSS3, JQUERY<br>
                             Frontend Dev: Anna Erdiawan<br>
                             Demo: <a href="http://lancong.id" target="_blank" rel="noopener noreferrer">lancong.id</a><br>
+                            Source Code: <strong>Private</strong>
+                        </p>
+                    </div> -->
+                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                        <img src="~/assets/img/portfolio/finest.jpg" rel="preload" loading="lazy" alt="Finest">
+                        <h3>Finest</h3>
+                        <p>Tech Stack: SASS, HTML5, CSS3, JQUERY <br>
+                            Frontend Dev: Anna Erdiawan & Ade Armyatna<br>
+                            Demo: <a href="https://finest.co.id" target="_blank" rel="noopener noreferrer">finest.co.id</a><br>
                             Source Code: <strong>Private</strong>
                         </p>
                     </div>
@@ -153,7 +180,7 @@
                             Source Code: <strong>Private</strong>
                         </p>
                     </div> -->
-                    <div class="portfolio-card d:item__6 t:item__6 m:item__12">
+                    <!-- <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/mariviu.jpg" loading="lazy" alt="Mariviu">
                         <h3>Mariviu</h3>
                         <p>Tech Stack: WORDPRESS<br>
@@ -161,7 +188,7 @@
                             Demo: <a href="https://mariviu.com" target="_blank" rel="noopener noreferrer">mariviu.com</a> <br>
                             Source Code: <strong>Private</strong>
                         </p>
-                    </div>
+                    </div> -->
                     <div class="portfolio-card d:item__6 t:item__6 m:item__12">
                         <img src="~/assets/img/portfolio/chromplex.jpg" loading="lazy" alt="Chromplex">
                         <h3>Chromplex</h3>
