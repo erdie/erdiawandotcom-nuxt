@@ -492,7 +492,7 @@ export default {
             .cases
                 padding: 10px 0 20px 0
                 border-radius: 8px
-                box-shadow: 0px 0px 0px 1px rgba(222,222,222,1);
+                box-shadow: 0px 0px 0px 1px rgba(222,222,222,1)
                 transform: scale(0.95)
                 font-weight: 300
                 transition: 0.3s
