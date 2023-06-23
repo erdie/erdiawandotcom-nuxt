@@ -122,19 +122,23 @@ export default {
     computed: mapState({
         blogPosts: state => state.blogPosts
     }),
+    mounted() {
+        this.fetchBlogPosts();
+    },
     methods: {
         moment: (date) => {
             return moment(date)
         },
-        delay() {
-            this.loading = true
-            setTimeout(() => {
-                this.loading = false
-            }, 2000)
+        async fetchBlogPosts() {
+            try {
+                this.loading = true;
+                await this.$store.dispatch('fetchBlogPosts');
+            } catch (error) {
+                console.error('Error fetching blog posts:', error);
+            } finally {
+                this.loading = false;
+            }
         }
-    },
-    mounted() {
-        this.delay()
     }
 }
 </script>
